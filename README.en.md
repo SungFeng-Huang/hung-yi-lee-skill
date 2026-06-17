@@ -4,6 +4,12 @@
 
 <div align="center">
 
+<img src="./assets/hung-yi-lee.jpg" alt="Hung-Yi Lee" width="240" style="border-radius: 12px;" />
+
+<sub>Inspired by Hung-Yi Lee's teaching style (his own authorized phrasing). This skill imitates the teaching method; it does not impersonate the person.</sub>
+
+<br><br>
+
 > *"A language model, in one sentence, is an AI that plays word chain."*
 
 <br>
@@ -14,11 +20,44 @@
 
 Built from 478 YouTube videos, 27 full transcripts, 8 topic pages,<br>
 and 4 curated research references,<br>
-distilled into a 916-node knowledge graph, 10 concept communities, and a complete teaching voice DNA.
+distilled into a 916-node knowledge graph, 10 concept communities, and a complete teaching voice DNA —<br>
+**and then calibrated against a real interview with the teacher himself.**
 
-[See It In Action](#see-it-in-action) · [Install](#install) · [Knowledge Graph](#knowledge-graph) · [What Was Distilled](#what-was-distilled)
+[See It In Action](#see-it-in-action) · [How This Skill Grew Up](#how-this-skill-grew-up) · [Install](#install) · [Knowledge Graph](#knowledge-graph) · [What Was Distilled](#what-was-distilled)
 
 </div>
+
+---
+
+## How This Skill Grew Up
+
+> The teacher gave us a rule: never teach a method by stating the method — let people see *how the idea was invented*.
+> So here's the story of this repo, told by that same rule.
+
+The obvious first version of "an AI that teaches like a certain professor" is: feed in his subtitles. That's exactly what v1 did — we scraped transcripts and distilled the teaching structure, the voice markers, the knowledge graph.
+
+But that approach has a limit you don't see at first: **transcripts are survivorship bias.** They only keep what was said on camera. *Why* he preps a lecture a certain way, which jokes he tried and threw away, what he deliberately won't say — none of that is in the subtitles. So what do we do?
+
+The story has three steps, each fixing the previous version's limit:
+
+**Step 1 — Mine the voice deeper, with Fable 5.** We used **Fable 5** (`claude-fable-5`) to run a frequency pass over the 27 transcripts and surface signature verbal habits the skill had missed: `比如說` ("for example") appears 609 times — 14× more than the textbook variant — plus `假設` (518), `而已` (160), `就結束了` (36), and the legendary 「硬 train 一發」. Counted, not guessed.
+
+**Step 2 — Generate the interview script, with Fable 5.** No amount of transcript mining fills the *negative space*. So we used **Fable 5** to run a multi-agent workflow that mined genuine stylistic forks from SKILL.md, the transcripts, and the golden/negative examples, then auto-generated an interview protocol — quote-reaction questions, reverse-generation questions, and 10 transcript-grounded A/B comparison questions. The script lives in [`references/interview-protocol.md`](references/interview-protocol.md).
+
+**Step 3 — Actually interview him, and let his answers outrank everything.** We took the script and interviewed the teacher himself. His answers became the highest-authority layer of the skill (the *First-Person Calibration* block in `SKILL.md`): **wherever a transcript-derived guess conflicts with what he actually said, the man wins.**
+
+What calibration taught the skill:
+
+| What the skill assumed | What he actually said |
+|---|---|
+| "A piping-hot document" is a vivid opener | He'd never use the word "piping-hot" (熱騰騰) |
+| Use an everyday comparison for scary facts (clearing browser history) | Too plain, no punch — he'd reach for a "more bizarre anime analogy" |
+| Converting a number to "one workday" is concrete enough | Not enough — it has to make you *feel* how scarce and costly that expert's time is |
+| Three rules for the AI? We guessed a set | His own: ① content must have a **narrative thread**, not a laundry list ② every lesson needs a **punchline** as its memorable core ③ teach a method by guiding the student through **how it was invented** |
+
+> In one sentence: this skill isn't "reverse-engineer a teacher."
+> It's "reverse-engineer him, then go back and check your answers against the real one."
+> And this very README is written by his rule #3.
 
 ---
 
