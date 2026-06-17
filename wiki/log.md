@@ -164,7 +164,55 @@
   - persona.md: sections 11.5–11.7 (habit frequency table, 怎麼辦 pivot, verified closings)
   - teaching-style.md: marker table expanded from 10 to 40+ entries with the 比如說/舉例來說 14× ratio note
 - correction (user feedback): promoted 「硬 train 一發」 from a single transcript variant to a signature catchphrase. The 27 cached transcripts (2024–25 LLM/Agent era) under-represent it, but per the user it is one of the most iconic Hung-Yi Lee phrases. Added a dedicated 「硬 train 一發」 flavor section to SKILL.md (deep-learning-beats-hand-engineering narrative arc + honest inversion「硬 train 一發 train 不起來」), updated both habit tables.
+## [2026-06-11 08:30:00] schema | first-person interview protocol
+
+- action: Created `references/interview-protocol.md`
+- reason: The user may gain direct access to Hung-Yi Lee; the skill is currently reverse-engineered from output only. An interview can capture what transcripts cannot: direct preference feedback on skill outputs (出戲點標記), negative space (abandoned techniques), lecture-prep decision process, non-lecture registers (office hour / email / meeting), catchphrase provenance, identity-boundary authorization, and his own lecture-evaluation rubric
+- structure: 7 parts with concrete questions, time-budget variants (30/60/90 min), interviewing tips (record his rewrites verbatim; keep self-report vs observed-behavior conflicts as data), and a post-interview mapping table from each answer type to the skill file it updates
+## [2026-06-11 09:00:00] schema | interview protocol rewritten for strict Q&A format
+
+- action: Rewrote `references/interview-protocol.md`
+- reason: User constraint — no A/B comparison materials, no document-marking exercise; the interview is strict one-question-one-answer
+- adaptations: preference feedback converted to 引句反應題 (quote read verbatim inside the question, one quote per question); A/B comparison replaced by 反向生成題 (elicit the teacher's own one-sentence explanation, diff against skill output offline — elicitation beats discrimination); questions flattened into a strictly priority-ordered list (核心十題 with ★ must-ask markers + themed 加時題庫 Q11–Q28); marking exercise demoted to optional leave-behind materials appendix
+## [2026-06-16 13:10:00] schema | add 10 grounded A/B comparison questions to interview protocol
+
+- action: Added A/B 對比題 section (AB1–AB10) to `references/interview-protocol.md`
+- reason: User requested 10 A/B comparison questions despite the one-question-one-answer constraint — reconciled by noting A/B works in Q&A format when both versions are read aloud within a single question (the teacher picks one)
+- method: Workflow (wf_567ebf7b-c5a) — 5 parallel miners extracted genuine stylistic forks from SKILL.md/persona.md/spirit.md, the cached transcripts, and the golden/negative examples; a judge agent selected the 10 most diverse + non-leading pairs (each A and B convey the same content, differ on one dimension, neither a strawman). 6 agents, ~338k tokens
+- the 10 dimensions: scale tactic (narrative vs clean conversion), mundane-comparison-for-scary-AI, self-invented narrative analogy vs report facts, genuine-reaction interjections density, opening greeting, sentence rhythm, method-introduction order, closing style, ACG vs everyday analogy, benchmark skepticism
+- AB1–AB4 marked ★ high-priority: they test self-invented flourishes (no transcript provenance) — the moves most likely to be inauthentic
+- each question annotated with which version the skill currently uses + which skill file gets updated per answer; post-processing table and interviewing tips extended accordingly
+## [2026-06-17 00:00:00] schema | ingest first-person interview answers (HIGHEST authority)
+
+- action: Updated `SKILL.md`, `references/persona.md`, `references/spirit.md`, `references/examples/report-analysis-golden.md`
+- reason: Received Hung-Yi Lee's actual answers to the interview protocol (Q1–Q28 + AB1/AB3 + 小金 questions). First-person feedback outranks all reverse-engineered guesses.
+- new top-authority layer: added `SKILL.md` "First-Person Calibration (本人訪談確認)" section that explicitly outranks everything below it; mirrored as spirit.md section 0
+- the three rules (Q3) elevated to top of Evaluation Criteria + spirit.md: (1) 脈絡 not 流水帳, (2) 有梗/punchline as load-bearing core, (3) teach the genealogy of a method not the method
+- CONFIRMED by him (kept/strengthened): classroom greeting; genuine reactions incl. 你沒有看錯 (Q11); 其實就是…而已 (Q13); original concrete narrative analogies — printer-intern rated 很好的比喻 (Q12, AB3), concrete detail preferred (本人對小金的話「要講一些具體的內容」); problem-before-method natural+deliberate (Q16); less-is-more (Q15)
+- CORRECTED (skill was wrong/over-reaching): drop 「熱騰騰」 (Q1, removed from golden example); prefer 莫名其妙的動漫比喻 over plain everyday comparison for scary facts (Q2, rewrote spirit.md humor mechanism 3 + SKILL.md Genuine Reactions); scale comparison must convey significance not just restate (AB1); analogy theory = pre-load shared content, 芙莉蓮魔族 canonical, AVOID 獵人/黑暗大陸 as dated「老人臭」(Q27, rewrote Technique 7); insight > math and dropping the formula is the higher skill (Q6); calibrate to prerequisites AND interest, may decline to explain (Q8); relevance-first / prompting-before-foundations (Q18, rewrote Phase 2 Motivation)
+- new first-person guardrails: never negative-evaluate a specific entity (Q4); no sexual/political jokes (Q7); identity line 「受李宏毅教學風格啟發」 authorized (Q5); factual guardrails — channel not monetized, did not author the textbook (Q28)
+- 硬 train 一發 (Q9): confirmed his coinage, still used but declining in agent era; added companion insight 「在 agent 時代，想做什麼比會做什麼重要」
+- persona.md: new sections — Non-Lecture Registers (office hour roadmap-but-looser, grad-student challenge stance, layperson 文字接龍), Lecture Preparation, Judging Lecture Quality (audience-relative not viral), Facts About The Persona (incl. 小金 context + its north star「用 AI 的角度做最難的實驗但讓大家聽懂」); rewrote Analogy Policy
+## [2026-06-17 01:00:00] docs | README portrait + genealogy story in teacher's voice
+
+- action: Updated `README.md` and `README.en.md`; created `assets/` (with `assets/README.md` note)
+- portrait: both READMEs reference `./assets/hung-yi-lee.jpg` at the top with the authorized caption「受李宏毅教學風格啟發」. NOTE: image binary could not be written from the pasted screenshot — user must save the photo to `assets/hung-yi-lee.jpg` and commit it (instructions in assets/README.md)
+- new section "這個 skill 是怎麼長出來的 / How This Skill Grew Up": tells the build story via the teacher's own Rule 3 (show how the idea was invented) — v1 transcript-only → limit (survivorship bias) → Step 1 Fable 5 frequency mining → Step 2 Fable 5 multi-agent workflow generating the interview protocol → Step 3 real interview, first-person answers outrank everything
+- explicitly credits **Fable 5 (claude-fable-5)** for the optimization passes and generating the interview script, per user request
+- includes an "assumed vs actually said" table surfacing the interview corrections
 ## [2026-06-11 07:24:05] lint | wiki health check
+
+- problems_found: `0`
+- report: `wiki/lint-report.md`
+## [2026-06-17 16:47:51] lint | wiki health check
+
+- problems_found: `0`
+- report: `wiki/lint-report.md`
+## [2026-06-17 16:52:21] lint | wiki health check
+
+- problems_found: `0`
+- report: `wiki/lint-report.md`
+## [2026-06-17 16:56:15] lint | wiki health check
 
 - problems_found: `0`
 - report: `wiki/lint-report.md`

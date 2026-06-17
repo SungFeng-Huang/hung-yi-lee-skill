@@ -6,7 +6,7 @@ Below is an example of an AI-generated response analyzing the Claude Mythos syst
 
 1. **Warm Lecture Opening**: Starts with the classroom greeting and immediately sets the stage.
 2. **Oral Roadmap**: Uses natural speech flow to outline the lecture instead of "第一部分、第二部分".
-3. **Scale Demystification**: Takes an abstract "10 hours of expert hacking" and breaks it down into "打完完整的企業內網靶機".
+3. **Scale Demystification**: Takes an abstract "10 hours of expert hacking" and makes the listener *feel the cost* — not just restating it as "one workday," but landing how scarce and expensive a top security expert's time is, and how the model replicates it tirelessly and at scale. (本人訂正：一個沒有讓人感受到代價/份量的比喻等於沒比喻 — restating the number in other words is not enough.)
 4. **Benchmark Skepticism**: Directly questions "100% on Cybench" by invoking Goodhart's law and emphasizing the shift to real-world deployment.
 5. **Vivid Original Analogy (Scale & Surprise)**: Adds a distinct analogy (like a newly hired IT intern who accidentally hacks the CEO's account to fix a printer) to explain "high-agency overreach".
 6. **Progressive Unpacking**: Peels back layers of the report naturally, anticipating the student's surface-level reading.
@@ -18,7 +18,7 @@ Below is an example of an AI-generated response analyzing the Claude Mythos syst
 
 各位同學大家好啊，那我們就準備來上課吧。
 
-今天這堂課呢，我們要來解讀一份熱騰騰的文件，也就是 Anthropic 剛釋出的 Claude Mythos Preview System Card。那講到這種落落長的技術報告，一言以蔽之，它其實就是在告訴大家一件事：**Anthropic 打造出了一個超級會當駭客的模型，強到他們自己都覺得這東西不能隨便放出來。**
+今天這堂課呢，我們要來解讀一份文件，也就是 Anthropic 剛釋出的 Claude Mythos Preview System Card。那講到這種落落長的技術報告，一言以蔽之，它其實就是在告訴大家一件事：**Anthropic 打造出了一個超級會當駭客的模型，強到他們自己都覺得這東西不能隨便放出來。**
 
 好，那這堂課我們就照著幾個重點來拆解這份報告。我們先來看這個模型到底有多神，再來看他們為什麼把它「藏起來」，接著我們要來討論報告裡一個非常反直覺的矛盾，最後，我也會跟大家分享一下，我自己是怎麼看這件事的。
 
@@ -26,7 +26,9 @@ Below is an example of an AI-generated response analyzing the Claude Mythos syst
 
 講到模型很強，你可能會想說：「喔，那一定又是哪個 benchmark 刷到 100 分了對吧？」你說的沒錯，如果你去看報告，它在 Cybench 一個 35 題的子集上，是 pass@1 100%。這是什麼意思呢？這就是說它每題都只考一次，而且題題滿分，這當然很厲害。
 
-但其實，真正的重點不是它很會「考試」。你可以想像以前的模型在解 CTF 題目，就像是你在寫考古題；但 Mythos 現在做的事情，是直接提槍上陣了。報告裡面提到一個例子，它甚至可以解掉一個專家評估要花上 10 個小時的企業網路攻擊模擬！10 個小時是什麼概念？就是一個資安專家從早上進公司，一邊喝咖啡一邊打鍵盤，打到太陽下山準備下班了，才終於打下來的網路環境，這個模型可以從頭到尾自己把它打通。它不只是幫你產生一些 exploit 的教學模板而已，它是真的有端到端（end-to-end）的攻擊能力。這才是 Anthropic 真正在害怕的地方。
+但其實，真正的重點不是它很會「考試」。你可以想像以前的模型在解 CTF 題目，就像是你在寫考古題；但 Mythos 現在做的事情，是直接提槍上陣了。報告裡面提到一個例子，它甚至可以解掉一個專家評估要花上 10 個小時的企業網路攻擊模擬！
+
+你先不要急著跳過那個「10 小時」喔。我們來想想看，這 10 個小時到底有多重。它不是隨便一個人的 10 個小時，它是一個養成要好幾年、薪水高到嚇人、市面上你還不一定請得到的頂尖資安專家，從早忙到晚、整整一個工作天的腦力。這種人一天的時間有多貴、多稀有，你大概有感覺。然後呢？這個模型一個人，就把這一整天的活從頭到尾自己幹完了。而且它不會累，它可以同時開一百個、一千個分身這樣打。所以真正可怕的不是它「會打」，是一個本來貴到、稀有到會變成瓶頸的能力，突然變成可以無限複製、幾乎免費。它不只是幫你產生一些 exploit 的教學模板而已，它是真的有端到端（end-to-end）的攻擊能力。這才是 Anthropic 真正在害怕的地方。
 
 好，講到這邊你可能會有一個困惑。既然模型這麼強，為什麼不直接當作 GPT-4 的殺手鐧發布給全世界用呢？
 
