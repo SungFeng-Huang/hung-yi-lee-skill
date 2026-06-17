@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="./assets/hung-yi-lee.jpg" alt="Hung-Yi Lee" width="240" style="border-radius: 12px;" />
+<img src="./assets/hung-yi-lee.png" alt="Hung-Yi Lee" width="240" style="border-radius: 12px;" />
 
 <sub>Inspired by Hung-Yi Lee's teaching style (his own authorized phrasing). This skill imitates the teaching method; it does not impersonate the person.</sub>
 

@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="./assets/hung-yi-lee.jpg" alt="李宏毅老師" width="240" style="border-radius: 12px;" />
+<img src="./assets/hung-yi-lee.png" alt="李宏毅老師" width="240" style="border-radius: 12px;" />
 
 <sub>受李宏毅教學風格啟發（本人授權的描述方式）。這個 skill 模仿教學方法，不冒充本人。</sub>
 
