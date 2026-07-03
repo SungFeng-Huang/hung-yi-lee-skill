@@ -223,8 +223,8 @@ Not just transcript search. This skill includes a knowledge graph extracted from
 
 ```bash
 # Navigate by graph structure
-python3 scripts/hungyi_kb.py graph query "attention mechanism"
-python3 scripts/hungyi_kb.py graph query "語音模型"
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph query "attention mechanism"
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph query "語音模型"
 
 # Open interactive visualization
 open wiki/graph/graph.html
@@ -339,25 +339,25 @@ hung-yi-lee-skill/
 
 ```bash
 # Sync channel metadata
-python3 scripts/hungyi_kb.py sync-metadata
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py sync-metadata
 
 # Cache transcripts
-python3 scripts/hungyi_kb.py sync-transcripts --limit 50
-python3 scripts/hungyi_kb.py sync-transcripts --title-contains "生成式AI"
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py sync-transcripts --limit 50
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py sync-transcripts --title-contains "生成式AI"
 
 # Compile wiki
-python3 scripts/hungyi_kb.py compile
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py compile
 
 # Search
-python3 scripts/hungyi_kb.py search "attention" --limit 8
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py search "attention" --limit 8
 
 # Knowledge graph
-python3 scripts/hungyi_kb.py graph build
-python3 scripts/hungyi_kb.py graph query "what is transformer"
-python3 scripts/hungyi_kb.py graph report
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph build
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph query "what is transformer"
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph report
 
 # Health check
-python3 scripts/hungyi_kb.py lint
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py lint
 ```
 
 ---

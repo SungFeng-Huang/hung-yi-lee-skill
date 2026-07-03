@@ -217,8 +217,8 @@ pip install -r requirements.txt
 
 ```bash
 # 用圖譜導航回答問題
-python3 scripts/hungyi_kb.py graph query "attention mechanism"
-python3 scripts/hungyi_kb.py graph query "語音模型"
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph query "attention mechanism"
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph query "語音模型"
 
 # 打開互動式視覺化
 open wiki/graph/graph.html
@@ -311,25 +311,25 @@ hung-yi-lee-skill/
 
 ```bash
 # 同步頻道 metadata
-python3 scripts/hungyi_kb.py sync-metadata
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py sync-metadata
 
 # 快取逐字稿
-python3 scripts/hungyi_kb.py sync-transcripts --limit 50
-python3 scripts/hungyi_kb.py sync-transcripts --title-contains "生成式AI"
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py sync-transcripts --limit 50
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py sync-transcripts --title-contains "生成式AI"
 
 # 編譯 wiki
-python3 scripts/hungyi_kb.py compile
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py compile
 
 # 搜尋
-python3 scripts/hungyi_kb.py search "attention" --limit 8
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py search "attention" --limit 8
 
 # 知識圖譜
-python3 scripts/hungyi_kb.py graph build
-python3 scripts/hungyi_kb.py graph query "什麼是 transformer"
-python3 scripts/hungyi_kb.py graph report
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph build
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph query "什麼是 transformer"
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph report
 
 # 健康檢查
-python3 scripts/hungyi_kb.py lint
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py lint
 ```
 
 ---

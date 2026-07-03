@@ -11,7 +11,7 @@ Before searching raw transcripts, check the knowledge graph:
 2. Run:
 
 ```bash
-python3 scripts/hungyi_kb.py graph query "<user question>"
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph query "<user question>"
 ```
 
 3. The graph query returns relevant nodes, their community membership, and connecting paths.
@@ -24,7 +24,7 @@ python3 scripts/hungyi_kb.py graph query "<user question>"
 2. Run:
 
 ```bash
-python3 scripts/hungyi_kb.py search "<user question>" --limit 8
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py search "<user question>" --limit 8
 ```
 
 3. Open the top matching transcript files in `raw/youtube/transcripts/`.
@@ -39,7 +39,7 @@ python3 scripts/hungyi_kb.py search "<user question>" --limit 8
 ## Optional Dossier Output
 
 ```bash
-python3 scripts/hungyi_kb.py build-brief "<user question>"
+conda run -n hung-yi-lee python3 scripts/hungyi_kb.py build-brief "<user question>"
 ```
 
 This writes a markdown brief into `outputs/query-briefs/` so the LLM can re-open it later.

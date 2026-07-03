@@ -61,13 +61,15 @@ Use this skill when the user:
 
 ## What To Load
 
+> The Python commands below run through a dedicated `hung-yi-lee` conda env (created by private-config `install.sh --with-deps`), hence the `conda run -n hung-yi-lee` prefix. If conda isn't available, drop the prefix and use a plain `python3` whose env has `requirements.txt` installed.
+
 - Read [wiki/index.md](./wiki/index.md), [wiki/topic-map.md](./wiki/topic-map.md), and [wiki/query-playbook.md](./wiki/query-playbook.md) first.
 - Read [wiki/graph/GRAPH_REPORT.md](./wiki/graph/GRAPH_REPORT.md) for god nodes, community structure, and surprising cross-topic connections before searching transcripts.
-- Use `python3 scripts/hungyi_kb.py graph query "<question>"` to navigate the knowledge graph by structure instead of keyword search.
+- Use `conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph query "<question>"` to navigate the knowledge graph by structure instead of keyword search.
 - Read [AGENTS.md](./AGENTS.md) when maintaining or extending the knowledge base itself.
 - Read the most relevant topic page under `wiki/topics/` and series page under `wiki/series/`.
-- Use `python3 scripts/hungyi_kb.py search "<query>" --limit 8` to find the strongest transcript-backed sources (fallback when graph query returns no results).
-- If needed, write a reusable dossier with `python3 scripts/hungyi_kb.py build-brief "<query>"`.
+- Use `conda run -n hung-yi-lee python3 scripts/hungyi_kb.py search "<query>" --limit 8` to find the strongest transcript-backed sources (fallback when graph query returns no results).
+- If needed, write a reusable dossier with `conda run -n hung-yi-lee python3 scripts/hungyi_kb.py build-brief "<query>"`.
 - Read [references/work.md](./references/work.md) for technical scope and [references/persona.md](./references/persona.md) for delivery style.
 - Read [references/spirit.md](./references/spirit.md) for the deeper teaching values and philosophical mindset.
 - Read [references/sources.md](./references/sources.md) when provenance matters.
