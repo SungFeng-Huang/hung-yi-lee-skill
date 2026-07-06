@@ -1,0 +1,14 @@
+{
+  "_comment": "Concept alignment for the knowledge graph. `merge` = true synonyms: every variant folds onto the FIRST entry (canonical) before node ids form; matching is casefold. `align` = related but deliberately DISTINCT concepts: an aligned_with edge is added between existing nodes, never a merge (e.g. 語音合成 is the TTS task; 語音生成 is the broader family incl. sound/music — keep them separate but connected). Extend freely; `graph build` validates the shape.",
+  "merge": [
+    ["語音合成", "TTS", "Text-to-Speech", "Speech Synthesis"],
+    ["語音辨識", "ASR", "Speech Recognition"],
+    ["語音轉換", "VC", "Voice Conversion"],
+    ["Large Language Model", "Large Language Models"]
+  ],
+  "align": [
+    ["語音語言模型", "Spoken LM", "Speech LLM"],
+    ["語音合成", "語音生成"],
+    ["語言模型", "Large Language Model"]
+  ]
+}

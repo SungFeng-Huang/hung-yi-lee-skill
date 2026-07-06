@@ -47,10 +47,17 @@ CONCEPT_PATTERNS: list[tuple[str, re.Pattern]] = [
         r"對抗式生成|擴散模型|生成模型|殘差網路|卷積神經網路|"
         r"損失函數|梯度下降|反向傳播|過擬合|正則化|"
         r"上下文工程|機器學習|深度學習|自然語言處理|"
-        r"語音辨識|語音合成|語音分離|語音轉換|全雙工|語音語言模型|"
+        r"語音辨識|語音合成|語音分離|語音轉換|語音生成|全雙工|語音語言模型|"
         r"模型編輯|模型合併|終身學習|"
         r"推理|評估|基準測試|解剖|可解釋性)"
     )),
+    # Whitelisted bare acronyms. english_term needs TWO capitalized words, so
+    # ubiquitous speech acronyms never became nodes on their own. UPPERCASE
+    # only (no IGNORECASE) — "tts"/"asr" in prose or code snippets stay out.
+    # Bare VC is deliberately absent: in ML lectures it collides with
+    # VC dimension / VC++ / venture capital (the "Voice Conversion" full form
+    # still merge-folds onto 語音轉換 via graph_alignment.json).
+    ("acronym", re.compile(r"\b(TTS|ASR|SVS|S2ST|LALM)\b")),
 ]
 
 # Concepts that are too generic to be useful as nodes
@@ -65,16 +72,87 @@ STOP_CONCEPTS = {
 MIN_CONCEPT_FREQUENCY = 2
 
 # ---------------------------------------------------------------------------
+# Concept alignment (scripts/graph_alignment.json)
+# ---------------------------------------------------------------------------
+# Two relations, two mechanisms:
+#   merge: TRUE synonyms — every variant maps onto the canonical label (first
+#          list entry) BEFORE node ids are formed, so all surface forms share
+#          one node (labels compared casefold; canonical keeps its casing).
+#   align: related-but-deliberately-DISTINCT concepts — an `aligned_with`
+#          edge (confidence ALIGNED) is added between existing nodes, never a
+#          merge (e.g. a taxonomy that separates 語音合成 from the broader
+#          語音生成 family must survive alignment).
+
+ALIGNMENT_PATH = Path(__file__).resolve().parent / "graph_alignment.json"
+
+
+def load_alignment(path: Path = ALIGNMENT_PATH) -> dict:
+    """Parse the alignment table. Missing file -> empty alignment; malformed
+    file or a variant claimed by two merge groups -> ValueError (silent
+    misalignment would corrupt node identity)."""
+    empty = {"canonical": {}, "alt_labels": {}, "align": []}
+    if not path.exists():
+        return empty
+    data = json.loads(path.read_text(encoding="utf-8"))
+    stop_cf = {s.casefold() for s in STOP_CONCEPTS}
+    canonical: dict[str, str] = {}
+    alt_labels: dict[str, list[str]] = {}
+    for group in data.get("merge", []):
+        if (not isinstance(group, list) or len(group) < 2
+                or not all(isinstance(x, str) and x.strip() for x in group)):
+            raise ValueError(f"{path}: merge groups must be lists of >=2 non-empty strings: {group!r}")
+        canon = group[0].strip()
+        if canon in alt_labels:
+            # A second group with the same canonical would silently REPLACE
+            # the first group's alt_labels (dropping its query aliases).
+            raise ValueError(f"{path}: canonical {canon!r} declared by two merge groups "
+                             f"— put all variants in one group")
+        for variant in group:
+            key = re.sub(r"\s+", " ", variant.strip()).casefold()
+            if key in stop_cf:
+                # A stop word as variant would launder stop surfaces into the
+                # graph; as canonical it would drop every variant instead.
+                raise ValueError(f"{path}: {variant!r} is a STOP_CONCEPT — remove it")
+            if key in canonical and canonical[key] != canon:
+                raise ValueError(f"{path}: {variant!r} appears in two merge groups "
+                                 f"({canonical[key]!r} vs {canon!r})")
+            canonical[key] = canon
+        alt_labels[canon] = [v.strip() for v in group[1:]]
+    align = []
+    for group in data.get("align", []):
+        if (not isinstance(group, list) or len(group) < 2
+                or not all(isinstance(x, str) and x.strip() for x in group)):
+            raise ValueError(f"{path}: align groups must be lists of >=2 non-empty strings: {group!r}")
+        entries = [x.strip() for x in group]
+        if any(e.casefold() in stop_cf for e in entries):
+            raise ValueError(f"{path}: align group {group!r} contains a STOP_CONCEPT")
+        # Entries that merge-fold onto one canonical would collapse to the
+        # same node id and the edge would be silently skipped — misplaced
+        # entries belong in the merge table instead.
+        folded = {canonical.get(re.sub(r"\s+", " ", e).casefold(), e) for e in entries}
+        if len(folded) < 2:
+            raise ValueError(f"{path}: align group {group!r} collapses to a single "
+                             f"merged concept — it belongs in 'merge'")
+        align.append(entries)
+    return {"canonical": canonical, "alt_labels": alt_labels, "align": align}
+
+
+_ALIGNMENT = load_alignment()
+
+# ---------------------------------------------------------------------------
 # Concept extraction
 # ---------------------------------------------------------------------------
 
 
 def normalize_concept(raw: str) -> str:
-    """Normalize a concept string for deduplication."""
+    """Normalize a concept string for deduplication, then fold merge-variants
+    onto their canonical label (see graph_alignment.json) — this is the ONE
+    choke point every extractor goes through, so lecture and external corpora
+    can't fork the same concept into differently-spelled nodes."""
     normalized = raw.strip()
     # Collapse whitespace
     normalized = re.sub(r"\s+", " ", normalized)
-    return normalized
+    return _ALIGNMENT["canonical"].get(normalized.casefold(), normalized)
 
 
 def slug(text: str) -> str:
@@ -566,6 +644,37 @@ def build_graph(extractions: list[dict]) -> "nx.Graph":
                     shared_video_count=len(shared),
                 )
 
+    # Alignment layer (graph_alignment.json):
+    # 1) merged nodes carry their variant spellings, so queries match any form
+    for canon, variants in _ALIGNMENT["alt_labels"].items():
+        nid = f"concept_{slug(canon)}"
+        if nid in G:
+            G.nodes[nid]["alt_labels"] = list(variants)
+    # 2) `aligned_with` edges between related-but-distinct concepts — added
+    #    only when BOTH endpoints already exist (alignment never invents
+    #    nodes), overriding a weaker co_mentioned edge if one is there.
+    for group in _ALIGNMENT["align"]:
+        ids = [f"concept_{slug(normalize_concept(x))}" for x in group]
+        for i, a in enumerate(ids):
+            for b in ids[i + 1:]:
+                if a == b or a not in G or b not in G:
+                    continue
+                if G.has_edge(a, b):
+                    # Only UPGRADE a weaker inferred co-mention; leave any
+                    # other existing relation untouched (and drop the
+                    # co_mentioned-specific attrs so none linger).
+                    if G.edges[a, b].get("relation") != "co_mentioned":
+                        continue
+                    G.edges[a, b].pop("shared_video_count", None)
+                G.add_edge(
+                    a, b,
+                    relation="aligned_with",
+                    confidence="ALIGNED",
+                    confidence_score=1.0,
+                    weight=2.0,
+                    source_file=str(ALIGNMENT_PATH),
+                )
+
     return G
 
 
@@ -694,7 +803,7 @@ def query_graph(G: "nx.Graph", partition: dict[str, int], query: str, budget: in
     """BFS-style query: find nodes matching the query, then explore neighbors."""
     import networkx as nx
 
-    tokens = [t.lower().strip() for t in re.split(r"[\s,;:()\"'`/]+", query) if t.strip()]
+    tokens = [t.casefold().strip() for t in re.split(r"[\s,;:()\"'`/]+", query) if t.strip()]
     tokens = [t for t in tokens if len(t) >= 2]
 
     # For Chinese tokens, also generate 2-char sub-tokens for partial matching
@@ -712,18 +821,21 @@ def query_graph(G: "nx.Graph", partition: dict[str, int], query: str, budget: in
     all_tokens = tokens + extra_tokens
 
     # Also use the full query as a substring for Chinese compound terms
-    full_query = query.lower().strip()
+    full_query = query.casefold().strip()
 
-    # Score all nodes by token match
+    # Score all nodes by token match — against the label AND any merged
+    # variant spellings (alt_labels), so e.g. "TTS" finds the 語音合成 node.
     scored = []
     for nid, data in G.nodes(data=True):
-        label = data.get("label", "").lower()
+        label = data.get("label", "").casefold()
+        alts = [a.casefold() for a in data.get("alt_labels", [])]
+        haystacks = [label] + alts
         # Token-based scoring (original tokens score higher)
-        score = sum(3 for t in tokens if t in label)
+        score = sum(3 for t in tokens if any(t in h for h in haystacks))
         # Sub-token scoring (partial Chinese matches)
-        score += sum(1 for t in extra_tokens if t in label)
+        score += sum(1 for t in extra_tokens if any(t in h for h in haystacks))
         # Full-query substring match
-        if full_query and full_query in label:
+        if full_query and any(full_query in h for h in haystacks):
             score += 5
         # Also match node ID for concept nodes
         nid_lower = nid.lower()
@@ -766,6 +878,8 @@ def query_graph(G: "nx.Graph", partition: dict[str, int], query: str, budget: in
         # they must not read as lecture-graph vocabulary.
         if data.get("type") == "concept" and data.get("from_external"):
             entry["from_external"] = True
+        if data.get("alt_labels"):
+            entry["alt_labels"] = data["alt_labels"]
         result_nodes.append(entry)
         if depth < 2:
             for neighbor in G.neighbors(current):
@@ -837,6 +951,8 @@ def generate_report(
         f"- EXTRACTED edges: `{confidence_counts.get('EXTRACTED', 0)}`",
         f"- INFERRED edges: `{confidence_counts.get('INFERRED', 0)}`",
         f"- AMBIGUOUS edges: `{confidence_counts.get('AMBIGUOUS', 0)}`",
+        f"- ALIGNED edges: `{confidence_counts.get('ALIGNED', 0)}`"
+        " (graph_alignment.json)",
         "",
         "## God Nodes",
         "",

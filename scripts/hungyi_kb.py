@@ -1092,7 +1092,11 @@ def run_graph_query(query: str) -> None:
             prov = f"（external：{node.get('source_type', 'external')}/{node.get('collection', '')}）"
         elif node.get("from_external"):
             prov = "（external-only concept）"
-        print(f"{depth_marker}• {node['label']} ({node['type']}) "
+        # Merged synonym node: show the folded variant spellings.
+        label = node["label"]
+        if node.get("alt_labels"):
+            label += f"（={'/'.join(node['alt_labels'])}）"
+        print(f"{depth_marker}• {label} ({node['type']}) "
               f"[community {node['community']}, degree {node['degree']}]{prov}")
 
     if result["paths"]:
