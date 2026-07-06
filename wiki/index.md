@@ -33,21 +33,21 @@ This wiki follows a Karpathy-style pattern:
 ## Quick Commands
 
 ```bash
-conda run -n hung-yi-lee python3 scripts/hungyi_kb.py sync-metadata
-conda run -n hung-yi-lee python3 scripts/hungyi_kb.py sync-transcripts --limit 50
-conda run -n hung-yi-lee python3 scripts/hungyi_kb.py compile
-conda run -n hung-yi-lee python3 scripts/hungyi_kb.py search "attention" --limit 8
-conda run -n hung-yi-lee python3 scripts/hungyi_kb.py build-brief "什麼是 attention"
-conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph build
-conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph query "attention mechanism"
-conda run -n hung-yi-lee python3 scripts/hungyi_kb.py lint
+python3 scripts/hungyi_kb.py sync-metadata
+python3 scripts/hungyi_kb.py sync-transcripts --limit 50
+python3 scripts/hungyi_kb.py compile
+python3 scripts/hungyi_kb.py search "attention" --limit 8
+python3 scripts/hungyi_kb.py build-brief "什麼是 attention"
+python3 scripts/hungyi_kb.py graph build
+python3 scripts/hungyi_kb.py graph query "attention mechanism"
+python3 scripts/hungyi_kb.py lint
 ```
 
-## Knowledge Graph (`916` nodes, `3664` edges)
+## Knowledge Graph (`929` nodes, `4098` edges)
 
 - [GRAPH_REPORT.md](./graph/GRAPH_REPORT.md) — god nodes, surprising connections, suggested questions
 - [graph.html](./graph/graph.html) — interactive visualization (open in browser)
-- Graph JSON: `wiki/graph/graph.json` (query with `conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph query "<question>"`)
+- Graph JSON: `wiki/graph/graph.json` (query with `python3 scripts/hungyi_kb.py graph query "<question>"`)
 
 ## Notes
 
