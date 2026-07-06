@@ -1,9 +1,11 @@
 # ML Fundamentals
 
-Video count: `373`
+Video count: `375`
 
 Representative videos:
 
+- [Is AI Crossing the Rubicon? How Far Are We from Self-Improving AI? (Part 2)](https://www.youtube.com/watch?v=cQLKVzbwN7I) | [transcript](../../raw/youtube/transcripts/cQLKVzbwN7I.md)
+- [AI 要跨越盧比孔河了嗎？自我成長的 AI 離我們多遠 (上集)](https://www.youtube.com/watch?v=s06mSAGN4gM) | [transcript](../../raw/youtube/transcripts/s06mSAGN4gM.md)
 - [【生成式人工智慧與機器學習導論2025】第 10 講：語音語言模型發展史 (本課程前段內容為歷史回顧，2025 年的技術從 1:42:00 開始)](https://www.youtube.com/watch?v=CbIPjrOj2Tc) | [transcript](../../raw/youtube/transcripts/CbIPjrOj2Tc.md)
 - [【生成式人工智慧與機器學習導論2025】第 9 講：影像和聲音上的生成策略 — Diffusion/Flow-matching 系列和接龍 (Autoregressive) 這兩條世界線的交會](https://www.youtube.com/watch?v=ccqCDD9LqCA) | [transcript](../../raw/youtube/transcripts/ccqCDD9LqCA.md)
 - [【生成式人工智慧與機器學習導論2025】第 8 講：通用模型的終身學習 (Fine-tuning, Model Editing, Model Merging, Test-Time Training)](https://www.youtube.com/watch?v=EnWz5XuOnIQ) | [transcript](../../raw/youtube/transcripts/EnWz5XuOnIQ.md)
@@ -25,10 +27,10 @@ Representative videos:
 - [【生成式AI時代下的機器學習(2025)】第六講：生成式人工智慧的後訓練(Post-Training)與遺忘問題](https://www.youtube.com/watch?v=Z6b5-77EfGk) | [transcript](../../raw/youtube/transcripts/Z6b5-77EfGk.md)
 - [【生成式AI時代下的機器學習(2025)】助教課：利用多張GPU訓練大型語言模型—從零開始介紹DeepSpeed、Liger Kernel、Flash Attention及Quantization](https://www.youtube.com/watch?v=mpuRca2UZtI) | [transcript](../../raw/youtube/transcripts/mpuRca2UZtI.md)
 - [【生成式AI時代下的機器學習(2025)】第五講：大型語言模型訓練方法「預訓練–對齊」(Pretrain-Alignment) 的強大與極限](https://www.youtube.com/watch?v=Ozos6M1JtIE) | [transcript](../../raw/youtube/transcripts/Ozos6M1JtIE.md)
-- [【生成式AI時代下的機器學習(2025)】第四講：Transformer 的時代要結束了嗎？介紹 Transformer 的競爭者們](https://www.youtube.com/watch?v=gjsdVi90yQo)
-- [【生成式AI時代下的機器學習(2025)】第三講：AI 的腦科學 — 語言模型內部運作機制剖析 (解析單一神經元到整群神經元的運作機制、如何讓語言模型說出自己的內心世界)](https://www.youtube.com/watch?v=Xnil63UDW2o)
-- [【生成式AI時代下的機器學習(2025)】第二講：一堂課搞懂 AI Agent 的原理 (AI如何透過經驗調整行為、使用工具和做計劃)](https://www.youtube.com/watch?v=M2Yg1kwPpts)
-- [【生成式AI時代下的機器學習(2025)】第一講：一堂課搞懂生成式人工智慧的技術突破與未來發展](https://www.youtube.com/watch?v=QLiKmca4kzI)
+- [【生成式AI時代下的機器學習(2025)】第四講：Transformer 的時代要結束了嗎？介紹 Transformer 的競爭者們](https://www.youtube.com/watch?v=gjsdVi90yQo) | [transcript](../../raw/youtube/transcripts/gjsdVi90yQo.md)
+- [【生成式AI時代下的機器學習(2025)】第三講：AI 的腦科學 — 語言模型內部運作機制剖析 (解析單一神經元到整群神經元的運作機制、如何讓語言模型說出自己的內心世界)](https://www.youtube.com/watch?v=Xnil63UDW2o) | [transcript](../../raw/youtube/transcripts/Xnil63UDW2o.md)
+- [【生成式AI時代下的機器學習(2025)】第二講：一堂課搞懂 AI Agent 的原理 (AI如何透過經驗調整行為、使用工具和做計劃)](https://www.youtube.com/watch?v=M2Yg1kwPpts) | [transcript](../../raw/youtube/transcripts/M2Yg1kwPpts.md)
+- [【生成式AI時代下的機器學習(2025)】第一講：一堂課搞懂生成式人工智慧的技術突破與未來發展](https://www.youtube.com/watch?v=QLiKmca4kzI) | [transcript](../../raw/youtube/transcripts/QLiKmca4kzI.md)
 - [【生成式AI導論 2024】第6講：大型語言模型修練史 — 第一階段: 自我學習，累積實力 (熟悉機器學習的同學從 15:00 開始看起即可)](https://www.youtube.com/watch?v=cCpErV7To2o)
 - [【生成式AI導論 2024】第5講：訓練不了人工智慧？你可以訓練你自己 (下) — 讓語言彼此合作，把一個人活成一個團隊 (開頭有芙莉蓮雷，慎入)](https://www.youtube.com/watch?v=inebiWdQW-4)
 - [【生成式AI導論 2024】第4講：訓練不了人工智慧？你可以訓練你自己 (中) — 拆解問題與使用工具](https://www.youtube.com/watch?v=lwe3_x50_uw)
@@ -52,5 +54,3 @@ Representative videos:
 - [【機器學習 2022】魚與熊掌可以兼得的深度學習](https://www.youtube.com/watch?v=yXd2D5J0QDU)
 - [【機器學習 2022】為什麼用了驗證集 (validation set) 結果卻還是過擬合(overfitting)了呢？](https://www.youtube.com/watch?v=xQXh3fSvD1A)
 - [【機器學習 2022】再探寶可夢、數碼寶貝分類器 — 淺談機器學習原理](https://www.youtube.com/watch?v=_j9MVVcvyZI)
-- [【機器學習2022】開學囉~ 又要週更了~](https://www.youtube.com/watch?v=7XZR0-4uS5s)
-- [[ML 2021 (English version)] Lecture 36: Network Compression (2/2)](https://www.youtube.com/watch?v=mGRdOGdOZ-4)

@@ -2,20 +2,20 @@
 
 This page is compiled from cached transcripts plus the curated references.
 
-- Cached transcript files: `27`
-- Cached transcript segments: `58457`
+- Cached transcript files: `44`
+- Cached transcript segments: `84253`
 
 ## Recurrent Markers In Cached Transcripts
 
-- `所以`: 2872
-- `今天`: 942
-- `但是`: 902
-- `接下來`: 542
-- `為什麼`: 332
-- `真正`: 257
-- `總之`: 150
-- `我們先`: 114
-- `注意`: 63
+- `所以`: 4151
+- `今天`: 1415
+- `但是`: 1353
+- `接下來`: 801
+- `為什麼`: 477
+- `真正`: 386
+- `總之`: 192
+- `我們先`: 143
+- `注意`: 79
 - `課程目標`: 1
 
 ## Stable Lecture Pattern

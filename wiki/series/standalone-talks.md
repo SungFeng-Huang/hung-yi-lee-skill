@@ -1,10 +1,12 @@
 # Standalone Talks
 
-Video count: `148`
+Video count: `150`
 
+- [Is AI Crossing the Rubicon? How Far Are We from Self-Improving AI? (Part 2)](https://www.youtube.com/watch?v=cQLKVzbwN7I) | [transcript](../../raw/youtube/transcripts/cQLKVzbwN7I.md)
+- [AI 要跨越盧比孔河了嗎？自我成長的 AI 離我們多遠 (上集)](https://www.youtube.com/watch?v=s06mSAGN4gM) | [transcript](../../raw/youtube/transcripts/s06mSAGN4gM.md)
+- [AI 能自我修正嗎？從 decoding、workflow 到 reasoning 的技術發展整理](https://www.youtube.com/watch?v=m3i2mk5hs8U) | [transcript](../../raw/youtube/transcripts/m3i2mk5hs8U.md)
 - [如何讓 Transformer 知道輸入 Token 的順序？Absolute、Relative、RoPE、到沒有 Positional Embedding](https://www.youtube.com/watch?v=Ll-wk8x3G_g) | [transcript](../../raw/youtube/transcripts/Ll-wk8x3G_g.md)
-- [解剖小龍蝦 — 以 OpenClaw 為例介紹 AI Agent 的運作原理](https://www.youtube.com/watch?v=2rcJdFuNbZQ) | [transcript](../../raw/youtube/transcripts/2rcJdFuNbZQ.md)
-- [GPT-4o 背後可能的語音技術猜測](https://www.youtube.com/watch?v=CgQ3lUOpXgc)
+- [GPT-4o 背後可能的語音技術猜測](https://www.youtube.com/watch?v=CgQ3lUOpXgc) | [transcript](../../raw/youtube/transcripts/CgQ3lUOpXgc.md)
 - [[活動宣傳] Webinar Series for Advancements in Audio, Speech and Language Technology](https://www.youtube.com/watch?v=2QC9VEBkaqk)
 - [Meta 語音對語音翻譯技術背後的黑科技 (在繪圖 AI 中也有用上喔!)](https://www.youtube.com/watch?v=sWz4e-DM4JU)
 - [[INTERSPEECH 2020] Defense for Black-box Attacks on Anti-spoofing Models by Self-Supervised Learning](https://www.youtube.com/watch?v=k81atCYWpzg)

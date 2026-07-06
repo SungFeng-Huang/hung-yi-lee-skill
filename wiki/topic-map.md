@@ -3,8 +3,10 @@
 Heuristic topic clusters inferred mostly from video titles.
 
 ## [ML Fundamentals](./topics/ml-fundamentals.md)
-Count: `373`
+Count: `375`
 
+- `cQLKVzbwN7I` [Is AI Crossing the Rubicon? How Far Are We from Self-Improving AI? (Part 2)](https://www.youtube.com/watch?v=cQLKVzbwN7I)
+- `s06mSAGN4gM` [AI 要跨越盧比孔河了嗎？自我成長的 AI 離我們多遠 (上集)](https://www.youtube.com/watch?v=s06mSAGN4gM)
 - `CbIPjrOj2Tc` [【生成式人工智慧與機器學習導論2025】第 10 講：語音語言模型發展史 (本課程前段內容為歷史回顧，2025 年的技術從 1:42:00 開始)](https://www.youtube.com/watch?v=CbIPjrOj2Tc)
 - `ccqCDD9LqCA` [【生成式人工智慧與機器學習導論2025】第 9 講：影像和聲音上的生成策略 — Diffusion/Flow-matching 系列和接龍 (Autoregressive) 這兩條世界線的交會](https://www.youtube.com/watch?v=ccqCDD9LqCA)
 - `EnWz5XuOnIQ` [【生成式人工智慧與機器學習導論2025】第 8 講：通用模型的終身學習 (Fine-tuning, Model Editing, Model Merging, Test-Time Training)](https://www.youtube.com/watch?v=EnWz5XuOnIQ)
@@ -18,13 +20,12 @@ Count: `373`
 - `VuQUF1VVX40` [【生成式人工智慧與機器學習導論2025】第０講：開場與課程簡介](https://www.youtube.com/watch?v=VuQUF1VVX40)
 - `zpRR_A3Thoo` [【舊影片上傳】DNN Backpropagation (2015 年上課錄影)](https://www.youtube.com/watch?v=zpRR_A3Thoo)
 - `gkAyqoQkOSk` [【生成式AI時代下的機器學習(2025)】第十二講：語言模型如何學會說話 — 概述語音語言模型發展歷程](https://www.youtube.com/watch?v=gkAyqoQkOSk)
-- `jFUwoCkdqAo` [【生成式AI時代下的機器學習(2025)】第十一講：今天你想為 Foundation Model 裝備哪些 Task Vector？淺談神奇的 Model Merging 技術](https://www.youtube.com/watch?v=jFUwoCkdqAo)
-- `9HPsz7F0mJg` [【生成式AI時代下的機器學習(2025)】第十講：人工智慧的微創手術 — 淺談 Model Editing](https://www.youtube.com/watch?v=9HPsz7F0mJg)
-- ... and 358 more
+- ... and 360 more
 
 ## [Diffusion And Generation](./topics/diffusion-and-generation.md)
-Count: `82`
+Count: `83`
 
+- `m3i2mk5hs8U` [AI 能自我修正嗎？從 decoding、workflow 到 reasoning 的技術發展整理](https://www.youtube.com/watch?v=m3i2mk5hs8U)
 - `fDQaadKysSA` [加快語言模型生成速度 (2/2)：KV Cache](https://www.youtube.com/watch?v=fDQaadKysSA)
 - `vXb2QYOUzl4` [加快語言模型生成速度 (1/2)：Flash Attention](https://www.youtube.com/watch?v=vXb2QYOUzl4)
 - `CbIPjrOj2Tc` [【生成式人工智慧與機器學習導論2025】第 10 講：語音語言模型發展史 (本課程前段內容為歷史回顧，2025 年的技術從 1:42:00 開始)](https://www.youtube.com/watch?v=CbIPjrOj2Tc)
@@ -39,12 +40,13 @@ Count: `82`
 - `TigfpYPJk1s` [【生成式人工智慧與機器學習導論2025】第１講：一堂課搞懂生成式人工智慧的原理](https://www.youtube.com/watch?v=TigfpYPJk1s)
 - `VuQUF1VVX40` [【生成式人工智慧與機器學習導論2025】第０講：開場與課程簡介](https://www.youtube.com/watch?v=VuQUF1VVX40)
 - `gkAyqoQkOSk` [【生成式AI時代下的機器學習(2025)】第十二講：語言模型如何學會說話 — 概述語音語言模型發展歷程](https://www.youtube.com/watch?v=gkAyqoQkOSk)
-- `jFUwoCkdqAo` [【生成式AI時代下的機器學習(2025)】第十一講：今天你想為 Foundation Model 裝備哪些 Task Vector？淺談神奇的 Model Merging 技術](https://www.youtube.com/watch?v=jFUwoCkdqAo)
-- ... and 67 more
+- ... and 68 more
 
 ## [LLMs And Transformers](./topics/llm-and-transformers.md)
-Count: `46`
+Count: `48`
 
+- `m3i2mk5hs8U` [AI 能自我修正嗎？從 decoding、workflow 到 reasoning 的技術發展整理](https://www.youtube.com/watch?v=m3i2mk5hs8U)
+- `R6fZR_9kmIw` [Harness Engineering: Sometimes Language Models Aren't Unintelligent, They Just Lack Proper Human ...](https://www.youtube.com/watch?v=R6fZR_9kmIw)
 - `Ll-wk8x3G_g` [如何讓 Transformer 知道輸入 Token 的順序？Absolute、Relative、RoPE、到沒有 Positional Embedding](https://www.youtube.com/watch?v=Ll-wk8x3G_g)
 - `fDQaadKysSA` [加快語言模型生成速度 (2/2)：KV Cache](https://www.youtube.com/watch?v=fDQaadKysSA)
 - `vXb2QYOUzl4` [加快語言模型生成速度 (1/2)：Flash Attention](https://www.youtube.com/watch?v=vXb2QYOUzl4)
@@ -58,9 +60,7 @@ Count: `46`
 - `mpuRca2UZtI` [【生成式AI時代下的機器學習(2025)】助教課：利用多張GPU訓練大型語言模型—從零開始介紹DeepSpeed、Liger Kernel、Flash Attention及Quantization](https://www.youtube.com/watch?v=mpuRca2UZtI)
 - `Ozos6M1JtIE` [【生成式AI時代下的機器學習(2025)】第五講：大型語言模型訓練方法「預訓練–對齊」(Pretrain-Alignment) 的強大與極限](https://www.youtube.com/watch?v=Ozos6M1JtIE)
 - `gjsdVi90yQo` [【生成式AI時代下的機器學習(2025)】第四講：Transformer 的時代要結束了嗎？介紹 Transformer 的競爭者們](https://www.youtube.com/watch?v=gjsdVi90yQo)
-- `Xnil63UDW2o` [【生成式AI時代下的機器學習(2025)】第三講：AI 的腦科學 — 語言模型內部運作機制剖析 (解析單一神經元到整群神經元的運作機制、如何讓語言模型說出自己的內心世界)](https://www.youtube.com/watch?v=Xnil63UDW2o)
-- `MAbGgsWKrg8` [【生成式AI導論 2024】第16講：可以加速所有語言模型生成速度的神奇外掛 — Speculative Decoding](https://www.youtube.com/watch?v=MAbGgsWKrg8)
-- ... and 31 more
+- ... and 33 more
 
 ## [Speech And Audio](./topics/speech-and-audio.md)
 Count: `43`
@@ -88,7 +88,7 @@ Count: `8`
 - `VqB8zMujdjM` [AI Agent (3/3): AI Agent 對於工作帶來的衝擊 - 以學術研究為例](https://www.youtube.com/watch?v=VqB8zMujdjM)
 - `mmPmNezjCi0` [AI Agent (2/3): AI Agent 之間可以有什麼樣的互動](https://www.youtube.com/watch?v=mmPmNezjCi0)
 - `urwDLyNa9FU` [AI Agent (1/3)：核心技術 Context Engineering 基本概念解說](https://www.youtube.com/watch?v=urwDLyNa9FU)
-- `2rcJdFuNbZQ` [解剖小龍蝦 — 以 OpenClaw 為例介紹 AI Agent 的運作原理](https://www.youtube.com/watch?v=2rcJdFuNbZQ)
+- `2rcJdFuNbZQ` [Dissecting the Lobster: How AI Agents Work, Featuring OpenClaw](https://www.youtube.com/watch?v=2rcJdFuNbZQ)
 - `lVdajtNpaGI` [【生成式人工智慧與機器學習導論2025】第 2 講：上下文工程 (Context Engineering) — AI Agent 背後的關鍵技術](https://www.youtube.com/watch?v=lVdajtNpaGI)
 - `M2Yg1kwPpts` [【生成式AI時代下的機器學習(2025)】第二講：一堂課搞懂 AI Agent 的原理 (AI如何透過經驗調整行為、使用工具和做計劃)](https://www.youtube.com/watch?v=M2Yg1kwPpts)
 - `bJZTJ7MjYqg` [【生成式AI導論 2024】第9講：以大型語言模型打造的AI Agent (14:50 教你怎麼打造芙莉蓮一級魔法使考試中出現的泥人哥列姆)](https://www.youtube.com/watch?v=bJZTJ7MjYqg)
@@ -116,8 +116,7 @@ Count: `6`
 - `VNqOspvEKEI` [Evaluation of Generative Models](https://www.youtube.com/watch?v=VNqOspvEKEI)
 
 ## [Interpretability And Internal Mechanisms](./topics/interpretability.md)
-Count: `3`
+Count: `2`
 
-- `2rcJdFuNbZQ` [解剖小龍蝦 — 以 OpenClaw 為例介紹 AI Agent 的運作原理](https://www.youtube.com/watch?v=2rcJdFuNbZQ)
 - `8iFvM7WUUs8` [【生成式人工智慧與機器學習導論2025】第3講：解剖大型語言模型](https://www.youtube.com/watch?v=8iFvM7WUUs8)
 - `Xnil63UDW2o` [【生成式AI時代下的機器學習(2025)】第三講：AI 的腦科學 — 語言模型內部運作機制剖析 (解析單一神經元到整群神經元的運作機制、如何讓語言模型說出自己的內心世界)](https://www.youtube.com/watch?v=Xnil63UDW2o)

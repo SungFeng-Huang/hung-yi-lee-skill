@@ -1,12 +1,14 @@
 # Video Catalog
 
-Total indexed videos: `478`
+Total indexed videos: `482`
 
 ## [Standalone Talks](./series/standalone-talks.md)
-Count: `148`
+Count: `150`
 
+- `cQLKVzbwN7I` [Is AI Crossing the Rubicon? How Far Are We from Self-Improving AI? (Part 2)](https://www.youtube.com/watch?v=cQLKVzbwN7I)
+- `s06mSAGN4gM` [AI 要跨越盧比孔河了嗎？自我成長的 AI 離我們多遠 (上集)](https://www.youtube.com/watch?v=s06mSAGN4gM)
+- `m3i2mk5hs8U` [AI 能自我修正嗎？從 decoding、workflow 到 reasoning 的技術發展整理](https://www.youtube.com/watch?v=m3i2mk5hs8U)
 - `Ll-wk8x3G_g` [如何讓 Transformer 知道輸入 Token 的順序？Absolute、Relative、RoPE、到沒有 Positional Embedding](https://www.youtube.com/watch?v=Ll-wk8x3G_g)
-- `2rcJdFuNbZQ` [解剖小龍蝦 — 以 OpenClaw 為例介紹 AI Agent 的運作原理](https://www.youtube.com/watch?v=2rcJdFuNbZQ)
 - `CgQ3lUOpXgc` [GPT-4o 背後可能的語音技術猜測](https://www.youtube.com/watch?v=CgQ3lUOpXgc)
 - `2QC9VEBkaqk` [[活動宣傳] Webinar Series for Advancements in Audio, Speech and Language Technology](https://www.youtube.com/watch?v=2QC9VEBkaqk)
 - `sWz4e-DM4JU` [Meta 語音對語音翻譯技術背後的黑科技 (在繪圖 AI 中也有用上喔!)](https://www.youtube.com/watch?v=sWz4e-DM4JU)
@@ -28,9 +30,7 @@ Count: `148`
 - `sc7dicXFoZE` [[線性代數] 線性代數 vs. 電機系其他必修課](https://www.youtube.com/watch?v=sc7dicXFoZE)
 - `SNT7LAGsLDY` [[線性代數] 這門課在學什麼？](https://www.youtube.com/watch?v=SNT7LAGsLDY)
 - `tRDF_w700Uw` [[DLHLP 2020] Dialogue State Tracking (as Question Answering)](https://www.youtube.com/watch?v=tRDF_w700Uw)
-- `SX6_1-mvkWk` [[TA 補充課] More about Lifelong Learning (由助教楊舒涵同學講授)](https://www.youtube.com/watch?v=SX6_1-mvkWk)
-- `mk6v2raVGfk` [[DLHLP 2020] Controllable Chatbot](https://www.youtube.com/watch?v=mk6v2raVGfk)
-- ... and 123 more
+- ... and 125 more
 
 ## [機器學習2021](./series/機器學習2021.md)
 Count: `40`
@@ -651,6 +651,11 @@ Count: `1`
 
 - `pivB5jEBOQw` [Deep Learning Theory 3-2: Indicator of Generalization](https://www.youtube.com/watch?v=pivB5jEBOQw)
 
+## [Dissecting the Lobster](./series/dissecting-the-lobster.md)
+Count: `1`
+
+- `2rcJdFuNbZQ` [Dissecting the Lobster: How AI Agents Work, Featuring OpenClaw](https://www.youtube.com/watch?v=2rcJdFuNbZQ)
+
 ## [DRL Lecture 1](./series/drl-lecture-1.md)
 Count: `1`
 
@@ -765,6 +770,11 @@ Count: `1`
 Count: `1`
 
 - `Xb1x4ZgV6iM` [GAN Lecture 9 (2018): Sequence Generation](https://www.youtube.com/watch?v=Xb1x4ZgV6iM)
+
+## [Harness Engineering](./series/harness-engineering.md)
+Count: `1`
+
+- `R6fZR_9kmIw` [Harness Engineering: Sometimes Language Models Aren't Unintelligent, They Just Lack Proper Human ...](https://www.youtube.com/watch?v=R6fZR_9kmIw)
 
 ## [Linear Algebra Lecture 1](./series/linear-algebra-lecture-1.md)
 Count: `1`

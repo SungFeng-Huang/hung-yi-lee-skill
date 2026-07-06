@@ -1,9 +1,11 @@
 # LLMs And Transformers
 
-Video count: `46`
+Video count: `48`
 
 Representative videos:
 
+- [AI 能自我修正嗎？從 decoding、workflow 到 reasoning 的技術發展整理](https://www.youtube.com/watch?v=m3i2mk5hs8U) | [transcript](../../raw/youtube/transcripts/m3i2mk5hs8U.md)
+- [Harness Engineering: Sometimes Language Models Aren't Unintelligent, They Just Lack Proper Human ...](https://www.youtube.com/watch?v=R6fZR_9kmIw) | [transcript](../../raw/youtube/transcripts/R6fZR_9kmIw.md)
 - [如何讓 Transformer 知道輸入 Token 的順序？Absolute、Relative、RoPE、到沒有 Positional Embedding](https://www.youtube.com/watch?v=Ll-wk8x3G_g) | [transcript](../../raw/youtube/transcripts/Ll-wk8x3G_g.md)
 - [加快語言模型生成速度 (2/2)：KV Cache](https://www.youtube.com/watch?v=fDQaadKysSA) | [transcript](../../raw/youtube/transcripts/fDQaadKysSA.md)
 - [加快語言模型生成速度 (1/2)：Flash Attention](https://www.youtube.com/watch?v=vXb2QYOUzl4) | [transcript](../../raw/youtube/transcripts/vXb2QYOUzl4.md)
@@ -16,14 +18,14 @@ Representative videos:
 - [【生成式AI時代下的機器學習(2025)】第七講：DeepSeek-R1 這類大型語言模型是如何進行「深度思考」（Reasoning）的？](https://www.youtube.com/watch?v=bJFtcwLSNxI) | [transcript](../../raw/youtube/transcripts/bJFtcwLSNxI.md)
 - [【生成式AI時代下的機器學習(2025)】助教課：利用多張GPU訓練大型語言模型—從零開始介紹DeepSpeed、Liger Kernel、Flash Attention及Quantization](https://www.youtube.com/watch?v=mpuRca2UZtI) | [transcript](../../raw/youtube/transcripts/mpuRca2UZtI.md)
 - [【生成式AI時代下的機器學習(2025)】第五講：大型語言模型訓練方法「預訓練–對齊」(Pretrain-Alignment) 的強大與極限](https://www.youtube.com/watch?v=Ozos6M1JtIE) | [transcript](../../raw/youtube/transcripts/Ozos6M1JtIE.md)
-- [【生成式AI時代下的機器學習(2025)】第四講：Transformer 的時代要結束了嗎？介紹 Transformer 的競爭者們](https://www.youtube.com/watch?v=gjsdVi90yQo)
-- [【生成式AI時代下的機器學習(2025)】第三講：AI 的腦科學 — 語言模型內部運作機制剖析 (解析單一神經元到整群神經元的運作機制、如何讓語言模型說出自己的內心世界)](https://www.youtube.com/watch?v=Xnil63UDW2o)
-- [【生成式AI導論 2024】第16講：可以加速所有語言模型生成速度的神奇外掛 — Speculative Decoding](https://www.youtube.com/watch?v=MAbGgsWKrg8)
-- [【生成式AI導論 2024】第15講：為什麼語言模型用文字接龍，圖片生成不用像素接龍呢？— 淺談生成式人工智慧的生成策略](https://www.youtube.com/watch?v=QbwQR9sjWbs)
-- [【生成式AI導論 2024】第14講：淺談大型語言模型相關的安全性議題 (下) — 欺騙大型語言模型](https://www.youtube.com/watch?v=CNTondxaguo)
-- [【生成式AI導論 2024】第13講：淺談大型語言模型相關的安全性議題 (上) — 亡羊補牢、語言模型的偏見、有多少人用 ChatGPT 寫論文審查意見](https://www.youtube.com/watch?v=MSnvknLywUc)
-- [【生成式AI導論 2024】第12講：淺談檢定大型語言模型能力的各種方式](https://www.youtube.com/watch?v=Hk8Z0uhmWg4)
-- [【生成式AI導論 2024】第11講：大型語言模型在「想」什麼呢？ — 淺談大型語言模型的可解釋性](https://www.youtube.com/watch?v=rZzfqkfZhY8)
+- [【生成式AI時代下的機器學習(2025)】第四講：Transformer 的時代要結束了嗎？介紹 Transformer 的競爭者們](https://www.youtube.com/watch?v=gjsdVi90yQo) | [transcript](../../raw/youtube/transcripts/gjsdVi90yQo.md)
+- [【生成式AI時代下的機器學習(2025)】第三講：AI 的腦科學 — 語言模型內部運作機制剖析 (解析單一神經元到整群神經元的運作機制、如何讓語言模型說出自己的內心世界)](https://www.youtube.com/watch?v=Xnil63UDW2o) | [transcript](../../raw/youtube/transcripts/Xnil63UDW2o.md)
+- [【生成式AI導論 2024】第16講：可以加速所有語言模型生成速度的神奇外掛 — Speculative Decoding](https://www.youtube.com/watch?v=MAbGgsWKrg8) | [transcript](../../raw/youtube/transcripts/MAbGgsWKrg8.md)
+- [【生成式AI導論 2024】第15講：為什麼語言模型用文字接龍，圖片生成不用像素接龍呢？— 淺談生成式人工智慧的生成策略](https://www.youtube.com/watch?v=QbwQR9sjWbs) | [transcript](../../raw/youtube/transcripts/QbwQR9sjWbs.md)
+- [【生成式AI導論 2024】第14講：淺談大型語言模型相關的安全性議題 (下) — 欺騙大型語言模型](https://www.youtube.com/watch?v=CNTondxaguo) | [transcript](../../raw/youtube/transcripts/CNTondxaguo.md)
+- [【生成式AI導論 2024】第13講：淺談大型語言模型相關的安全性議題 (上) — 亡羊補牢、語言模型的偏見、有多少人用 ChatGPT 寫論文審查意見](https://www.youtube.com/watch?v=MSnvknLywUc) | [transcript](../../raw/youtube/transcripts/MSnvknLywUc.md)
+- [【生成式AI導論 2024】第12講：淺談檢定大型語言模型能力的各種方式](https://www.youtube.com/watch?v=Hk8Z0uhmWg4) | [transcript](../../raw/youtube/transcripts/Hk8Z0uhmWg4.md)
+- [【生成式AI導論 2024】第11講：大型語言模型在「想」什麼呢？ — 淺談大型語言模型的可解釋性](https://www.youtube.com/watch?v=rZzfqkfZhY8) | [transcript](../../raw/youtube/transcripts/rZzfqkfZhY8.md)
 - [【生成式AI導論 2024】第10講：今日的語言模型是如何做文字接龍的 — 淺談Transformer (已經熟悉 Transformer 的同學可略過本講)](https://www.youtube.com/watch?v=uhNsUCb2fJI)
 - [【生成式AI導論 2024】第9講：以大型語言模型打造的AI Agent (14:50 教你怎麼打造芙莉蓮一級魔法使考試中出現的泥人哥列姆)](https://www.youtube.com/watch?v=bJZTJ7MjYqg)
 - [【生成式AI導論 2024】第8講：大型語言模型修練史 — 第三階段: 參與實戰，打磨技巧 (Reinforcement Learning from Human Feedback, RLHF)](https://www.youtube.com/watch?v=v12IKvF6Cj8)

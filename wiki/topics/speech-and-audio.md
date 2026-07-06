@@ -11,7 +11,7 @@ Representative videos:
 - [VoiceCraft: Zero-Shot Speech Editing and TTS in the Wild - Shang-Wen Li (Meta)](https://www.youtube.com/watch?v=JidtdZVtpkI)
 - [Challenges in Developing Universal Audio Foundation Model - Dongchao Yang (CUHK)](https://www.youtube.com/watch?v=ExDfqz8NfnE)
 - [Audio Language Models - Neil Zeghidour (Moshi)](https://www.youtube.com/watch?v=Zjpl84KCTvw)
-- [GPT-4o 背後可能的語音技術猜測](https://www.youtube.com/watch?v=CgQ3lUOpXgc)
+- [GPT-4o 背後可能的語音技術猜測](https://www.youtube.com/watch?v=CgQ3lUOpXgc) | [transcript](../../raw/youtube/transcripts/CgQ3lUOpXgc.md)
 - [[活動宣傳] Webinar Series for Advancements in Audio, Speech and Language Technology](https://www.youtube.com/watch?v=2QC9VEBkaqk)
 - [【機器學習2023】語音基石模型 (助教張凱為講授) (1/2)](https://www.youtube.com/watch?v=m7Be7ppR6q0)
 - [【機器學習2023】語音基石模型 (助教張凱為講授) (2/2)](https://www.youtube.com/watch?v=HTAq-CPrU5s)

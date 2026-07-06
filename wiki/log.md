@@ -294,3 +294,28 @@
 - topic_pages: `8`
 - series_pages: `203`
 - cached_transcripts: `27`
+## [2026-07-06 17:13:35] ingest | channel metadata sync
+
+- channel_url: `https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ/videos`
+- video_count: `482`
+- output: `raw/youtube/channel_videos.json`
+## [2026-07-06 17:13:59] ingest | transcript sync
+
+- selected_videos: `50`
+- fetched_now: `17`
+- missing_now: `6`
+- errors_now: `0`
+- languages: `zh-TW, zh-Hant, zh`
+## [2026-07-06 17:14:05] graph | knowledge graph build
+
+- nodes: `956`
+- edges: `4814`
+- communities: `10`
+- files_processed: `495`
+- output: `wiki/graph`
+## [2026-07-06 17:14:06] compile | wiki refresh
+
+- video_count: `482`
+- topic_pages: `8`
+- series_pages: `205`
+- cached_transcripts: `44`

@@ -10,10 +10,10 @@ This wiki follows a Karpathy-style pattern:
 
 ## Current Snapshot
 
-- Metadata sync time: `2026-04-08T08:43:38+00:00`
-- Public video count: `478`
-- Cached transcript files: `27`
-- Cached transcript segments: `58457`
+- Metadata sync time: `2026-07-06T09:13:35+00:00`
+- Public video count: `482`
+- Cached transcript files: `44`
+- Cached transcript segments: `84253`
 
 ## Read This First
 
@@ -43,7 +43,7 @@ python3 scripts/hungyi_kb.py graph query "attention mechanism"
 python3 scripts/hungyi_kb.py lint
 ```
 
-## Knowledge Graph (`927` nodes, `4137` edges)
+## Knowledge Graph (`956` nodes, `4814` edges)
 
 - [GRAPH_REPORT.md](./graph/GRAPH_REPORT.md) — god nodes, surprising connections, suggested questions
 - [graph.html](./graph/graph.html) — interactive visualization (open in browser)
