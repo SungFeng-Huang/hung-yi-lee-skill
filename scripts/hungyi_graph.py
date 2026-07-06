@@ -77,6 +77,24 @@ def normalize_concept(raw: str) -> str:
     return normalized
 
 
+def slug(text: str) -> str:
+    """Node-id-safe slug that PRESERVES CJK. The old inline pattern
+    (`[^a-zA-Z0-9_]` -> `_`) mapped every CJK char to `_`, so distinct
+    Chinese concepts of the same length collapsed into ONE node id
+    (e.g. 語音合成 and 語音辨識 both -> `concept_____`). Keep ASCII alnum
+    plus kana (U+3040-30FF), 〇, CJK Ext-A, the basic ideographs, and the
+    compatibility ideographs; collapse everything else to single
+    underscores (this also normalizes ASCII runs — `a  (b)` -> `a_b` —
+    which is an id CHANGE vs the old per-char mapping; safe because the
+    graph is fully rebuilt from source on every `graph build` and node
+    ids are never persisted across builds)."""
+    lowered = text.lower()
+    out = re.sub(
+        r"[^a-z0-9぀-ヿ〇㐀-䶿一-鿿豈-﫿]+",
+        "_", lowered)
+    return out.strip("_") or "_"
+
+
 def extract_concepts_from_text(text: str) -> list[dict]:
     """Extract concept mentions from a text block."""
     found: list[dict] = []
@@ -156,7 +174,7 @@ def extract_from_transcript(path: Path) -> dict:
 
     # Concept nodes + edges to video
     for concept_text, count in concept_counts.items():
-        concept_id = f"concept_{re.sub(r'[^a-zA-Z0-9_]', '_', concept_text.lower())}"
+        concept_id = f"concept_{slug(concept_text)}"
         nodes.append({
             "id": concept_id,
             "label": concept_text,
@@ -176,7 +194,7 @@ def extract_from_transcript(path: Path) -> dict:
 
     # Series edge
     if series:
-        series_id = f"series_{re.sub(r'[^a-zA-Z0-9_]', '_', series.lower())}"
+        series_id = f"series_{slug(series)}"
         nodes.append({
             "id": series_id,
             "label": series,
@@ -244,7 +262,7 @@ def extract_from_metadata(video: dict) -> dict:
         concept_counts[c["raw"]] += 1
 
     for concept_text, count in concept_counts.items():
-        concept_id = f"concept_{re.sub(r'[^a-zA-Z0-9_]', '_', concept_text.lower())}"
+        concept_id = f"concept_{slug(concept_text)}"
         nodes.append({
             "id": concept_id,
             "label": concept_text,
@@ -263,7 +281,7 @@ def extract_from_metadata(video: dict) -> dict:
         })
 
     if series:
-        series_id = f"series_{re.sub(r'[^a-zA-Z0-9_]', '_', series.lower())}"
+        series_id = f"series_{slug(series)}"
         nodes.append({
             "id": series_id,
             "label": series,
@@ -318,7 +336,7 @@ def extract_from_wiki_topic(path: Path) -> dict:
         concept_counts[c["raw"]] += 1
 
     for concept_text, count in concept_counts.most_common(15):
-        concept_id = f"concept_{re.sub(r'[^a-zA-Z0-9_]', '_', concept_text.lower())}"
+        concept_id = f"concept_{slug(concept_text)}"
         nodes.append({
             "id": concept_id,
             "label": concept_text,
@@ -355,7 +373,7 @@ def extract_from_reference(path: Path) -> dict:
         concept_counts[c["raw"]] += 1
 
     for concept_text, count in concept_counts.most_common(20):
-        concept_id = f"concept_{re.sub(r'[^a-zA-Z0-9_]', '_', concept_text.lower())}"
+        concept_id = f"concept_{slug(concept_text)}"
         nodes.append({
             "id": concept_id,
             "label": concept_text,
