@@ -1,6 +1,6 @@
 # Knowledge Graph Report
 
-Generated: `2026-07-06T09:58:05+00:00`
+Generated: `2026-07-06T11:15:16+00:00`
 
 ## Corpus
 
@@ -12,11 +12,11 @@ Generated: `2026-07-06T09:58:05+00:00`
 
 ## Graph Stats
 
-- Nodes: `961`
-- Edges: `4817`
-- Communities: `9`
-- EXTRACTED edges: `1942`
-- INFERRED edges: `2873`
+- Nodes: `948`
+- Edges: `4749`
+- Communities: `7`
+- EXTRACTED edges: `1931`
+- INFERRED edges: `2816`
 - AMBIGUOUS edges: `0`
 - ALIGNED edges: `2` (graph_alignment.json)
 
@@ -25,27 +25,25 @@ Generated: `2026-07-06T09:58:05+00:00`
 Highest-degree concepts — what everything connects through.
 
 1. **Ml Fundamentals** (topic) — degree 389
-2. **機器學習** (concept) — degree 263
-3. **語言模型** (concept) — degree 215
+2. **機器學習** (concept) — degree 256
+3. **語言模型** (concept) — degree 206
 4. **Standalone Talks** (series) — degree 151
-5. **Claude** (concept) — degree 131
-6. **Llama** (concept) — degree 125
-7. **Transformer** (concept) — degree 116
-8. **Gemini** (concept) — degree 113
-9. **Language Model** (concept) — degree 107
-10. **語音辨識** (concept) — degree 103
+5. **Claude** (concept) — degree 128
+6. **Llama** (concept) — degree 120
+7. **Transformer** (concept) — degree 114
+8. **Gemini** (concept) — degree 110
+9. **Language Model** (concept) — degree 102
+10. **語音辨識** (concept) — degree 101
 
 ## Communities
 
-- **Ml Fundamentals** — 448 nodes
-- **Diffusion And Generation** — 127 nodes
-- **【生成式人工智慧與機器學習導論2025】第 10 講：語音語言模型發展史 (本課程前段內容為歷史回顧，2025 年的技術從 1:42:00 開始)** — 84 nodes
-- **Speech And Audio** — 79 nodes
-- **機器學習2021** — 68 nodes
-- **Evaluation And Benchmarks** — 47 nodes
-- **[ML 2021 (English version)] Lecture 17** — 41 nodes
-- **Agents And Context** — 40 nodes
-- **Model Editing And Merging** — 27 nodes
+- **Ml Fundamentals** — 470 nodes
+- **Speech And Audio** — 144 nodes
+- **Diffusion And Generation** — 126 nodes
+- **李宏毅老師訪談腳本 — 一問一答版** — 87 nodes
+- **Model Editing And Merging** — 77 nodes
+- **Agents And Context** — 38 nodes
+- **[ICASSP 2020] TRAINING CODE-SWITCHING LANGUAGE MODEL WITH MONOLINGUAL DATA (Speaker** — 6 nodes
 
 ## Surprising Connections
 
@@ -70,7 +68,7 @@ Questions the graph is uniquely positioned to answer:
 - 「Ml Fundamentals」和「機器學習」之間是什麼關係？
 - 為什麼「解剖小龍蝦 — 以 OpenClaw 為例介紹 AI Agent 的運作原理」和「Claude」會有關聯？
 - 為什麼「解剖小龍蝦 — 以 OpenClaw 為例介紹 AI Agent 的運作原理」和「語言模型」會有關聯？
-- 「Agents And Context」和「【生成式人工智慧與機器學習導論2025】第 10 講：語音語言模型發展史 (本課程前段內容為歷史回顧，2025 年的技術從 1:42:00 開始)」這兩個主題群之間有什麼交集？
+- 「Agents And Context」和「李宏毅老師訪談腳本 — 一問一答版」這兩個主題群之間有什麼交集？
 
 ## How To Use This Graph
 

@@ -358,3 +358,16 @@
 - topic_pages: `8`
 - series_pages: `205`
 - cached_transcripts: `44`
+## [2026-07-06 19:15:16] graph | knowledge graph build
+
+- nodes: `948`
+- edges: `4749`
+- communities: `7`
+- files_processed: `495`
+- output: `wiki/graph`
+## [2026-07-06 19:15:17] compile | wiki refresh
+
+- video_count: `482`
+- topic_pages: `8`
+- series_pages: `205`
+- cached_transcripts: `44`

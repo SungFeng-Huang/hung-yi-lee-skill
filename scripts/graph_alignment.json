@@ -1,14 +1,158 @@
 {
   "_comment": "Concept alignment for the knowledge graph. `merge` = true synonyms: every variant folds onto the FIRST entry (canonical) before node ids form; matching is casefold. `align` = related but deliberately DISTINCT concepts: an aligned_with edge is added between existing nodes, never a merge (e.g. 語音合成 is the TTS task; 語音生成 is the broader family incl. sound/music — keep them separate but connected). Extend freely; `graph build` validates the shape.",
   "merge": [
-    ["語音合成", "TTS", "Text-to-Speech", "Speech Synthesis"],
-    ["語音辨識", "ASR", "Speech Recognition"],
-    ["語音轉換", "VC", "Voice Conversion"],
-    ["Large Language Model", "Large Language Models"]
+    [
+      "語音合成",
+      "TTS",
+      "Text-to-Speech",
+      "Speech Synthesis"
+    ],
+    [
+      "語音辨識",
+      "ASR",
+      "Speech Recognition"
+    ],
+    [
+      "語音轉換",
+      "VC",
+      "Voice Conversion"
+    ],
+    [
+      "Large Language Model",
+      "Large Language Models"
+    ],
+    [
+      "GRPO",
+      "Group Relative Policy Optimization"
+    ],
+    [
+      "DPO",
+      "Direct Preference Optimization"
+    ],
+    [
+      "PPO",
+      "Proximal Policy Optimization"
+    ],
+    [
+      "SFT",
+      "Supervised Fine Tuning",
+      "Supervised Fine-Tuning"
+    ],
+    [
+      "LALM",
+      "Large Audio Language Model",
+      "Large Audio Language Models"
+    ],
+    [
+      "Language Model",
+      "Language Models"
+    ],
+    [
+      "Spoken LM",
+      "Spoken Language Model",
+      "Spoken Language Models"
+    ],
+    [
+      "語音語言模型",
+      "Speech Language Model",
+      "Speech Language Models"
+    ],
+    [
+      "Audio Language Model",
+      "Audio Language Models"
+    ],
+    [
+      "Neural Codec Language Model",
+      "Neural Codec Language Models"
+    ],
+    [
+      "Latent Diffusion Model",
+      "Latent Diffusion Models"
+    ],
+    [
+      "Representation Autoencoder",
+      "Representation Autoencoders"
+    ],
+    [
+      "Natural Language Description",
+      "Natural Language Descriptions"
+    ],
+    [
+      "Evaluation Metric",
+      "Evaluation Metrics"
+    ],
+    [
+      "Normalizing Flow",
+      "Normalizing Flows"
+    ],
+    [
+      "Diffusion Transformer",
+      "Diffusion Transformers"
+    ],
+    [
+      "Generative Model",
+      "Generative Models"
+    ],
+    [
+      "autoregressive",
+      "Auto-regressive"
+    ],
+    [
+      "non-autoregressive",
+      "non-auto-regressive"
+    ],
+    [
+      "Pretraining",
+      "Pre-training"
+    ],
+    [
+      "Pretrain",
+      "Pre-train"
+    ],
+    [
+      "Pretrained",
+      "Pre-trained"
+    ],
+    [
+      "Fine-tuning",
+      "Finetuning"
+    ],
+    [
+      "GPT-3",
+      "GPT3"
+    ],
+    [
+      "GPT-4",
+      "GPT4"
+    ],
+    [
+      "FlashAttention",
+      "Flash Attention"
+    ],
+    [
+      "終身學習",
+      "Lifelong Learning",
+      "Life Long Learning"
+    ],
+    [
+      "全雙工",
+      "Full Duplex",
+      "Full-Duplex"
+    ]
   ],
   "align": [
-    ["語音語言模型", "Spoken LM", "Speech LLM"],
-    ["語音合成", "語音生成"],
-    ["語言模型", "Large Language Model"]
+    [
+      "語音語言模型",
+      "Spoken LM",
+      "Speech LLM"
+    ],
+    [
+      "語音合成",
+      "語音生成"
+    ],
+    [
+      "語言模型",
+      "Large Language Model"
+    ]
   ]
 }
