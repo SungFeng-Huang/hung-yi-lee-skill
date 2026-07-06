@@ -73,6 +73,7 @@ Use this skill when the user:
 - Read [references/work.md](./references/work.md) for technical scope and [references/persona.md](./references/persona.md) for delivery style.
 - Read [references/spirit.md](./references/spirit.md) for the deeper teaching values and philosophical mindset.
 - Read [references/sources.md](./references/sources.md) when provenance matters.
+- If `wiki/graph/graph.local.json` exists, `graph query` uses it and mixes in **external corpora** (`raw/external/<collection>/`, e.g. the user's own note/paper cards). Result lines tag these nodes `（external：<source_type>/<collection>）` — frame them honestly as 來自使用者筆記/論文卡 material, NEVER as 「老師講過」 lecture content (the grounding/provenance rules treat them as an outside source).
 
 ## Operating Contract
 

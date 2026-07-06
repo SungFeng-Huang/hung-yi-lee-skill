@@ -14,7 +14,7 @@
         "agents-and-context",
         "interpretability"
       ],
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_ai_agent",
@@ -22,7 +22,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/2rcJdFuNbZQ.md",
       "mention_count": 49,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_claude_code",
@@ -30,7 +30,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/2rcJdFuNbZQ.md",
       "mention_count": 8,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_gemini_cli",
@@ -38,7 +38,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/2rcJdFuNbZQ.md",
       "mention_count": 7,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_openclaw_openclaw",
@@ -46,7 +46,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/2rcJdFuNbZQ.md",
       "mention_count": 1,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_large_language_model",
@@ -62,7 +62,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/2rcJdFuNbZQ.md",
       "mention_count": 29,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_prompt_injection_attack",
@@ -70,7 +70,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/2rcJdFuNbZQ.md",
       "mention_count": 11,
-      "community": 1
+      "community": 8
     },
     {
       "id": "concept_context_window",
@@ -78,7 +78,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/2rcJdFuNbZQ.md",
       "mention_count": 9,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_context_engineering",
@@ -86,7 +86,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/2rcJdFuNbZQ.md",
       "mention_count": 21,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_prompt_injection",
@@ -94,7 +94,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/2rcJdFuNbZQ.md",
       "mention_count": 1,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_gemini",
@@ -126,7 +126,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/2rcJdFuNbZQ.md",
       "mention_count": 5,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_語言模型",
@@ -134,7 +134,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/2rcJdFuNbZQ.md",
       "mention_count": 247,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_機器學習",
@@ -150,7 +150,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/2rcJdFuNbZQ.md",
       "mention_count": 27,
-      "community": 1
+      "community": 3
     },
     {
       "id": "concept_自然語言處理",
@@ -158,7 +158,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/2rcJdFuNbZQ.md",
       "mention_count": 4,
-      "community": 1
+      "community": 8
     },
     {
       "id": "concept_語音辨識",
@@ -173,21 +173,21 @@
       "label": "Standalone Talks",
       "type": "series",
       "source_file": "raw/youtube/transcripts/2rcJdFuNbZQ.md",
-      "community": 3
+      "community": 6
     },
     {
       "id": "topic_agents-and-context",
       "label": "Agents And Context",
       "type": "topic",
       "source_file": "raw/youtube/transcripts/2rcJdFuNbZQ.md",
-      "community": 0
+      "community": 8
     },
     {
       "id": "topic_interpretability",
       "label": "Interpretability",
       "type": "topic",
       "source_file": "raw/youtube/transcripts/2rcJdFuNbZQ.md",
-      "community": 0
+      "community": 8
     },
     {
       "id": "video_8iFvM7WUUs8",
@@ -202,7 +202,7 @@
         "diffusion-and-generation",
         "interpretability"
       ],
-      "community": 0
+      "community": 5
     },
     {
       "id": "concept_hugging_face",
@@ -218,7 +218,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/8iFvM7WUUs8.md",
       "mention_count": 17,
-      "community": 0
+      "community": 5
     },
     {
       "id": "concept_positional_embedding",
@@ -226,7 +226,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/8iFvM7WUUs8.md",
       "mention_count": 50,
-      "community": 0
+      "community": 5
     },
     {
       "id": "concept_deep_learning",
@@ -242,7 +242,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/8iFvM7WUUs8.md",
       "mention_count": 1,
-      "community": 1
+      "community": 3
     },
     {
       "id": "concept_query_attention",
@@ -250,7 +250,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/8iFvM7WUUs8.md",
       "mention_count": 12,
-      "community": 0
+      "community": 5
     },
     {
       "id": "concept_self_attention",
@@ -258,7 +258,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/8iFvM7WUUs8.md",
       "mention_count": 17,
-      "community": 0
+      "community": 5
     },
     {
       "id": "concept_feed_forward",
@@ -266,7 +266,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/8iFvM7WUUs8.md",
       "mention_count": 13,
-      "community": 0
+      "community": 5
     },
     {
       "id": "concept_multi_head",
@@ -274,7 +274,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/8iFvM7WUUs8.md",
       "mention_count": 8,
-      "community": 0
+      "community": 5
     },
     {
       "id": "concept_autoregressive",
@@ -282,7 +282,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/8iFvM7WUUs8.md",
       "mention_count": 11,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_grouped_query",
@@ -290,7 +290,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/8iFvM7WUUs8.md",
       "mention_count": 4,
-      "community": 0
+      "community": 5
     },
     {
       "id": "concept_llama",
@@ -322,7 +322,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/8iFvM7WUUs8.md",
       "mention_count": 21,
-      "community": 1
+      "community": 3
     },
     {
       "id": "concept_rope",
@@ -330,7 +330,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/8iFvM7WUUs8.md",
       "mention_count": 58,
-      "community": 0
+      "community": 5
     },
     {
       "id": "concept_tokenizer",
@@ -338,7 +338,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/8iFvM7WUUs8.md",
       "mention_count": 36,
-      "community": 1
+      "community": 3
     },
     {
       "id": "concept_深度學習",
@@ -360,21 +360,21 @@
       "label": "Ml Fundamentals",
       "type": "topic",
       "source_file": "raw/youtube/transcripts/8iFvM7WUUs8.md",
-      "community": 3
+      "community": 6
     },
     {
       "id": "topic_llm-and-transformers",
       "label": "Llm And Transformers",
       "type": "topic",
       "source_file": "raw/youtube/transcripts/8iFvM7WUUs8.md",
-      "community": 0
+      "community": 5
     },
     {
       "id": "topic_diffusion-and-generation",
       "label": "Diffusion And Generation",
       "type": "topic",
       "source_file": "raw/youtube/transcripts/8iFvM7WUUs8.md",
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_9HPsz7F0mJg",
@@ -388,7 +388,7 @@
         "diffusion-and-generation",
         "model-editing-and-merging"
       ],
-      "community": 6
+      "community": 1
     },
     {
       "id": "concept_model_editing",
@@ -396,7 +396,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/9HPsz7F0mJg.md",
       "mention_count": 19,
-      "community": 6
+      "community": 1
     },
     {
       "id": "concept_eiffel_tower",
@@ -404,7 +404,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/9HPsz7F0mJg.md",
       "mention_count": 4,
-      "community": 6
+      "community": 1
     },
     {
       "id": "concept_meta_learning",
@@ -412,7 +412,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/9HPsz7F0mJg.md",
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_post_training",
@@ -420,7 +420,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/9HPsz7F0mJg.md",
       "mention_count": 43,
-      "community": 6
+      "community": 1
     },
     {
       "id": "concept_in_context",
@@ -444,21 +444,21 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/9HPsz7F0mJg.md",
       "mention_count": 61,
-      "community": 0
+      "community": 8
     },
     {
       "id": "series_生成式ai時代下的機器學習_2025",
       "label": "生成式AI時代下的機器學習(2025)",
       "type": "series",
       "source_file": "raw/youtube/transcripts/9HPsz7F0mJg.md",
-      "community": 0
+      "community": 8
     },
     {
       "id": "topic_model-editing-and-merging",
       "label": "Model Editing And Merging",
       "type": "topic",
       "source_file": "raw/youtube/transcripts/9HPsz7F0mJg.md",
-      "community": 6
+      "community": 1
     },
     {
       "id": "video_CbIPjrOj2Tc",
@@ -473,7 +473,7 @@
         "speech-and-audio",
         "diffusion-and-generation"
       ],
-      "community": 1
+      "community": 3
     },
     {
       "id": "concept_speech_language_model",
@@ -481,7 +481,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 6,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_language_model",
@@ -505,7 +505,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 1,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_unsupervised_learning",
@@ -513,7 +513,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 1,
-      "community": 7
+      "community": 6
     },
     {
       "id": "concept_flow_matching",
@@ -521,7 +521,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 33,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_diffusion_head",
@@ -529,7 +529,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 3,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_flow_matching_head",
@@ -537,7 +537,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 4,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_word_error_rate",
@@ -553,7 +553,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 54,
-      "community": 6
+      "community": 1
     },
     {
       "id": "concept_speech_processing_universal_performance_benchmark",
@@ -561,7 +561,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 1,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_speaker_verification",
@@ -569,7 +569,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_weighted_sum",
@@ -577,7 +577,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 12,
-      "community": 1
+      "community": 5
     },
     {
       "id": "concept_supervised_learning",
@@ -601,7 +601,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 1,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_chat_template",
@@ -633,7 +633,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 1,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_supervised_fine_tuning",
@@ -665,7 +665,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 40,
-      "community": 1
+      "community": 3
     },
     {
       "id": "concept_real_time",
@@ -673,7 +673,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 1,
-      "community": 8
+      "community": 7
     },
     {
       "id": "concept_self_supervised",
@@ -689,7 +689,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 17,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_fine_tune",
@@ -721,7 +721,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 1,
-      "community": 1
+      "community": 3
     },
     {
       "id": "concept_pretrain",
@@ -729,7 +729,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 6,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_pre_trained",
@@ -753,7 +753,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 8,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_diffusion",
@@ -761,7 +761,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 40,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_flow",
@@ -769,7 +769,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 97,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_wav2vec",
@@ -785,7 +785,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 21,
-      "community": 1
+      "community": 3
     },
     {
       "id": "concept_codec",
@@ -793,7 +793,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 4,
-      "community": 1
+      "community": 3
     },
     {
       "id": "concept_gpt_3",
@@ -809,7 +809,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 4,
-      "community": 8
+      "community": 3
     },
     {
       "id": "concept_sft",
@@ -825,7 +825,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 1,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_rlhf",
@@ -844,12 +844,20 @@
       "community": 1
     },
     {
+      "id": "concept_語音語言模型",
+      "label": "語音語言模型",
+      "type": "concept",
+      "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
+      "mention_count": 112,
+      "community": 3
+    },
+    {
       "id": "concept_語音轉換",
       "label": "語音轉換",
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 1,
-      "community": 2
+      "community": 1
     },
     {
       "id": "concept_語音模型",
@@ -857,7 +865,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 33,
-      "community": 1
+      "community": 3
     },
     {
       "id": "concept_生成模型",
@@ -865,7 +873,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "mention_count": 23,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_評估",
@@ -880,7 +888,7 @@
       "label": "Speech And Audio",
       "type": "topic",
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_EnWz5XuOnIQ",
@@ -894,7 +902,7 @@
         "diffusion-and-generation",
         "model-editing-and-merging"
       ],
-      "community": 6
+      "community": 1
     },
     {
       "id": "concept_model_merging",
@@ -902,7 +910,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/EnWz5XuOnIQ.md",
       "mention_count": 21,
-      "community": 6
+      "community": 1
     },
     {
       "id": "concept_time_training",
@@ -910,7 +918,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/EnWz5XuOnIQ.md",
       "mention_count": 1,
-      "community": 6
+      "community": 1
     },
     {
       "id": "concept_lifelong_learning",
@@ -918,7 +926,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/EnWz5XuOnIQ.md",
       "mention_count": 8,
-      "community": 6
+      "community": 1
     },
     {
       "id": "concept_base_model",
@@ -934,7 +942,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/EnWz5XuOnIQ.md",
       "mention_count": 1,
-      "community": 2
+      "community": 1
     },
     {
       "id": "concept_context_learning",
@@ -958,7 +966,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/EnWz5XuOnIQ.md",
       "mention_count": 17,
-      "community": 2
+      "community": 1
     },
     {
       "id": "concept_loss_function",
@@ -982,7 +990,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/EnWz5XuOnIQ.md",
       "mention_count": 6,
-      "community": 6
+      "community": 2
     },
     {
       "id": "concept_cross_entropy",
@@ -998,7 +1006,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/EnWz5XuOnIQ.md",
       "mention_count": 5,
-      "community": 6
+      "community": 1
     },
     {
       "id": "concept_task_vector",
@@ -1006,7 +1014,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/EnWz5XuOnIQ.md",
       "mention_count": 30,
-      "community": 6
+      "community": 1
     },
     {
       "id": "concept_test_time",
@@ -1014,7 +1022,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/EnWz5XuOnIQ.md",
       "mention_count": 6,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_pre_training",
@@ -1030,7 +1038,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/EnWz5XuOnIQ.md",
       "mention_count": 8,
-      "community": 2
+      "community": 1
     },
     {
       "id": "concept_closed_form",
@@ -1038,7 +1046,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/EnWz5XuOnIQ.md",
       "mention_count": 2,
-      "community": 2
+      "community": 1
     },
     {
       "id": "concept_semi_supervised",
@@ -1046,7 +1054,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/EnWz5XuOnIQ.md",
       "mention_count": 8,
-      "community": 2
+      "community": 1
     },
     {
       "id": "concept_pre_task",
@@ -1062,7 +1070,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/EnWz5XuOnIQ.md",
       "mention_count": 15,
-      "community": 1
+      "community": 8
     },
     {
       "id": "concept_gpt_4",
@@ -1086,7 +1094,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/EnWz5XuOnIQ.md",
       "mention_count": 16,
-      "community": 6
+      "community": 1
     },
     {
       "id": "concept_mistral",
@@ -1102,7 +1110,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/EnWz5XuOnIQ.md",
       "mention_count": 5,
-      "community": 6
+      "community": 1
     },
     {
       "id": "concept_終身學習",
@@ -1110,7 +1118,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/EnWz5XuOnIQ.md",
       "mention_count": 3,
-      "community": 6
+      "community": 2
     },
     {
       "id": "concept_上下文工程",
@@ -1130,7 +1138,7 @@
       "topics": [
         "llm-and-transformers"
       ],
-      "community": 0
+      "community": 5
     },
     {
       "id": "concept_attention_weight",
@@ -1138,7 +1146,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/Ll-wk8x3G_g.md",
       "mention_count": 3,
-      "community": 0
+      "community": 5
     },
     {
       "id": "concept_flash_attention",
@@ -1146,7 +1154,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/Ll-wk8x3G_g.md",
       "mention_count": 58,
-      "community": 0
+      "community": 5
     },
     {
       "id": "concept_kv_cache",
@@ -1154,7 +1162,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/Ll-wk8x3G_g.md",
       "mention_count": 31,
-      "community": 0
+      "community": 5
     },
     {
       "id": "concept_zero_shot",
@@ -1162,7 +1170,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/Ll-wk8x3G_g.md",
       "mention_count": 1,
-      "community": 6
+      "community": 1
     },
     {
       "id": "concept_qwen",
@@ -1184,7 +1192,7 @@
         "llm-and-transformers",
         "diffusion-and-generation"
       ],
-      "community": 0
+      "community": 8
     },
     {
       "id": "video_Taj1eHmZyWw",
@@ -1261,7 +1269,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/Taj1eHmZyWw.md",
       "mention_count": 3,
-      "community": 3
+      "community": 2
     },
     {
       "id": "concept_validation_set",
@@ -1285,7 +1293,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/Taj1eHmZyWw.md",
       "mention_count": 19,
-      "community": 1
+      "community": 8
     },
     {
       "id": "concept_testing_set",
@@ -1314,7 +1322,7 @@
         "ml-fundamentals",
         "diffusion-and-generation"
       ],
-      "community": 0
+      "community": 8
     },
     {
       "id": "video_VqB8zMujdjM",
@@ -1326,7 +1334,7 @@
       "topics": [
         "agents-and-context"
       ],
-      "community": 1
+      "community": 8
     },
     {
       "id": "concept_area_chair",
@@ -1334,7 +1342,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/VqB8zMujdjM.md",
       "mention_count": 2,
-      "community": 1
+      "community": 8
     },
     {
       "id": "concept_h_index",
@@ -1342,14 +1350,14 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/VqB8zMujdjM.md",
       "mention_count": 1,
-      "community": 1
+      "community": 8
     },
     {
       "id": "series_ai_agent_3_3",
       "label": "AI Agent (3/3)",
       "type": "series",
       "source_file": "raw/youtube/transcripts/VqB8zMujdjM.md",
-      "community": 1
+      "community": 8
     },
     {
       "id": "video_VuQUF1VVX40",
@@ -1362,7 +1370,7 @@
         "ml-fundamentals",
         "diffusion-and-generation"
       ],
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_YJoegm7kiUM",
@@ -1384,7 +1392,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/YJoegm7kiUM.md",
       "mention_count": 2,
-      "community": 0
+      "community": 5
     },
     {
       "id": "concept_chinchilla_scaling_law",
@@ -1392,7 +1400,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/YJoegm7kiUM.md",
       "mention_count": 3,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_knowledge_distillation",
@@ -1424,7 +1432,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/YJoegm7kiUM.md",
       "mention_count": 2,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_ppo",
@@ -1432,7 +1440,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/YJoegm7kiUM.md",
       "mention_count": 2,
-      "community": 3
+      "community": 0
     },
     {
       "id": "video_Z6b5-77EfGk",
@@ -1445,7 +1453,7 @@
         "ml-fundamentals",
         "diffusion-and-generation"
       ],
-      "community": 0
+      "community": 8
     },
     {
       "id": "video_bJFtcwLSNxI",
@@ -1459,7 +1467,7 @@
         "llm-and-transformers",
         "diffusion-and-generation"
       ],
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_chain_of_thought",
@@ -1467,7 +1475,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/bJFtcwLSNxI.md",
       "mention_count": 11,
-      "community": 0
+      "community": 8
     },
     {
       "id": "video_ccqCDD9LqCA",
@@ -1480,7 +1488,7 @@
         "ml-fundamentals",
         "diffusion-and-generation"
       ],
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_diffusion_model",
@@ -1488,7 +1496,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/ccqCDD9LqCA.md",
       "mention_count": 19,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_generative_model",
@@ -1496,7 +1504,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/ccqCDD9LqCA.md",
       "mention_count": 13,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_stable_diffusion",
@@ -1504,7 +1512,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/ccqCDD9LqCA.md",
       "mention_count": 3,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_vector_quantization",
@@ -1512,7 +1520,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/ccqCDD9LqCA.md",
       "mention_count": 1,
-      "community": 8
+      "community": 7
     },
     {
       "id": "concept_video_generation",
@@ -1520,7 +1528,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/ccqCDD9LqCA.md",
       "mention_count": 1,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_dall_e",
@@ -1528,7 +1536,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/ccqCDD9LqCA.md",
       "mention_count": 4,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_flow_based",
@@ -1536,7 +1544,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/ccqCDD9LqCA.md",
       "mention_count": 2,
-      "community": 4
+      "community": 3
     },
     {
       "id": "concept_vae",
@@ -1544,7 +1552,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/ccqCDD9LqCA.md",
       "mention_count": 5,
-      "community": 4
+      "community": 3
     },
     {
       "id": "video_dWQVY_h0YXU",
@@ -1558,7 +1566,7 @@
         "diffusion-and-generation",
         "evaluation-and-benchmarks"
       ],
-      "community": 1
+      "community": 8
     },
     {
       "id": "concept_ground_truth",
@@ -1574,7 +1582,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/dWQVY_h0YXU.md",
       "mention_count": 1,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_chatbot_arena",
@@ -1582,7 +1590,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/dWQVY_h0YXU.md",
       "mention_count": 9,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_swe_bench",
@@ -1590,7 +1598,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/dWQVY_h0YXU.md",
       "mention_count": 4,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_state_of_the_art",
@@ -1598,14 +1606,14 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/dWQVY_h0YXU.md",
       "mention_count": 6,
-      "community": 1
+      "community": 8
     },
     {
       "id": "topic_evaluation-and-benchmarks",
       "label": "Evaluation And Benchmarks",
       "type": "topic",
       "source_file": "raw/youtube/transcripts/dWQVY_h0YXU.md",
-      "community": 4
+      "community": 0
     },
     {
       "id": "video_fDQaadKysSA",
@@ -1618,7 +1626,7 @@
         "llm-and-transformers",
         "diffusion-and-generation"
       ],
-      "community": 0
+      "community": 5
     },
     {
       "id": "concept_speculative_decoding",
@@ -1626,14 +1634,14 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/fDQaadKysSA.md",
       "mention_count": 4,
-      "community": 0
+      "community": 5
     },
     {
       "id": "series_加快語言模型生成速度_2_2",
       "label": "加快語言模型生成速度 (2/2)",
       "type": "series",
       "source_file": "raw/youtube/transcripts/fDQaadKysSA.md",
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_gkAyqoQkOSk",
@@ -1648,7 +1656,7 @@
         "speech-and-audio",
         "diffusion-and-generation"
       ],
-      "community": 1
+      "community": 3
     },
     {
       "id": "video_ip3XnTpcxoA",
@@ -1662,7 +1670,7 @@
         "llm-and-transformers",
         "diffusion-and-generation"
       ],
-      "community": 0
+      "community": 8
     },
     {
       "id": "video_jFUwoCkdqAo",
@@ -1676,7 +1684,7 @@
         "diffusion-and-generation",
         "model-editing-and-merging"
       ],
-      "community": 6
+      "community": 1
     },
     {
       "id": "video_lVdajtNpaGI",
@@ -1690,7 +1698,7 @@
         "agents-and-context",
         "diffusion-and-generation"
       ],
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_multi_agent",
@@ -1698,7 +1706,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/lVdajtNpaGI.md",
       "mention_count": 19,
-      "community": 0
+      "community": 8
     },
     {
       "id": "video_mPWvAN4hzzY",
@@ -1719,7 +1727,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/mPWvAN4hzzY.md",
       "mention_count": 2,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_mmPmNezjCi0",
@@ -1731,14 +1739,14 @@
       "topics": [
         "agents-and-context"
       ],
-      "community": 0
+      "community": 8
     },
     {
       "id": "series_ai_agent_2_3",
       "label": "AI Agent (2/3)",
       "type": "series",
       "source_file": "raw/youtube/transcripts/mmPmNezjCi0.md",
-      "community": 0
+      "community": 8
     },
     {
       "id": "video_mpuRca2UZtI",
@@ -1752,7 +1760,7 @@
         "llm-and-transformers",
         "diffusion-and-generation"
       ],
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_liger_kernel",
@@ -1760,7 +1768,7 @@
       "type": "concept",
       "source_file": "raw/youtube/transcripts/mpuRca2UZtI.md",
       "mention_count": 2,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_s266BzGNKKc",
@@ -1775,7 +1783,7 @@
         "diffusion-and-generation",
         "evaluation-and-benchmarks"
       ],
-      "community": 4
+      "community": 0
     },
     {
       "id": "video_urwDLyNa9FU",
@@ -1787,14 +1795,14 @@
       "topics": [
         "agents-and-context"
       ],
-      "community": 0
+      "community": 8
     },
     {
       "id": "series_ai_agent_1_3",
       "label": "AI Agent (1/3)",
       "type": "series",
       "source_file": "raw/youtube/transcripts/urwDLyNa9FU.md",
-      "community": 0
+      "community": 8
     },
     {
       "id": "video_vXb2QYOUzl4",
@@ -1807,14 +1815,14 @@
         "llm-and-transformers",
         "diffusion-and-generation"
       ],
-      "community": 0
+      "community": 5
     },
     {
       "id": "series_加快語言模型生成速度_1_2",
       "label": "加快語言模型生成速度 (1/2)",
       "type": "series",
       "source_file": "raw/youtube/transcripts/vXb2QYOUzl4.md",
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_zpRR_A3Thoo",
@@ -1827,7 +1835,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_dnn_backpropagation",
@@ -1835,14 +1843,14 @@
       "type": "concept",
       "source_file": "wiki/topics/ml-fundamentals.md",
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_舊影片上傳",
       "label": "舊影片上傳",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_gjsdVi90yQo",
@@ -1857,7 +1865,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_Xnil63UDW2o",
@@ -1873,7 +1881,7 @@
         "interpretability"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 8
     },
     {
       "id": "video_M2Yg1kwPpts",
@@ -1888,7 +1896,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 8
     },
     {
       "id": "video_QLiKmca4kzI",
@@ -1902,7 +1910,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_zxFTrb_xGD0",
@@ -1915,7 +1923,7 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "concept_future_directions",
@@ -1923,7 +1931,7 @@
       "type": "concept",
       "source_file": "wiki/topics/speech-and-audio.md",
       "mention_count": 1,
-      "community": 8
+      "community": 7
     },
     {
       "id": "concept_neural_speech_communication_codecs",
@@ -1931,7 +1939,7 @@
       "type": "concept",
       "source_file": "wiki/topics/speech-and-audio.md",
       "mention_count": 1,
-      "community": 8
+      "community": 7
     },
     {
       "id": "concept_minje_kim",
@@ -1939,14 +1947,14 @@
       "type": "concept",
       "source_file": "wiki/topics/speech-and-audio.md",
       "mention_count": 1,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_future_directions_in_neural_speech_communication_codecs",
       "label": "Future Directions in Neural Speech Communication Codecs",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_fIoCxwVobEo",
@@ -1959,7 +1967,7 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "concept_case_study",
@@ -1967,14 +1975,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_neuralaudiocodecs",
       "label": "NeuralAudioCodecs",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_JidtdZVtpkI",
@@ -1988,7 +1996,7 @@
         "model-editing-and-merging"
       ],
       "metadata_only": true,
-      "community": 6
+      "community": 1
     },
     {
       "id": "concept_shot_speech_editing",
@@ -1996,7 +2004,7 @@
       "type": "concept",
       "source_file": "wiki/topics/model-editing-and-merging.md",
       "mention_count": 1,
-      "community": 6
+      "community": 1
     },
     {
       "id": "concept_wen_li",
@@ -2004,14 +2012,14 @@
       "type": "concept",
       "source_file": "wiki/topics/model-editing-and-merging.md",
       "mention_count": 1,
-      "community": 6
+      "community": 1
     },
     {
       "id": "series_voicecraft",
       "label": "VoiceCraft",
       "type": "series",
       "source_file": null,
-      "community": 6
+      "community": 1
     },
     {
       "id": "video_ExDfqz8NfnE",
@@ -2024,14 +2032,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_challenges_in_developing_universal_audio_foundation_model",
       "label": "Challenges in Developing Universal Audio Foundation Model",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_Zjpl84KCTvw",
@@ -2044,14 +2052,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_audio_language_models",
       "label": "Audio Language Models",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_OYN_GvAqv-A",
@@ -2064,14 +2072,14 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 3
     },
     {
       "id": "series_生成式ai導論_2024",
       "label": "生成式AI導論 2024",
       "type": "series",
       "source_file": null,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_5H2bVEmYDNg",
@@ -2084,7 +2092,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_CgQ3lUOpXgc",
@@ -2097,7 +2105,7 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_MAbGgsWKrg8",
@@ -2111,7 +2119,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_QbwQR9sjWbs",
@@ -2125,7 +2133,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_CNTondxaguo",
@@ -2139,7 +2147,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_MSnvknLywUc",
@@ -2153,7 +2161,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_Hk8Z0uhmWg4",
@@ -2167,7 +2175,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_rZzfqkfZhY8",
@@ -2181,7 +2189,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "concept_可解釋性",
@@ -2189,7 +2197,7 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_uhNsUCb2fJI",
@@ -2203,7 +2211,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_2QC9VEBkaqk",
@@ -2216,7 +2224,7 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_bJZTJ7MjYqg",
@@ -2231,7 +2239,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 8
     },
     {
       "id": "video_v12IKvF6Cj8",
@@ -2245,7 +2253,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_Q9cNkUPXUB8",
@@ -2259,7 +2267,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_cCpErV7To2o",
@@ -2274,7 +2282,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_inebiWdQW-4",
@@ -2288,7 +2296,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_lwe3_x50_uw",
@@ -2302,7 +2310,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_A3Yx35KrSN0",
@@ -2316,7 +2324,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_glBhOQ1_RkE",
@@ -2329,7 +2337,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_JGtqpQXfJis",
@@ -2342,7 +2350,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_AVIKFXLCPY8",
@@ -2355,7 +2363,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_wG8-IUtqu-s",
@@ -2368,14 +2376,14 @@
         "llm-and-transformers"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "series_80分鐘快速了解大型語言模型_5",
       "label": "80分鐘快速了解大型語言模型 (5",
       "type": "series",
       "source_file": null,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_VpKN3KvSK6c",
@@ -2388,14 +2396,14 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "series_生成式ai_2023",
       "label": "生成式AI 2023",
       "type": "series",
       "source_file": null,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_vxxPtDCb9Go",
@@ -2408,7 +2416,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_eQNADlR0jSs",
@@ -2421,7 +2429,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_OOvhBIIHITE",
@@ -2435,7 +2443,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_GBXm30qRAqg",
@@ -2449,7 +2457,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_m7Be7ppR6q0",
@@ -2463,14 +2471,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_機器學習2023",
       "label": "機器學習2023",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_HTAq-CPrU5s",
@@ -2484,7 +2492,7 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_m7dUFlX-yQI",
@@ -2497,14 +2505,14 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "series_生成式ai",
       "label": "生成式AI",
       "type": "series",
       "source_file": null,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_G44Lkj7XDsA",
@@ -2517,7 +2525,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_rK_rZFew1yc",
@@ -2530,7 +2538,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_67_M2qP5ssY",
@@ -2543,7 +2551,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_m6QchXTx6wA",
@@ -2556,7 +2564,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_73qwu77ZsTM",
@@ -2569,7 +2577,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_ifCDXFdeaaM",
@@ -2582,7 +2590,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_JbfcAaBT66U",
@@ -2595,7 +2603,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_azBugJzmz-o",
@@ -2608,7 +2616,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_z83Edfvgd9g",
@@ -2621,7 +2629,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_kslijcrYizE",
@@ -2634,7 +2642,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_V-3ksGCjehU",
@@ -2647,7 +2655,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_qycxA-xX_OY",
@@ -2660,7 +2668,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_SaZTJJNOCOY",
@@ -2673,7 +2681,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_HnzDaEiN_eg",
@@ -2687,7 +2695,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "concept_finetuning",
@@ -2695,7 +2703,7 @@
       "type": "concept",
       "source_file": "wiki/topics/llm-and-transformers.md",
       "mention_count": 3,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_aZ_jXZvxyVg",
@@ -2709,7 +2717,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_F58vJcGgjt0",
@@ -2723,7 +2731,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_ZID220t_MpI",
@@ -2736,7 +2744,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_AihBniegMKg",
@@ -2749,7 +2757,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_XLyPFnephpY",
@@ -2763,7 +2771,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_phQK8xZpgoU",
@@ -2777,7 +2785,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_A-6c584jxX8",
@@ -2790,7 +2798,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_UsaZhQ9bY2k",
@@ -2803,7 +2811,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_1ah7Qsri_c8",
@@ -2817,7 +2825,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_yiY4nPOzJEg",
@@ -2830,7 +2838,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_e0aKI2GGZNg",
@@ -2843,14 +2851,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_chatgpt_可能_是怎麼煉成的",
       "label": "ChatGPT (可能)是怎麼煉成的",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_sWz4e-DM4JU",
@@ -2863,7 +2871,7 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_KPcA8QCTm5U",
@@ -2876,14 +2884,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_alphatensor",
       "label": "AlphaTensor",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_QNfymMRUg3M",
@@ -2896,14 +2904,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_機器學習_2022",
       "label": "機器學習 2022",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_Pal2DbmiYpk",
@@ -2916,7 +2924,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_uHKXwwQ7A_s",
@@ -2929,14 +2937,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_機器學習2022",
       "label": "機器學習2022",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_LP3q72MwE7A",
@@ -2949,7 +2957,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_68lwXWFzCmg",
@@ -2962,7 +2970,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_z-lRPFFYVJc",
@@ -2975,7 +2983,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_lMIN1iKYNmA",
@@ -2989,7 +2997,7 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_NzElV8jTNmw",
@@ -3002,7 +3010,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_yHoAq1IT_og",
@@ -3016,7 +3024,7 @@
         "llm-and-transformers"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "concept_注意力機制",
@@ -3024,7 +3032,7 @@
       "type": "concept",
       "source_file": "wiki/topics/llm-and-transformers.md",
       "mention_count": 3,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_yXd2D5J0QDU",
@@ -3037,7 +3045,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_xQXh3fSvD1A",
@@ -3050,7 +3058,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video__j9MVVcvyZI",
@@ -3063,7 +3071,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_7XZR0-4uS5s",
@@ -3076,7 +3084,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_GTjwYzFG54E",
@@ -3089,14 +3097,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_superb",
       "label": "SUPERB",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_MpsVE60iRLM",
@@ -3109,7 +3117,7 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_mGRdOGdOZ-4",
@@ -3122,7 +3130,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_network_compression",
@@ -3130,14 +3138,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_36",
       "label": "[ML 2021 (English version)] Lecture 36",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_CB0a3aBwND8",
@@ -3150,14 +3158,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_35",
       "label": "[ML 2021 (English version)] Lecture 35",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_JXDjNh2qlfc",
@@ -3170,14 +3178,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "series_機器學習2021",
       "label": "機器學習2021",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_Q68Eh-wm1Ts",
@@ -3190,7 +3198,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_xoastiYx9JU",
@@ -3203,7 +3211,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_xrlbLPaq_Og",
@@ -3216,7 +3224,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_9H3ShV57lHs",
@@ -3229,14 +3237,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_32",
       "label": "[ML 2021 (English version)] Lecture 32",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_Cf-WkM-Xef0",
@@ -3249,14 +3257,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_30",
       "label": "[ML 2021 (English version)] Lecture 30",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_pibO_5JhQ4U",
@@ -3269,14 +3277,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_31",
       "label": "[ML 2021 (English version)] Lecture 31",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_yAX8Ydfek_I",
@@ -3289,7 +3297,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_life_long",
@@ -3297,14 +3305,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_33",
       "label": "[ML 2021 (English version)] Lecture 33",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_-2r4cqDP4BY",
@@ -3317,14 +3325,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_34",
       "label": "[ML 2021 (English version)] Lecture 34",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_utk3EnAUh-g",
@@ -3337,7 +3345,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_Y9Jay_vxOsM",
@@ -3351,7 +3359,7 @@
         "model-editing-and-merging"
       ],
       "metadata_only": true,
-      "community": 6
+      "community": 2
     },
     {
       "id": "concept_life_long_learning",
@@ -3359,7 +3367,7 @@
       "type": "concept",
       "source_file": "wiki/topics/model-editing-and-merging.md",
       "mention_count": 2,
-      "community": 6
+      "community": 2
     },
     {
       "id": "video_rWF9sg5w6Zk",
@@ -3373,7 +3381,7 @@
         "model-editing-and-merging"
       ],
       "metadata_only": true,
-      "community": 6
+      "community": 2
     },
     {
       "id": "video_75rZwxKBAf0",
@@ -3386,7 +3394,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_73YyF1gmIus",
@@ -3399,7 +3407,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_kk6DqWreLeU",
@@ -3412,7 +3420,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "concept_actor_critic",
@@ -3420,7 +3428,7 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 0
     },
     {
       "id": "video_jbN0oYLtXps",
@@ -3433,14 +3441,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_29",
       "label": "[ML 2021 (English version)] Lecture 29",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_8AKqH6V9kjE",
@@ -3453,7 +3461,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_domain_adaptation",
@@ -3461,14 +3469,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_27",
       "label": "[ML 2021 (English version)] Lecture 27",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_0oucZNfBXlI",
@@ -3481,14 +3489,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_28",
       "label": "[ML 2021 (English version)] Lecture 28",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_5VPy7OGlGMQ",
@@ -3501,7 +3509,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_explainable_ml",
@@ -3509,14 +3517,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_26",
       "label": "[ML 2021 (English version)] Lecture 26",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_US8DFaAZcp4",
@@ -3529,7 +3537,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_XWukX-ayIrs",
@@ -3542,7 +3550,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_0ayIPqbdHYQ",
@@ -3555,7 +3563,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_Mnk_oUrgppM",
@@ -3568,7 +3576,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_4rVD1EOaAX4",
@@ -3581,14 +3589,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_25",
       "label": "[ML 2021 (English version)] Lecture 25",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_kRmBiV2X810",
@@ -3601,7 +3609,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_adversarial_attack",
@@ -3609,14 +3617,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 2
     },
     {
       "id": "series_ml_2021_english_version_lecture_24",
       "label": "[ML 2021 (English version)] Lecture 24",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_WQY85vaQfTI",
@@ -3629,7 +3637,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_z-Q9ia5H2Ig",
@@ -3642,7 +3650,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_6sAf24QvJEY",
@@ -3655,14 +3663,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_20",
       "label": "[ML 2021 (English version)] Lecture 20",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_E7wlA85RxcI",
@@ -3675,7 +3683,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_auto_encoder",
@@ -3683,14 +3691,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 2
     },
     {
       "id": "series_ml_2021_english_version_lecture_21",
       "label": "[ML 2021 (English version)] Lecture 21",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_xw6K4naFWFg",
@@ -3703,14 +3711,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_23",
       "label": "[ML 2021 (English version)] Lecture 23",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_PsBHWq9KKqk",
@@ -3723,14 +3731,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_22",
       "label": "[ML 2021 (English version)] Lecture 22",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_JZvEzb5PV3U",
@@ -3743,7 +3751,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_xGQKhbjrFRk",
@@ -3756,7 +3764,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_3oHlf8-J3Nc",
@@ -3769,7 +3777,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_WY_E0Sd4K80",
@@ -3782,7 +3790,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_XcAmPtMQqS8",
@@ -3795,14 +3803,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 3
     },
     {
       "id": "series_ml_2021_english_version_lecture_16",
       "label": "[ML 2021 (English version)] Lecture 16",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 3
     },
     {
       "id": "video_6xRAiKAYPxU",
@@ -3815,14 +3823,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 3
     },
     {
       "id": "series_ml_2021_english_version_lecture_17",
       "label": "[ML 2021 (English version)] Lecture 17",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 3
     },
     {
       "id": "video_mEcVirwmrkA",
@@ -3835,14 +3843,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_18",
       "label": "[ML 2021 (English version)] Lecture 18",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_L-ZQ-6vKOxU",
@@ -3855,14 +3863,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_19",
       "label": "[ML 2021 (English version)] Lecture 19",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_ExXA05i8DEQ",
@@ -3875,7 +3883,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_gh0hewYkjgo",
@@ -3888,7 +3896,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_e422eloJ0W4",
@@ -3901,7 +3909,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_wulqhgnDr7E",
@@ -3915,7 +3923,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_MP0BnVH2yOo",
@@ -3930,7 +3938,7 @@
         "evaluation-and-benchmarks"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 2
     },
     {
       "id": "video_kFhv1I_fbZI",
@@ -3943,14 +3951,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 3
     },
     {
       "id": "series_ml_2021_english_version_lecture_15",
       "label": "[ML 2021 (English version)] Lecture 15",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 3
     },
     {
       "id": "video_Mb9kddLfLRI",
@@ -3963,14 +3971,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 3
     },
     {
       "id": "series_ml_2021_english_version_lecture_14",
       "label": "[ML 2021 (English version)] Lecture 14",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 3
     },
     {
       "id": "video_fPTj5Zh1ACo",
@@ -3983,14 +3991,14 @@
         "llm-and-transformers"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "series_ml_2021_english_version_lecture_13",
       "label": "[ML 2021 (English version)] Lecture 13",
       "type": "series",
       "source_file": null,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_zmOuJkH9l9M",
@@ -4003,14 +4011,14 @@
         "llm-and-transformers"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "series_ml_2021_english_version_lecture_12",
       "label": "[ML 2021 (English version)] Lecture 12",
       "type": "series",
       "source_file": null,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_t3u3WshJQV8",
@@ -4023,14 +4031,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_7",
       "label": "[ML 2021 (English version)] Lecture 7",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_zeCDPYZli0k",
@@ -4043,14 +4051,14 @@
         "llm-and-transformers"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "series_ml_2021_english_version_lecture_11",
       "label": "[ML 2021 (English version)] Lecture 11",
       "type": "series",
       "source_file": null,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_8yf-tU7zm7w",
@@ -4063,14 +4071,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_6",
       "label": "[ML 2021 (English version)] Lecture 6",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_jNY1WBb8l4U",
@@ -4084,7 +4092,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_4OWp0wDu6Xw",
@@ -4098,7 +4106,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_N6aRv06iv2g",
@@ -4112,7 +4120,7 @@
         "llm-and-transformers"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_gmsMY5kc-zw",
@@ -4126,7 +4134,7 @@
         "llm-and-transformers"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_n9TlOhRjYoc",
@@ -4140,7 +4148,7 @@
         "llm-and-transformers"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_BABPWOkSbLE",
@@ -4153,7 +4161,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "concept_batch_normalization",
@@ -4161,7 +4169,7 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_0djMUi2-uV4",
@@ -4174,14 +4182,14 @@
         "llm-and-transformers"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "series_ml_2021_english_version_lecture_10",
       "label": "[ML 2021 (English version)] Lecture 10",
       "type": "series",
       "source_file": null,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_I4eLIsPM9Yc",
@@ -4194,7 +4202,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_convolutional_neural_networks",
@@ -4202,14 +4210,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_9",
       "label": "[ML 2021 (English version)] Lecture 9",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_jqVONJ-Wn8w",
@@ -4222,14 +4230,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_8",
       "label": "[ML 2021 (English version)] Lecture 8",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_MNoEQ9w-AbE",
@@ -4242,14 +4250,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_5",
       "label": "[ML 2021 (English version)] Lecture 5",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_yz7QS1I6omw",
@@ -4262,14 +4270,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_4",
       "label": "[ML 2021 (English version)] Lecture 4",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_3qgKpBptyFY",
@@ -4282,14 +4290,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_3",
       "label": "[ML 2021 (English version)] Lecture 3",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_OP5HcXJg2Aw",
@@ -4302,7 +4310,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_hYdO9CscNes",
@@ -4316,7 +4324,7 @@
         "llm-and-transformers"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_HYUXEeh3kwY",
@@ -4329,7 +4337,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_O2VkP8dJ5FE",
@@ -4342,7 +4350,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_QW6uINn7uGk",
@@ -4355,7 +4363,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_zzbr1h9sF54",
@@ -4368,7 +4376,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_WeHM2xpYQpw",
@@ -4381,7 +4389,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_O69EqgzUl9U",
@@ -4394,7 +4402,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_ml_introduction",
@@ -4402,14 +4410,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_2",
       "label": "[ML 2021 (English version)] Lecture 2",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_Y87Ct23H3Kw",
@@ -4422,14 +4430,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_2021_english_version_lecture_1",
       "label": "[ML 2021 (English version)] Lecture 1",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_bHcJCp2Fyxs",
@@ -4442,7 +4450,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_Ye018rCVvOo",
@@ -4455,7 +4463,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 2
     },
     {
       "id": "video_Jjy6ER0bHv8",
@@ -4468,7 +4476,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "concept_ml_lecture",
@@ -4476,7 +4484,7 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 7
+      "community": 6
     },
     {
       "id": "concept_recurrent_neural_network",
@@ -4484,7 +4492,7 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 7
+      "community": 6
     },
     {
       "id": "concept_part_i",
@@ -4492,14 +4500,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_21_1",
       "label": "ML Lecture 21-1",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_k81atCYWpzg",
@@ -4512,7 +4520,7 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_RJq_B416V1Q",
@@ -4526,15 +4534,7 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 0
-    },
-    {
-      "id": "concept_understanding_self",
-      "label": "Understanding Self",
-      "type": "concept",
-      "source_file": "wiki/topics/llm-and-transformers.md",
-      "mention_count": 1,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_7mf7nSh8dGE",
@@ -4547,14 +4547,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_interspeech_2020_speechbert",
       "label": "[INTERSPEECH 2020] SpeechBERT",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_rztqT8RXyuI",
@@ -4567,14 +4567,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_interspeech_2020_darts_asr",
       "label": "[INTERSPEECH 2020] DARTS-ASR",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_3b1S20iVyMY",
@@ -4587,7 +4587,7 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_rsbT7X2-g7E",
@@ -4600,14 +4600,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_interspeech_2020_wg_wavenet",
       "label": "[INTERSPEECH 2020] WG-WaveNet",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_JWGVfVSvQwc",
@@ -4620,7 +4620,7 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "concept_one_shot",
@@ -4628,14 +4628,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_interspeech_2020_vqvc",
       "label": "[INTERSPEECH 2020] VQVC+",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_FEnFCtNILtI",
@@ -4648,7 +4648,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_-zIPQ8hcsps",
@@ -4661,7 +4661,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_pZfvmcjIrpE",
@@ -4674,7 +4674,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_OHgibs_pDN8",
@@ -4687,7 +4687,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_linear_equations",
@@ -4695,7 +4695,7 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_zchDGSfr_yU",
@@ -4708,7 +4708,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_6wPSfjwm_qk",
@@ -4721,7 +4721,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_OMdCNhJp60M",
@@ -4734,7 +4734,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_cf-WpQX70Vs",
@@ -4747,7 +4747,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_7qwaAhcD2og",
@@ -4760,7 +4760,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_Ww3eAfLZjME",
@@ -4773,7 +4773,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_I3hyvWN78Is",
@@ -4786,7 +4786,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_J-U_zKg15f4",
@@ -4799,7 +4799,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_sc7dicXFoZE",
@@ -4812,7 +4812,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_SNT7LAGsLDY",
@@ -4825,7 +4825,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_OybkIdSNKSc",
@@ -4838,7 +4838,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 5
+      "community": 4
     },
     {
       "id": "concept_po_chuang",
@@ -4846,7 +4846,7 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 5
+      "community": 4
     },
     {
       "id": "concept_shun_po",
@@ -4854,14 +4854,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 5
+      "community": 4
     },
     {
       "id": "series_acl_2020_worse_wer_but_better_bleu_speaker",
       "label": "[ACL 2020] Worse WER, but Better BLEU? (Speaker",
       "type": "series",
       "source_file": null,
-      "community": 5
+      "community": 4
     },
     {
       "id": "video_tRDF_w700Uw",
@@ -4874,7 +4874,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_question_answering",
@@ -4882,7 +4882,7 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_SX6_1-mvkWk",
@@ -4895,7 +4895,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_mk6v2raVGfk",
@@ -4908,7 +4908,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_ZR2AZgupIpc",
@@ -4921,7 +4921,7 @@
         "agents-and-context"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_alpha_star",
@@ -4929,7 +4929,7 @@
       "type": "concept",
       "source_file": "wiki/topics/agents-and-context.md",
       "mention_count": 1,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_large_scale",
@@ -4937,7 +4937,7 @@
       "type": "concept",
       "source_file": "wiki/topics/agents-and-context.md",
       "mention_count": 1,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_hide_and_seek",
@@ -4945,14 +4945,14 @@
       "type": "concept",
       "source_file": "wiki/topics/agents-and-context.md",
       "mention_count": 1,
-      "community": 0
+      "community": 8
     },
     {
       "id": "series_ta_補充課_rl",
       "label": "[TA 補充課] RL",
       "type": "series",
       "source_file": null,
-      "community": 0
+      "community": 8
     },
     {
       "id": "video_h_Lptoq8spQ",
@@ -4965,7 +4965,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_DOG1L9lvsDY",
@@ -4978,7 +4978,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_0KNvAYb1emQ",
@@ -4991,7 +4991,7 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "concept_audio_bert",
@@ -4999,7 +4999,7 @@
       "type": "concept",
       "source_file": "wiki/topics/speech-and-audio.md",
       "mention_count": 2,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_NN9Q9Jhtvvg",
@@ -5012,7 +5012,7 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_gRfTfXCe3LA",
@@ -5025,7 +5025,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_9erBrs-VIqc",
@@ -5038,7 +5038,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_8rDN1jUI82g",
@@ -5051,7 +5051,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_w0-7BO09kdo",
@@ -5064,7 +5064,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_QBbeIsiqw-U",
@@ -5077,7 +5077,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_ZGnKfoUb7h8",
@@ -5090,7 +5090,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_-DQBMAULXX8",
@@ -5103,7 +5103,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_gvfLq4sPW4k",
@@ -5116,7 +5116,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_-C8RUrWb7F8",
@@ -5129,7 +5129,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_anomaly_detection",
@@ -5137,7 +5137,7 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_pHQ2lcDgoFs",
@@ -5150,7 +5150,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_hTNE8iFXEMU",
@@ -5163,7 +5163,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_2BemmceHKOU",
@@ -5176,7 +5176,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_WROBoprE0js",
@@ -5189,7 +5189,7 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "concept_speech_recognition",
@@ -5197,7 +5197,7 @@
       "type": "concept",
       "source_file": "wiki/topics/speech-and-audio.md",
       "mention_count": 8,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_9CCn9uPfJ64",
@@ -5210,14 +5210,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ta_補充課_network_compression_1_2",
       "label": "[TA 補充課] Network Compression (1/2)",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_w6gdV2_PtsE",
@@ -5230,14 +5230,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ta_補充課_network_compression_2_2",
       "label": "[TA 補充課] Network Compression (2/2)",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_jvyKmU4OM3c",
@@ -5250,7 +5250,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_cW04Sb02lU4",
@@ -5263,7 +5263,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_language_modeling",
@@ -5271,14 +5271,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_iclr_2020_language_modeling_for_lifelong_language_learning_speaker",
       "label": "[ICLR 2020] Language Modeling for Lifelong Language Learning (Speaker",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_lluMBz5AoOg",
@@ -5291,7 +5291,7 @@
         "llm-and-transformers"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_Bywo7m6ySlk",
@@ -5304,14 +5304,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_dlhlp_2020_bert_and_its_family",
       "label": "[DLHLP 2020] BERT and its family",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_qf0j0A0-SVM",
@@ -5324,14 +5324,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 5
+      "community": 4
     },
     {
       "id": "series_icassp_2020_training_code_switching_language_model_with_monolingual_data_speaker",
       "label": "[ICASSP 2020] TRAINING CODE-SWITCHING LANGUAGE MODEL WITH MONOLINGUAL DATA (Speaker",
       "type": "series",
       "source_file": null,
-      "community": 5
+      "community": 4
     },
     {
       "id": "video_RUhkc6ihyYI",
@@ -5344,14 +5344,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_icassp_2020_interrupted_and_cascaded_pit_for_speech_separation_speaker",
       "label": "[ICASSP 2020] INTERRUPTED AND CASCADED PIT FOR SPEECH SEPARATION (Speaker",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_1j46kdawA4Q",
@@ -5364,14 +5364,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_icassp_2020_asr_with_word_embedding_regularization_and_fused_decoding_speaker",
       "label": "[ICASSP 2020] ASR WITH WORD EMBEDDING REGULARIZATION AND FUSED DECODING (Speaker",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_sKwz5GvxGgI",
@@ -5384,14 +5384,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_icassp_2020_defense_against_adversarial_attacks_on_spoofing_countermeasures_speaker",
       "label": "[ICASSP 2020] Defense against adversarial attacks on spoofing countermeasures (Speaker",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_JlOSyRNFjOw",
@@ -5404,14 +5404,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_icassp_2020_mockingjay",
       "label": "[ICASSP 2020] MOCKINGJAY",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_W3t8FHgV90M",
@@ -5424,14 +5424,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_icassp_2020_one_shot_voice_conversion_by_vector_quantization_speaker",
       "label": "[ICASSP 2020] ONE-SHOT VOICE CONVERSION BY VECTOR QUANTIZATION (Speaker",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_6gtn7H-pWr8",
@@ -5444,14 +5444,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_icassp_2020_what_does_a_network_layer_hear_speaker",
       "label": "[ICASSP 2020] WHAT DOES A NETWORK LAYER HEAR? (Speaker",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_goav0eXKPwg",
@@ -5464,14 +5464,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_icassp_2020_meta_learning_for_end_to_end_low_resource_speech_recognition_speaker",
       "label": "[ICASSP 2020] META LEARNING FOR END-TO-END LOW-RESOURCE SPEECH RECOGNITION (Speaker",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_cnZdfLSqwiE",
@@ -5484,14 +5484,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_icassp_2020_towards_unsupervised_speech_recognition_and_synthesis_speaker",
       "label": "[ICASSP 2020] TOWARDS UNSUPERVISED SPEECH RECOGNITION AND SYNTHESIS (Speaker",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_1_gRK9EIQpc",
@@ -5504,7 +5504,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_tFBrqPPxWzE",
@@ -5517,7 +5517,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_6g2aPc0ol2Y",
@@ -5530,7 +5530,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_tfpKIZIWidA",
@@ -5543,7 +5543,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_PaHhMlxFPyU",
@@ -5556,7 +5556,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_Eau1Fr2x86Y",
@@ -5569,7 +5569,7 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "concept_speech_synthesis",
@@ -5577,14 +5577,14 @@
       "type": "concept",
       "source_file": "wiki/topics/speech-and-audio.md",
       "mention_count": 2,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_dlhlp_2020_speech_synthesis_2_2",
       "label": "[DLHLP 2020] Speech Synthesis (2/2)",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_LsdiOt0wiWM",
@@ -5597,7 +5597,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_z3yvxvyP-lE",
@@ -5610,7 +5610,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_G0O1A7lONSY",
@@ -5623,7 +5623,7 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "concept_speech_separation",
@@ -5631,14 +5631,14 @@
       "type": "concept",
       "source_file": "wiki/topics/speech-and-audio.md",
       "mention_count": 2,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_dlhlp_2020_speech_separation_2_2",
       "label": "[DLHLP 2020] Speech Separation (2/2)",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_DMxKeHW8KdM",
@@ -5651,14 +5651,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_dlhlp_2020_speech_synthesis_1_2",
       "label": "[DLHLP 2020] Speech Synthesis (1/2)",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_e03YKGHXnL8",
@@ -5671,7 +5671,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_4pUmZ8hXlHM",
@@ -5684,7 +5684,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_kQeezFrNoOg",
@@ -5697,7 +5697,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_tovg5ZxNgIo",
@@ -5710,14 +5710,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_dlhlp_2020_speech_separation_1_2",
       "label": "[DLHLP 2020] Speech Separation (1/2)",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_JUWVuF2ucTk",
@@ -5730,14 +5730,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_dlhlp_2020_voice_conversion_2_2",
       "label": "[DLHLP 2020] Voice Conversion (2/2)",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_M9ht8vsVEw8",
@@ -5750,7 +5750,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_graph_neural_network",
@@ -5758,7 +5758,7 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_eybCCtNKwzA",
@@ -5771,7 +5771,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_Jj6blc8UijY",
@@ -5784,14 +5784,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_dlhlp_2020_voice_conversion_1_2",
       "label": "[DLHLP 2020] Voice Conversion (1/2)",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_dymfkWtVUdo",
@@ -5804,14 +5804,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_dlhlp_2020_speech_recognition_7_7",
       "label": "[DLHLP 2020] Speech Recognition (7/7)",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_L519dCHUCog",
@@ -5824,7 +5824,7 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "concept_rnn_t",
@@ -5832,14 +5832,14 @@
       "type": "concept",
       "source_file": "wiki/topics/speech-and-audio.md",
       "mention_count": 3,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_dlhlp_2020_speech_recognition_6_7",
       "label": "[DLHLP 2020] Speech Recognition (6/7)",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_5SSVra6IJY4",
@@ -5852,14 +5852,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_dlhlp_2020_speech_recognition_5_7",
       "label": "[DLHLP 2020] Speech Recognition (5/7)",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_XWTGY_PNABo",
@@ -5872,14 +5872,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_dlhlp_2020_speech_recognition_4_7",
       "label": "[DLHLP 2020] Speech Recognition (4/7)",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_CGuLuBaLIeI",
@@ -5892,14 +5892,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_dlhlp_2020_speech_recognition_3_7",
       "label": "[DLHLP 2020] Speech Recognition (3/7)",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_BdUeBa6NbXA",
@@ -5912,14 +5912,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_dlhlp_2020_speech_recognition_2_7",
       "label": "[DLHLP 2020] Speech Recognition (2/7)",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_nER51ZyJaCQ",
@@ -5932,7 +5932,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_AIKu43goh-8",
@@ -5945,14 +5945,14 @@
         "speech-and-audio"
       ],
       "metadata_only": true,
-      "community": 8
+      "community": 7
     },
     {
       "id": "series_dlhlp_2020_speech_recognition_1_7",
       "label": "[DLHLP 2020] Speech Recognition (1/7)",
       "type": "series",
       "source_file": null,
-      "community": 8
+      "community": 7
     },
     {
       "id": "video_c9TwBeWAj_U",
@@ -5965,14 +5965,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_machine_learning_2020",
       "label": "Machine Learning (2020)",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_uXY18nzdSsM",
@@ -5985,7 +5985,7 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 3
     },
     {
       "id": "video_UYPa347-DdE",
@@ -5998,7 +5998,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_ePimv_k-H24",
@@ -6011,14 +6011,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_meta_learning",
       "label": "Meta Learning",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_ugWDIIOHtPA",
@@ -6031,7 +6031,7 @@
         "llm-and-transformers"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_ufcKFjdpT98",
@@ -6044,7 +6044,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_f0rOMyZSZi4",
@@ -6057,7 +6057,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_L0TOXlNpCJ8",
@@ -6070,7 +6070,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_fMsNf0ufYnY",
@@ -6083,7 +6083,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_mzZzn8fBvEs",
@@ -6096,7 +6096,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_7B8Cx7woQk4",
@@ -6109,7 +6109,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_dPp8rCAnU_A",
@@ -6122,7 +6122,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_6ZWu4L7XOiQ",
@@ -6135,7 +6135,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_DRLsw4CshqU",
@@ -6148,7 +6148,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_ZRyoCBCFMOs",
@@ -6161,7 +6161,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_hhsfEaVaeQU",
@@ -6174,7 +6174,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_semSxPP2Yzg",
@@ -6187,7 +6187,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_metric_based",
@@ -6195,7 +6195,7 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_scK2EIT7klw",
@@ -6208,7 +6208,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_yyKaACh_j3M",
@@ -6221,7 +6221,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_p0Tn8oZWZbQ",
@@ -6234,7 +6234,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_G_xYYq772NQ",
@@ -6247,7 +6247,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_NjZygLDXxjg",
@@ -6260,7 +6260,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_9jJe2AD35P8",
@@ -6273,7 +6273,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_mxqzGwP_Qys",
@@ -6286,7 +6286,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_3z997JhL9Oo",
@@ -6299,7 +6299,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_dV-Crj8hsJM",
@@ -6312,7 +6312,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_vUwOA3SNb_E",
@@ -6325,7 +6325,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_knaAdp5uWRg",
@@ -6338,7 +6338,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_PznN0w7dYc0",
@@ -6351,7 +6351,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_9k4ND-xjcgM",
@@ -6364,7 +6364,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_EkAqYbpCYAc",
@@ -6377,7 +6377,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_8uo3kJ509hA",
@@ -6390,7 +6390,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_X7aWP6LngEs",
@@ -6403,7 +6403,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_UgLx4rjcCO8",
@@ -6416,7 +6416,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_W37WANBMUTM",
@@ -6429,7 +6429,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_D4aN7urRp3E",
@@ -6442,7 +6442,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_CubL463rhsQ",
@@ -6455,7 +6455,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_7qT5P9KJnWo",
@@ -6468,7 +6468,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_YIuBHB9Ejok",
@@ -6481,7 +6481,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_K1mWgthGS-A",
@@ -6494,7 +6494,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_OjqIVSwly4k",
@@ -6507,7 +6507,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_gotiBlOu18I",
@@ -6520,7 +6520,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_1xnhQbAV1m0",
@@ -6533,7 +6533,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_yORbWn7UsBs",
@@ -6546,7 +6546,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_K6TpPWLc52c",
@@ -6559,7 +6559,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_pNpk6DPYUh8",
@@ -6572,7 +6572,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_lnjrn3bF9lA",
@@ -6585,7 +6585,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_ah_Ttx6cIVU",
@@ -6598,7 +6598,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_attack_ml_models",
@@ -6606,7 +6606,7 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_KH48zq2RfBA",
@@ -6619,7 +6619,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_z2nmPDLEXI0",
@@ -6632,7 +6632,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_2mgLPZJOHNk",
@@ -6645,7 +6645,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_qjnMoWmn1FQ",
@@ -6658,7 +6658,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_F9N5zF7N0qY",
@@ -6671,7 +6671,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_zOdg05BwE7I",
@@ -6684,7 +6684,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_NI6yb0WgMBM",
@@ -6697,7 +6697,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_6W8FqUGYyDo",
@@ -6710,7 +6710,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_LmFWzmn2rFY",
@@ -6723,7 +6723,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_Fh1xFBktRLQ",
@@ -6736,7 +6736,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_XwkHOUPbc0Q",
@@ -6749,7 +6749,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_ueDlm2FkCnw",
@@ -6762,7 +6762,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_cYrNjLxkoXs",
@@ -6775,7 +6775,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_gDp2LXGnVLQ",
@@ -6788,7 +6788,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_XnyM3-xtxHs",
@@ -6801,7 +6801,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_7E7ZzTJFeng",
@@ -6814,7 +6814,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_linear_algebra_lecture",
@@ -6822,7 +6822,7 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_general_vectors",
@@ -6830,7 +6830,7 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_part_ii",
@@ -6838,14 +6838,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_35",
       "label": "Linear Algebra Lecture 35",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_o4dPfMkz_lw",
@@ -6858,14 +6858,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_34",
       "label": "Linear Algebra Lecture 34",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_OEJ0wxxLO7M",
@@ -6878,14 +6878,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_36",
       "label": "Linear Algebra Lecture 36",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_0ijUQ-RfN3I",
@@ -6898,14 +6898,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_33",
       "label": "Linear Algebra Lecture 33",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_TmDYxL7HV68",
@@ -6918,14 +6918,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_32",
       "label": "Linear Algebra Lecture 32",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_PzqVLldlHTE",
@@ -6938,14 +6938,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_31",
       "label": "Linear Algebra Lecture 31",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_98-0Q1ed3sM",
@@ -6958,7 +6958,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_hxI7stenqaw",
@@ -6971,14 +6971,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_29",
       "label": "Linear Algebra Lecture 29",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_6WJikUaKKNo",
@@ -6991,14 +6991,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_30",
       "label": "Linear Algebra Lecture 30",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_pSg9TG_U_fY",
@@ -7011,14 +7011,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_28",
       "label": "Linear Algebra Lecture 28",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_L7Y8wB3xzEc",
@@ -7031,14 +7031,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_27",
       "label": "Linear Algebra Lecture 27",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_TsB5_BiMFoo",
@@ -7051,14 +7051,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_26",
       "label": "Linear Algebra Lecture 26",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_1RyHRIP8QGg",
@@ -7071,14 +7071,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_25",
       "label": "Linear Algebra Lecture 25",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_005nG8ZZVDE",
@@ -7091,14 +7091,14 @@
         "llm-and-transformers"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "series_linear_algebra_lecture_24",
       "label": "Linear Algebra Lecture 24",
       "type": "series",
       "source_file": null,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_7fXtSUrKND0",
@@ -7111,14 +7111,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_23",
       "label": "Linear Algebra Lecture 23",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_IrAdVhE6VqI",
@@ -7131,7 +7131,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_coordinate_system",
@@ -7139,14 +7139,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_22",
       "label": "Linear Algebra Lecture 22",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_im3kTm9jGEM",
@@ -7159,14 +7159,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_21",
       "label": "Linear Algebra Lecture 21",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_GB48DyvC14o",
@@ -7179,14 +7179,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_19",
       "label": "Linear Algebra Lecture 19",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_aW0JVmpIxas",
@@ -7199,14 +7199,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_20",
       "label": "Linear Algebra Lecture 20",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_pXtXnY2b2-E",
@@ -7219,14 +7219,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_18",
       "label": "Linear Algebra Lecture 18",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_d43mGvCnuBU",
@@ -7239,14 +7239,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_16",
       "label": "Linear Algebra Lecture 16",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_vV2ff0xFPbw",
@@ -7259,14 +7259,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_17",
       "label": "Linear Algebra Lecture 17",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_fOK-bLERPUM",
@@ -7279,14 +7279,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_15",
       "label": "Linear Algebra Lecture 15",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_mSMh27SxKbM",
@@ -7299,14 +7299,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_13",
       "label": "Linear Algebra Lecture 13",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_UaBRpTMX98c",
@@ -7319,14 +7319,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_12",
       "label": "Linear Algebra Lecture 12",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_G-afSDZgEVI",
@@ -7339,14 +7339,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_11",
       "label": "Linear Algebra Lecture 11",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_ObibwhRY8xc",
@@ -7359,14 +7359,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_10",
       "label": "Linear Algebra Lecture 10",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_yO8lDzf4jMs",
@@ -7379,14 +7379,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_14",
       "label": "Linear Algebra Lecture 14",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_YzAg9l9FO7Y",
@@ -7399,7 +7399,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_solving_system",
@@ -7407,14 +7407,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_9",
       "label": "Linear Algebra Lecture 9",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_zuTH1WdREkY",
@@ -7427,14 +7427,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_8",
       "label": "Linear Algebra Lecture 8",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_34HlThINCsc",
@@ -7447,14 +7447,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_7",
       "label": "Linear Algebra Lecture 7",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_-E67rZSjTNI",
@@ -7467,14 +7467,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_6",
       "label": "Linear Algebra Lecture 6",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_K2zzvo28X0g",
@@ -7487,14 +7487,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_5",
       "label": "Linear Algebra Lecture 5",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_FInagysEI0o",
@@ -7507,14 +7507,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_4",
       "label": "Linear Algebra Lecture 4",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_tpNFMU7KsEU",
@@ -7527,14 +7527,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_3",
       "label": "Linear Algebra Lecture 3",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_ZexDYHpmID8",
@@ -7547,14 +7547,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_2",
       "label": "Linear Algebra Lecture 2",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_uUrt8xgdMbs",
@@ -7567,14 +7567,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_linear_algebra_lecture_1",
       "label": "Linear Algebra Lecture 1",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_oITx1yP2hxE",
@@ -7587,7 +7587,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_Rd63BhmLr-M",
@@ -7600,7 +7600,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_N5wfwAnVZlk",
@@ -7613,7 +7613,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_Q3xi_stxlUY",
@@ -7626,7 +7626,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_n6rcXu9R23s",
@@ -7639,7 +7639,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_R0LP4HelkIc",
@@ -7652,7 +7652,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_fs7fNqEqwnE",
@@ -7665,7 +7665,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_It7qtXah9YU",
@@ -7678,7 +7678,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_TR937eL1WLc",
@@ -7691,7 +7691,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_Lobg0qVR-y0",
@@ -7704,7 +7704,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_95hyyAMJieU",
@@ -7717,7 +7717,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_LGAMeOgAwU4",
@@ -7730,7 +7730,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_j82QLgfhFiY",
@@ -7743,7 +7743,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 0
     },
     {
       "id": "concept_drl_lecture",
@@ -7751,14 +7751,14 @@
       "type": "concept",
       "source_file": "wiki/topics/evaluation-and-benchmarks.md",
       "mention_count": 1,
-      "community": 4
+      "community": 0
     },
     {
       "id": "series_drl_lecture_6",
       "label": "DRL Lecture 6",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 0
     },
     {
       "id": "video_-5cCWhu0OaM",
@@ -7771,7 +7771,7 @@
         "evaluation-and-benchmarks"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 0
     },
     {
       "id": "concept_sparse_reward",
@@ -7779,14 +7779,14 @@
       "type": "concept",
       "source_file": "wiki/topics/evaluation-and-benchmarks.md",
       "mention_count": 1,
-      "community": 4
+      "community": 0
     },
     {
       "id": "series_drl_lecture_7",
       "label": "DRL Lecture 7",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 0
     },
     {
       "id": "video_tnPVcec22cg",
@@ -7799,7 +7799,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 0
     },
     {
       "id": "concept_q_learning",
@@ -7807,14 +7807,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 4
+      "community": 0
     },
     {
       "id": "series_drl_lecture_5",
       "label": "DRL Lecture 5",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 0
     },
     {
       "id": "video_rl_ozvqQUU8",
@@ -7827,7 +7827,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_imitation_learning",
@@ -7835,14 +7835,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_drl_lecture_8",
       "label": "DRL Lecture 8",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_OAKAZhFmYoI",
@@ -7855,14 +7855,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 0
     },
     {
       "id": "series_drl_lecture_2",
       "label": "DRL Lecture 2",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 0
     },
     {
       "id": "video_z95ZYgPgXOY",
@@ -7875,14 +7875,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 0
     },
     {
       "id": "series_drl_lecture_1",
       "label": "DRL Lecture 1",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 0
     },
     {
       "id": "video_o_g9JUMw1Oc",
@@ -7895,14 +7895,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 0
     },
     {
       "id": "series_drl_lecture_3",
       "label": "DRL Lecture 3",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 0
     },
     {
       "id": "video_2-zGCx4iv_k",
@@ -7915,14 +7915,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 0
     },
     {
       "id": "series_drl_lecture_4",
       "label": "DRL Lecture 4",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 0
     },
     {
       "id": "video_IB_ADssBomk",
@@ -7935,7 +7935,7 @@
         "evaluation-and-benchmarks"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 0
     },
     {
       "id": "concept_gan_lecture",
@@ -7943,7 +7943,7 @@
       "type": "concept",
       "source_file": "wiki/topics/evaluation-and-benchmarks.md",
       "mention_count": 1,
-      "community": 4
+      "community": 0
     },
     {
       "id": "concept_concluding_remarks",
@@ -7951,14 +7951,14 @@
       "type": "concept",
       "source_file": "wiki/topics/evaluation-and-benchmarks.md",
       "mention_count": 1,
-      "community": 4
+      "community": 0
     },
     {
       "id": "series_gan_lecture_10_2018",
       "label": "GAN Lecture 10 (2018)",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 0
     },
     {
       "id": "video_Lhs_Kphd0jg",
@@ -7971,7 +7971,7 @@
         "model-editing-and-merging"
       ],
       "metadata_only": true,
-      "community": 6
+      "community": 1
     },
     {
       "id": "concept_photo_editing",
@@ -7979,14 +7979,14 @@
       "type": "concept",
       "source_file": "wiki/topics/model-editing-and-merging.md",
       "mention_count": 1,
-      "community": 6
+      "community": 1
     },
     {
       "id": "series_gan_lecture_8_2018",
       "label": "GAN Lecture 8 (2018)",
       "type": "series",
       "source_file": null,
-      "community": 6
+      "community": 1
     },
     {
       "id": "video_Xb1x4ZgV6iM",
@@ -7999,7 +7999,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 6
     },
     {
       "id": "concept_sequence_generation",
@@ -8007,14 +8007,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 4
+      "community": 6
     },
     {
       "id": "series_gan_lecture_9_2018",
       "label": "GAN Lecture 9 (2018)",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 6
     },
     {
       "id": "video_3JP-xuBJsyc",
@@ -8027,14 +8027,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 0
     },
     {
       "id": "series_gan_lecture_6_2018",
       "label": "GAN Lecture 6 (2018)",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 0
     },
     {
       "id": "video_-3LgL3NXLtI",
@@ -8047,14 +8047,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 0
     },
     {
       "id": "series_gan_lecture_3_2018",
       "label": "GAN Lecture 3 (2018)",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 0
     },
     {
       "id": "video_sU5CG8Z0zgw",
@@ -8067,14 +8067,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 3
     },
     {
       "id": "series_gan_lecture_7_2018",
       "label": "GAN Lecture 7 (2018)",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 3
     },
     {
       "id": "video_DQNNMiAP5lw",
@@ -8087,14 +8087,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 0
     },
     {
       "id": "series_gan_lecture_1_2018",
       "label": "GAN Lecture 1 (2018)",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 0
     },
     {
       "id": "video_LpyL4nZSuqU",
@@ -8107,7 +8107,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 0
     },
     {
       "id": "concept_conditional_generation",
@@ -8115,14 +8115,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 4
+      "community": 0
     },
     {
       "id": "series_gan_lecture_2_2018",
       "label": "GAN Lecture 2 (2018)",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 0
     },
     {
       "id": "video_av1bqilLsyQ",
@@ -8135,14 +8135,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 0
     },
     {
       "id": "series_gan_lecture_5_2018",
       "label": "GAN Lecture 5 (2018)",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 0
     },
     {
       "id": "video_DMA4MrNieWo",
@@ -8155,14 +8155,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 0
     },
     {
       "id": "series_gan_lecture_4_2018",
       "label": "GAN Lecture 4 (2018)",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 0
     },
     {
       "id": "video_pivB5jEBOQw",
@@ -8175,7 +8175,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_deep_learning_theory",
@@ -8183,14 +8183,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_deep_learning_theory_3_2",
       "label": "Deep Learning Theory 3-2",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_9dtxv4HLq_8",
@@ -8203,14 +8203,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_deep_learning_theory_3_1",
       "label": "Deep Learning Theory 3-1",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_XysGHdNOTbg",
@@ -8223,7 +8223,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_loss_surfaces",
@@ -8231,14 +8231,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_deep_learning_theory_2_5",
       "label": "Deep Learning Theory 2-5",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_0O6nYRC7GeY",
@@ -8251,14 +8251,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_deep_learning_theory_2_2",
       "label": "Deep Learning Theory 2-2",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video__VuWvQUMQVk",
@@ -8271,14 +8271,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_deep_learning_theory_2_4",
       "label": "Deep Learning Theory 2-4",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_NmelPQkUark",
@@ -8291,14 +8291,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_deep_learning_theory_2_3",
       "label": "Deep Learning Theory 2-3",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_XSdkBG6Vvr0",
@@ -8311,14 +8311,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_deep_learning_theory_2_1",
       "label": "Deep Learning Theory 2-1",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_qpuLxXrHQB4",
@@ -8331,14 +8331,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_deep_learning_theory_1_3",
       "label": "Deep Learning Theory 1-3",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_FN8jclCrqY0",
@@ -8351,14 +8351,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_deep_learning_theory_1_2",
       "label": "Deep Learning Theory 1-2",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_KKT2VkTdFyc",
@@ -8371,14 +8371,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_deep_learning_theory_1_1",
       "label": "Deep Learning Theory 1-1",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_2-JNBzCq77c",
@@ -8391,14 +8391,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 0
     },
     {
       "id": "series_ml_lecture_23_3",
       "label": "ML Lecture 23-3",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 0
     },
     {
       "id": "video_y8UPGr36ccI",
@@ -8411,14 +8411,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_23_2",
       "label": "ML Lecture 23-2",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_dFwesaqC_Wo",
@@ -8431,14 +8431,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 0
     },
     {
       "id": "series_gan_lecture_4_2017",
       "label": "GAN Lecture 4 (2017)",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 0
     },
     {
       "id": "video_Adi54-wp8Qk",
@@ -8451,14 +8451,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 0
     },
     {
       "id": "series_gan_lecture_3_2017",
       "label": "GAN Lecture 3 (2017)",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 0
     },
     {
       "id": "video_9N_uOIPghuo",
@@ -8471,14 +8471,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 0
     },
     {
       "id": "series_gan_lecture_2_2017",
       "label": "GAN Lecture 2 (2017)",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 0
     },
     {
       "id": "video_G0dZc-8yIjE",
@@ -8491,14 +8491,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 3
     },
     {
       "id": "series_gan_lecture_1_2017",
       "label": "GAN Lecture 1 (2017)",
       "type": "series",
       "source_file": null,
-      "community": 4
+      "community": 3
     },
     {
       "id": "video_1WPjVpwJ88I",
@@ -8511,7 +8511,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_kyX29rUntjM",
@@ -8524,7 +8524,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_1KElr75pHdQ",
@@ -8537,7 +8537,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_BZh1ltr5Rkg",
@@ -8550,7 +8550,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_F1vek6ULo9w",
@@ -8563,14 +8563,14 @@
         "diffusion-and-generation"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "series_ml_lecture_9_3",
       "label": "ML Lecture 9-3",
       "type": "series",
       "source_file": null,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_VdOyqNQ9aww",
@@ -8583,7 +8583,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_tH9FH1DH5n0",
@@ -8596,14 +8596,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_22",
       "label": "ML Lecture 22",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_T8mGfIy9dWM",
@@ -8616,7 +8616,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_Ky1ku1miDow",
@@ -8629,7 +8629,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "concept_keras_demo",
@@ -8637,14 +8637,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_9_2",
       "label": "ML Lecture 9-2",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_5BJDJd-dzzg",
@@ -8657,14 +8657,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_8_2",
       "label": "ML Lecture 8-2",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_L8unuZNpWw8",
@@ -8677,14 +8677,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_8_3",
       "label": "ML Lecture 8-3",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_On1N8u1z2Ng",
@@ -8697,14 +8697,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_0_2",
       "label": "ML Lecture 0-2",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_CXgbekl66jc",
@@ -8717,14 +8717,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_0_1",
       "label": "ML Lecture 0-1",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_1UqCjFQiiy0",
@@ -8737,14 +8737,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_1",
       "label": "ML Lecture 1",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_O79Ic8XBzvw",
@@ -8757,7 +8757,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_wzPAInDF_gI",
@@ -8770,14 +8770,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_3_3",
       "label": "ML Lecture 3-3",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_1_HBTJyWgNA",
@@ -8790,14 +8790,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_3_2",
       "label": "ML Lecture 3-2",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_gFaqKdcCdOE",
@@ -8810,7 +8810,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_1DlTX9srmvE",
@@ -8823,7 +8823,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_TN8cJiomk_k",
@@ -8836,7 +8836,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_rOho-2oJFeA",
@@ -8849,7 +8849,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_VNqOspvEKEI",
@@ -8862,7 +8862,7 @@
         "evaluation-and-benchmarks"
       ],
       "metadata_only": true,
-      "community": 4
+      "community": 0
     },
     {
       "id": "concept_generative_models",
@@ -8870,7 +8870,7 @@
       "type": "concept",
       "source_file": "wiki/topics/evaluation-and-benchmarks.md",
       "mention_count": 1,
-      "community": 4
+      "community": 0
     },
     {
       "id": "video_pbQ4qe8EwLo",
@@ -8883,7 +8883,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_A5p1_ehUSVI",
@@ -8896,7 +8896,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_KSN4QYgAtao",
@@ -8909,7 +8909,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_0CKeqXl5IY0",
@@ -8922,7 +8922,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_z0uOq2wEGcc",
@@ -8935,7 +8935,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_f1KUUz7v8g4",
@@ -8948,7 +8948,7 @@
         "llm-and-transformers"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_Lx3l4lOrquw",
@@ -8961,14 +8961,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_8_1",
       "label": "ML Lecture 8-1",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_JKWqPO3d6kQ",
@@ -8981,7 +8981,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "concept_basic_structures",
@@ -8989,7 +8989,7 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 7
+      "community": 6
     },
     {
       "id": "concept_deep_learning_models",
@@ -8997,14 +8997,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_review",
       "label": "Review",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_dxB6299gpvI",
@@ -9017,7 +9017,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_SoCywZ1hZak",
@@ -9030,7 +9030,7 @@
         "llm-and-transformers"
       ],
       "metadata_only": true,
-      "community": 0
+      "community": 5
     },
     {
       "id": "video_-yhm3WdGFok",
@@ -9043,7 +9043,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_IzHoNwlCGnE",
@@ -9056,7 +9056,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_Jvigef51rqk",
@@ -9069,7 +9069,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_hSXFuypLukA",
@@ -9082,14 +9082,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_5",
       "label": "ML Lecture 5",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_xCGidAeyS4M",
@@ -9102,7 +9102,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_rTqmWlnwz_0",
@@ -9115,14 +9115,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_21_2",
       "label": "ML Lecture 21-2",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_QsO2zyED7Lw",
@@ -9135,14 +9135,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_27",
       "label": "ML Lecture 27",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_o9FPSqobMys",
@@ -9155,7 +9155,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "concept_structured_learning",
@@ -9163,14 +9163,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_structured_learning_4",
       "label": "Structured Learning 4",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_W8XF3ME8G2I",
@@ -9183,14 +9183,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_23_1",
       "label": "ML Lecture 23-1",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_YjvGVVrCrhQ",
@@ -9203,14 +9203,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_structured_learning_3",
       "label": "Structured Learning 3",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_HfPw40JPays",
@@ -9223,14 +9223,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_structured_learning_2",
       "label": "Structured Learning 2",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_5OYu0vxXEv8",
@@ -9243,14 +9243,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_structured_learning_1",
       "label": "Structured Learning 1",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_QSEPStBgwRQ",
@@ -9263,14 +9263,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_20",
       "label": "ML Lecture 20",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_qD6iD4TFsdQ",
@@ -9283,14 +9283,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_19",
       "label": "ML Lecture 19",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_GBUEjkpoxXc",
@@ -9303,14 +9303,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_15",
       "label": "ML Lecture 15",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_8zomhgKrsmQ",
@@ -9323,7 +9323,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "concept_deep_generative_model",
@@ -9331,14 +9331,14 @@
       "type": "concept",
       "source_file": null,
       "mention_count": 1,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_18",
       "label": "ML Lecture 18",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_YNUek8ioAJk",
@@ -9351,14 +9351,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_17",
       "label": "ML Lecture 17",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_X7PH3NuYW0Q",
@@ -9371,14 +9371,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_14",
       "label": "ML Lecture 14",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_Tk5B4seA-AU",
@@ -9391,14 +9391,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 3
+      "community": 6
     },
     {
       "id": "series_ml_lecture_16",
       "label": "ML Lecture 16",
       "type": "series",
       "source_file": null,
-      "community": 3
+      "community": 6
     },
     {
       "id": "video_iwh5o_M4BNU",
@@ -9411,14 +9411,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_13",
       "label": "ML Lecture 13",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_fX_guE7JNnY",
@@ -9431,14 +9431,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_12",
       "label": "ML Lecture 12",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_XsC9byQkUH8",
@@ -9451,14 +9451,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_11",
       "label": "ML Lecture 11",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_FrKWiRv254g",
@@ -9471,14 +9471,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_10",
       "label": "ML Lecture 10",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_xki61j7z-30",
@@ -9491,14 +9491,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_9_1",
       "label": "ML Lecture 9-1",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_ibJpTrp5mcE",
@@ -9511,14 +9511,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_7",
       "label": "ML Lecture 7",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_fZAZUYEeIMg",
@@ -9531,14 +9531,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_4",
       "label": "ML Lecture 4",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_Dr-WRlEFefw",
@@ -9551,14 +9551,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_6",
       "label": "ML Lecture 6",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_fegAeph9UaA",
@@ -9571,7 +9571,7 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_yKKNr-QKz2Q",
@@ -9584,14 +9584,14 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_3_1",
       "label": "ML Lecture 3-1",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "video_D_S6y0Jm6dQ",
@@ -9604,28 +9604,28 @@
         "ml-fundamentals"
       ],
       "metadata_only": true,
-      "community": 7
+      "community": 6
     },
     {
       "id": "series_ml_lecture_2",
       "label": "ML Lecture 2",
       "type": "series",
       "source_file": null,
-      "community": 7
+      "community": 6
     },
     {
       "id": "ref_interview-protocol",
       "label": "李宏毅老師訪談腳本 — 一問一答版",
       "type": "reference",
       "source_file": "references/interview-protocol.md",
-      "community": 1
+      "community": 8
     },
     {
       "id": "ref_persona",
       "label": "Part B: Persona",
       "type": "reference",
       "source_file": "references/persona.md",
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_yi_lee",
@@ -9633,7 +9633,7 @@
       "type": "concept",
       "source_file": "references/persona.md",
       "mention_count": 2,
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_hung_yi",
@@ -9641,14 +9641,14 @@
       "type": "concept",
       "source_file": "references/persona.md",
       "mention_count": 2,
-      "community": 0
+      "community": 8
     },
     {
       "id": "ref_sources",
       "label": "Source Notes",
       "type": "reference",
       "source_file": "references/sources.md",
-      "community": 0
+      "community": 8
     },
     {
       "id": "concept_speech_representation_learning",
@@ -9656,21 +9656,21 @@
       "type": "concept",
       "source_file": "references/sources.md",
       "mention_count": 3,
-      "community": 0
+      "community": 8
     },
     {
       "id": "ref_spirit",
       "label": "Part C: Spirit — The Deeper Teaching Values",
       "type": "reference",
       "source_file": "references/spirit.md",
-      "community": 0
+      "community": 8
     },
     {
       "id": "ref_work",
       "label": "Part A: Work Skill",
       "type": "reference",
       "source_file": "references/work.md",
-      "community": 0
+      "community": 8
     }
   ],
   "links": [
@@ -11861,6 +11861,16 @@
       "source_file": null,
       "shared_video_count": 2,
       "source": "concept_gemini",
+      "target": "concept_語音語言模型"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "weight": 0.8,
+      "source_file": null,
+      "shared_video_count": 2,
+      "source": "concept_gemini",
       "target": "concept_語音模型"
     },
     {
@@ -12690,6 +12700,16 @@
       "source_file": null,
       "shared_video_count": 2,
       "source": "concept_claude",
+      "target": "concept_語音語言模型"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "weight": 0.8,
+      "source_file": null,
+      "shared_video_count": 2,
+      "source": "concept_claude",
       "target": "concept_語音模型"
     },
     {
@@ -13482,6 +13502,16 @@
     {
       "relation": "co_mentioned",
       "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "weight": 1.2,
+      "source_file": null,
+      "shared_video_count": 3,
+      "source": "concept_gpt",
+      "target": "concept_語音語言模型"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
       "confidence_score": 0.8,
       "weight": 1.6,
       "source_file": null,
@@ -14050,15 +14080,6 @@
       "target": "topic_ml-fundamentals"
     },
     {
-      "relation": "contains_concept",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "wiki/topics/speech-and-audio.md",
-      "source": "concept_語言模型",
-      "target": "topic_speech-and-audio"
-    },
-    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
@@ -14066,15 +14087,6 @@
       "source_file": "references/persona.md",
       "source": "concept_語言模型",
       "target": "ref_persona"
-    },
-    {
-      "relation": "references",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "references/sources.md",
-      "source": "concept_語言模型",
-      "target": "ref_sources"
     },
     {
       "relation": "co_mentioned",
@@ -14745,6 +14757,16 @@
       "shared_video_count": 5,
       "source": "concept_語言模型",
       "target": "concept_deepseek"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "weight": 1.2,
+      "source_file": null,
+      "shared_video_count": 3,
+      "source": "concept_語言模型",
+      "target": "concept_語音語言模型"
     },
     {
       "relation": "co_mentioned",
@@ -16666,6 +16688,16 @@
     {
       "relation": "co_mentioned",
       "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "weight": 1.2,
+      "source_file": null,
+      "shared_video_count": 3,
+      "source": "concept_機器學習",
+      "target": "concept_語音語言模型"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
       "confidence_score": 0.4,
       "weight": 0.8,
       "source_file": null,
@@ -17754,6 +17786,16 @@
       "source_file": null,
       "shared_video_count": 3,
       "source": "concept_語音合成",
+      "target": "concept_語音語言模型"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "weight": 1.2,
+      "source_file": null,
+      "shared_video_count": 3,
+      "source": "concept_語音合成",
       "target": "concept_語音模型"
     },
     {
@@ -18419,6 +18461,16 @@
       "shared_video_count": 2,
       "source": "concept_語音辨識",
       "target": "concept_deepseek"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "weight": 1.2,
+      "source_file": null,
+      "shared_video_count": 3,
+      "source": "concept_語音辨識",
+      "target": "concept_語音語言模型"
     },
     {
       "relation": "co_mentioned",
@@ -21913,6 +21965,16 @@
       "source_file": null,
       "shared_video_count": 2,
       "source": "concept_autoregressive",
+      "target": "concept_語音語言模型"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "weight": 0.8,
+      "source_file": null,
+      "shared_video_count": 2,
+      "source": "concept_autoregressive",
       "target": "concept_語音模型"
     },
     {
@@ -23658,6 +23720,16 @@
       "source_file": null,
       "shared_video_count": 2,
       "source": "concept_bert",
+      "target": "concept_語音語言模型"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "weight": 0.8,
+      "source_file": null,
+      "shared_video_count": 2,
+      "source": "concept_bert",
       "target": "concept_語音轉換"
     },
     {
@@ -24436,6 +24508,16 @@
       "source_file": null,
       "shared_video_count": 2,
       "source": "concept_transformer",
+      "target": "concept_語音語言模型"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "weight": 0.8,
+      "source_file": null,
+      "shared_video_count": 2,
+      "source": "concept_transformer",
       "target": "concept_語音模型"
     },
     {
@@ -24891,6 +24973,16 @@
       "shared_video_count": 2,
       "source": "concept_tokenizer",
       "target": "concept_rlhf"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "weight": 0.8,
+      "source_file": null,
+      "shared_video_count": 2,
+      "source": "concept_tokenizer",
+      "target": "concept_語音語言模型"
     },
     {
       "relation": "co_mentioned",
@@ -28647,6 +28739,15 @@
       "weight": 1.0,
       "source_file": "wiki/topics/ml-fundamentals.md",
       "source": "topic_ml-fundamentals",
+      "target": "concept_語音語言模型"
+    },
+    {
+      "relation": "contains_concept",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "wiki/topics/ml-fundamentals.md",
+      "source": "topic_ml-fundamentals",
       "target": "concept_評估"
     },
     {
@@ -28675,15 +28776,6 @@
       "source_file": "wiki/topics/ml-fundamentals.md",
       "source": "topic_ml-fundamentals",
       "target": "concept_foundation_model"
-    },
-    {
-      "relation": "contains_concept",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "wiki/topics/ml-fundamentals.md",
-      "source": "topic_ml-fundamentals",
-      "target": "concept_task_vector"
     },
     {
       "relation": "covers_topic",
@@ -29115,6 +29207,15 @@
       "weight": 1.0,
       "source_file": "wiki/topics/llm-and-transformers.md",
       "source": "topic_llm-and-transformers",
+      "target": "concept_語音語言模型"
+    },
+    {
+      "relation": "contains_concept",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "wiki/topics/llm-and-transformers.md",
+      "source": "topic_llm-and-transformers",
       "target": "concept_kv_cache"
     },
     {
@@ -29161,15 +29262,6 @@
       "source_file": "wiki/topics/llm-and-transformers.md",
       "source": "topic_llm-and-transformers",
       "target": "concept_human_feedback"
-    },
-    {
-      "relation": "contains_concept",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "wiki/topics/llm-and-transformers.md",
-      "source": "topic_llm-and-transformers",
-      "target": "concept_understanding_self"
     },
     {
       "relation": "covers_topic",
@@ -29943,6 +30035,15 @@
       "weight": 1.0,
       "source_file": "wiki/topics/diffusion-and-generation.md",
       "source": "topic_diffusion-and-generation",
+      "target": "concept_語音語言模型"
+    },
+    {
+      "relation": "contains_concept",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "wiki/topics/diffusion-and-generation.md",
+      "source": "topic_diffusion-and-generation",
       "target": "concept_評估"
     },
     {
@@ -29971,15 +30072,6 @@
       "source_file": "wiki/topics/diffusion-and-generation.md",
       "source": "topic_diffusion-and-generation",
       "target": "concept_time_training"
-    },
-    {
-      "relation": "contains_concept",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "weight": 1.0,
-      "source_file": "wiki/topics/diffusion-and-generation.md",
-      "source": "topic_diffusion-and-generation",
-      "target": "concept_foundation_model"
     },
     {
       "relation": "mentions",
@@ -31332,6 +31424,16 @@
       "source_file": null,
       "shared_video_count": 2,
       "source": "concept_gpt_4o",
+      "target": "concept_語音語言模型"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "weight": 0.8,
+      "source_file": null,
+      "shared_video_count": 2,
+      "source": "concept_gpt_4o",
       "target": "concept_語音模型"
     },
     {
@@ -32366,6 +32468,15 @@
       "relation": "mentions",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
+      "weight": 3.0,
+      "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
+      "source": "video_CbIPjrOj2Tc",
+      "target": "concept_語音語言模型"
+    },
+    {
+      "relation": "mentions",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
       "weight": 0.2,
       "source_file": "raw/youtube/transcripts/CbIPjrOj2Tc.md",
       "source": "video_CbIPjrOj2Tc",
@@ -32948,6 +33059,16 @@
       "shared_video_count": 3,
       "source": "concept_language_model",
       "target": "concept_deepseek"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "weight": 1.2,
+      "source_file": null,
+      "shared_video_count": 3,
+      "source": "concept_language_model",
+      "target": "concept_語音語言模型"
     },
     {
       "relation": "co_mentioned",
@@ -34766,6 +34887,16 @@
       "source_file": null,
       "shared_video_count": 2,
       "source": "concept_reinforcement_learning",
+      "target": "concept_語音語言模型"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "weight": 0.8,
+      "source_file": null,
+      "shared_video_count": 2,
+      "source": "concept_reinforcement_learning",
       "target": "concept_語音模型"
     },
     {
@@ -34944,6 +35075,16 @@
       "source_file": null,
       "shared_video_count": 2,
       "source": "concept_overview_paper",
+      "target": "concept_語音語言模型"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "weight": 0.8,
+      "source_file": null,
+      "shared_video_count": 2,
+      "source": "concept_overview_paper",
       "target": "concept_語音模型"
     },
     {
@@ -35113,6 +35254,16 @@
       "shared_video_count": 2,
       "source": "concept_evaluation_metrics",
       "target": "concept_gpt_3"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "weight": 0.8,
+      "source_file": null,
+      "shared_video_count": 2,
+      "source": "concept_evaluation_metrics",
+      "target": "concept_語音語言模型"
     },
     {
       "relation": "co_mentioned",
@@ -35695,6 +35846,16 @@
       "source_file": null,
       "shared_video_count": 2,
       "source": "concept_reward_model",
+      "target": "concept_語音語言模型"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "weight": 0.8,
+      "source_file": null,
+      "shared_video_count": 2,
+      "source": "concept_reward_model",
       "target": "concept_語音模型"
     },
     {
@@ -35968,6 +36129,16 @@
       "shared_video_count": 2,
       "source": "concept_self_supervised",
       "target": "concept_rlhf"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "weight": 0.8,
+      "source_file": null,
+      "shared_video_count": 2,
+      "source": "concept_self_supervised",
+      "target": "concept_語音語言模型"
     },
     {
       "relation": "co_mentioned",
@@ -36772,6 +36943,16 @@
       "source_file": null,
       "shared_video_count": 2,
       "source": "concept_fine_tuning",
+      "target": "concept_語音語言模型"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "weight": 0.8,
+      "source_file": null,
+      "shared_video_count": 2,
+      "source": "concept_fine_tuning",
       "target": "concept_語音模型"
     },
     {
@@ -36922,6 +37103,16 @@
       "shared_video_count": 2,
       "source": "concept_pretrained",
       "target": "concept_codec"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "weight": 0.8,
+      "source_file": null,
+      "shared_video_count": 2,
+      "source": "concept_pretrained",
+      "target": "concept_語音語言模型"
     },
     {
       "relation": "co_mentioned",
@@ -37107,6 +37298,16 @@
       "shared_video_count": 2,
       "source": "concept_whisper",
       "target": "concept_deepseek"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "weight": 0.8,
+      "source_file": null,
+      "shared_video_count": 2,
+      "source": "concept_whisper",
+      "target": "concept_語音語言模型"
     },
     {
       "relation": "co_mentioned",
@@ -37848,6 +38049,16 @@
       "source_file": null,
       "shared_video_count": 2,
       "source": "concept_codec",
+      "target": "concept_語音語言模型"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "weight": 0.8,
+      "source_file": null,
+      "shared_video_count": 2,
+      "source": "concept_codec",
       "target": "concept_語音模型"
     },
     {
@@ -37886,6 +38097,16 @@
       "source_file": null,
       "source": "concept_gpt_3",
       "target": "video_DOG1L9lvsDY"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.4,
+      "weight": 0.8,
+      "source_file": null,
+      "shared_video_count": 2,
+      "source": "concept_gpt_3",
+      "target": "concept_語音語言模型"
     },
     {
       "relation": "co_mentioned",
@@ -38335,6 +38556,53 @@
       "shared_video_count": 2,
       "source": "concept_deepseek",
       "target": "concept_chain_of_thought"
+    },
+    {
+      "relation": "mentions",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 0.4,
+      "source_file": "raw/youtube/transcripts/dWQVY_h0YXU.md",
+      "source": "concept_語音語言模型",
+      "target": "video_dWQVY_h0YXU"
+    },
+    {
+      "relation": "mentions",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 3.0,
+      "source_file": "raw/youtube/transcripts/gkAyqoQkOSk.md",
+      "source": "concept_語音語言模型",
+      "target": "video_gkAyqoQkOSk"
+    },
+    {
+      "relation": "contains_concept",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "wiki/topics/speech-and-audio.md",
+      "source": "concept_語音語言模型",
+      "target": "topic_speech-and-audio"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "weight": 1.2,
+      "source_file": null,
+      "shared_video_count": 3,
+      "source": "concept_語音語言模型",
+      "target": "concept_語音模型"
+    },
+    {
+      "relation": "co_mentioned",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "weight": 1.2,
+      "source_file": null,
+      "shared_video_count": 3,
+      "source": "concept_語音語言模型",
+      "target": "concept_評估"
     },
     {
       "relation": "mentions",
@@ -45374,15 +45642,6 @@
       "source_file": null,
       "source": "series_ml_lecture_21_1",
       "target": "video_xCGidAeyS4M"
-    },
-    {
-      "relation": "mentions",
-      "confidence": "INFERRED",
-      "confidence_score": 0.6,
-      "weight": 0.5,
-      "source_file": null,
-      "source": "video_RJq_B416V1Q",
-      "target": "concept_understanding_self"
     },
     {
       "relation": "belongs_to_series",

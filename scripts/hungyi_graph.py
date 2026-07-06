@@ -47,7 +47,7 @@ CONCEPT_PATTERNS: list[tuple[str, re.Pattern]] = [
         r"對抗式生成|擴散模型|生成模型|殘差網路|卷積神經網路|"
         r"損失函數|梯度下降|反向傳播|過擬合|正則化|"
         r"上下文工程|機器學習|深度學習|自然語言處理|"
-        r"語音辨識|語音合成|語音分離|語音轉換|"
+        r"語音辨識|語音合成|語音分離|語音轉換|全雙工|語音語言模型|"
         r"模型編輯|模型合併|終身學習|"
         r"推理|評估|基準測試|解剖|可解釋性)"
     )),
@@ -357,6 +357,92 @@ def extract_from_wiki_topic(path: Path) -> dict:
     return {"nodes": nodes, "edges": edges}
 
 
+def extract_from_external(path: Path) -> dict:
+    """Extract concepts from an external-corpus document.
+
+    External corpora live under `raw/external/<collection>/*.md` (gitignored —
+    personal/third-party content, e.g. the user's own note cards). Frontmatter
+    contract: `title` and `source_type` required, `collection` defaults to the
+    parent directory name; `url` / `origin_id` optional. Nodes get
+    type="external" plus source_type/collection attrs so downstream consumers
+    (query output, prompts) can frame them honestly as NON-lecture sources —
+    never as something the teacher said."""
+    text = path.read_text(encoding="utf-8")
+    lines = text.splitlines()
+
+    meta: dict[str, str] = {}
+    body_start = 0
+    if lines and lines[0].strip() == "---":
+        for i, line in enumerate(lines[1:], 1):
+            if line.strip() == "---":
+                body_start = i + 1
+                break
+            if ":" in line:
+                key, _, val = line.partition(":")
+                meta[key.strip()] = val.strip().strip('"').strip("'")
+        if body_start == 0:
+            # Unclosed frontmatter would silently swallow the whole body as
+            # metadata — fail fast with the offending file.
+            raise ValueError(f"{path}: unclosed frontmatter (missing second '---')")
+
+    # Contract: title + source_type are REQUIRED (the docs promise consumers
+    # can trust provenance); a fallback here would silently weaken that.
+    if not meta.get("title") or not meta.get("source_type"):
+        raise ValueError(f"{path}: external corpus doc needs frontmatter with "
+                         f"'title' and 'source_type'")
+    title = meta["title"]
+    source_type = meta["source_type"]
+    collection = meta.get("collection") or path.parent.name
+    body = "\n".join(lines[body_start:])
+
+    ext_id = f"external_{slug(collection)}_{slug(meta.get('origin_id') or path.stem)}"
+    node: dict[str, Any] = {
+        "id": ext_id,
+        "label": title,
+        "type": "external",
+        "source_type": source_type,
+        "collection": collection,
+        "source_file": str(path),
+    }
+    if meta.get("url"):
+        node["url"] = meta["url"]
+    if meta.get("origin_id"):
+        node["origin_id"] = meta["origin_id"]
+    nodes = [node]
+    edges: list[dict] = []
+
+    concepts = extract_concepts_from_text(title + "\n" + body)
+    concept_counts: Counter = Counter()
+    for c in concepts:
+        concept_counts[c["raw"]] += 1
+
+    # External docs can be much longer than references/* — cap a bit higher
+    # so a comparison card's core vocabulary still makes it into the graph.
+    for concept_text, count in concept_counts.most_common(40):
+        concept_id = f"concept_{slug(concept_text)}"
+        nodes.append({
+            "id": concept_id,
+            "label": concept_text,
+            "type": "concept",
+            "source_file": str(path),
+            "mention_count": count,
+            # AND-merged in build_graph: stays True only when NO lecture-side
+            # extraction also produced this concept — i.e. external-only.
+            "from_external": True,
+        })
+        edges.append({
+            "source": ext_id,
+            "target": concept_id,
+            "relation": "mentions",
+            "confidence": "EXTRACTED",
+            "confidence_score": 1.0,
+            "weight": min(count / 5.0, 3.0),
+            "source_file": str(path),
+        })
+
+    return {"nodes": nodes, "edges": edges}
+
+
 def extract_from_reference(path: Path) -> dict:
     """Extract concepts from a references/*.md file."""
     text = path.read_text(encoding="utf-8")
@@ -421,6 +507,11 @@ def build_graph(extractions: list[dict]) -> "nx.Graph":
                     existing["mention_count"] = node["mention_count"]
                 if node.get("source_file") and not existing.get("source_file"):
                     existing["source_file"] = node["source_file"]
+                # external-only marker: survives ONLY if every contribution
+                # came from the external corpus (AND semantics).
+                if existing.get("from_external") or node.get("from_external"):
+                    existing["from_external"] = bool(
+                        existing.get("from_external")) and bool(node.get("from_external"))
         all_edges.extend(extraction.get("edges", []))
 
     # Filter concept nodes by global frequency
@@ -658,14 +749,24 @@ def query_graph(G: "nx.Graph", partition: dict[str, int], query: str, budget: in
             continue
         visited.add(current)
         data = G.nodes[current]
-        result_nodes.append({
+        entry = {
             "id": current,
             "label": data.get("label", current),
             "type": data.get("type", ""),
             "community": partition.get(current, -1),
             "depth": depth,
             "degree": G.degree(current),
-        })
+        }
+        # Provenance for external-corpus nodes: consumers must frame these as
+        # non-lecture sources (the user's notes/papers), never teacher content.
+        if data.get("type") == "external":
+            entry["source_type"] = data.get("source_type", "external")
+            entry["collection"] = data.get("collection", "")
+        # Concepts that ONLY external docs mention are provenance-marked too —
+        # they must not read as lecture-graph vocabulary.
+        if data.get("type") == "concept" and data.get("from_external"):
+            entry["from_external"] = True
+        result_nodes.append(entry)
         if depth < 2:
             for neighbor in G.neighbors(current):
                 if neighbor not in visited:
@@ -695,6 +796,7 @@ def generate_report(
     partition: dict[str, int],
     community_labels: dict[int, str],
     corpus_stats: dict,
+    output_suffix: str = "",
 ) -> str:
     """Generate a GRAPH_REPORT.md similar to Graphify's output."""
     gods = god_nodes(G, 10)
@@ -724,6 +826,8 @@ def generate_report(
         f"- Metadata-only videos: `{corpus_stats.get('metadata_only', 0)}`",
         f"- Topic pages: `{corpus_stats.get('topic_pages', 0)}`",
         f"- Reference docs: `{corpus_stats.get('reference_docs', 0)}`",
+        *([f"- External docs: `{corpus_stats['external_docs']}`"]
+          if corpus_stats.get("external_docs") else []),
         "",
         "## Graph Stats",
         "",
@@ -769,10 +873,11 @@ def generate_report(
     lines.append("```bash")
     lines.append('python3 scripts/hungyi_kb.py graph query "attention mechanism"')
     lines.append('python3 scripts/hungyi_kb.py graph query "語音模型"')
-    lines.append("python3 scripts/hungyi_kb.py graph report")
+    if not output_suffix:
+        lines.append("python3 scripts/hungyi_kb.py graph report")
     lines.append("```")
     lines.append("")
-    lines.append("Open `wiki/graph/graph.html` in any browser for interactive exploration.")
+    lines.append(f"Open `wiki/graph/graph{output_suffix}.html` in any browser for interactive exploration.")
     lines.append("")
 
     return "\n".join(lines)
@@ -957,8 +1062,15 @@ def build_full_graph(
     references_dir: Path,
     channel_index_path: Path,
     output_dir: Path,
+    external_dir: Path | None = None,
+    output_suffix: str = "",
 ) -> dict:
-    """Run the full graph pipeline: detect → extract → build → cluster → analyze → export."""
+    """Run the full graph pipeline: detect → extract → build → cluster → analyze → export.
+
+    `external_dir` (raw/external/) mixes in gitignored external corpora; pair
+    it with `output_suffix=".local"` so the mixed graph lands in
+    graph.local.json / GRAPH_REPORT.local.md / graph.local.html and the
+    tracked lecture-only outputs stay untouched."""
     output_dir.mkdir(parents=True, exist_ok=True)
 
     extractions: list[dict] = []
@@ -968,6 +1080,7 @@ def build_full_graph(
         "metadata_only": 0,
         "topic_pages": 0,
         "reference_docs": 0,
+        "external_docs": 0,
     }
 
     # 1. Extract from transcripts
@@ -1010,6 +1123,15 @@ def build_full_graph(
         stats["files_processed"] += 1
     print(f"  References: {stats['reference_docs']}")
 
+    # 4b. Extract from external corpora (raw/external/<collection>/*.md)
+    if external_dir is not None and external_dir.exists():
+        for path in sorted(external_dir.glob("*/*.md")):
+            extraction = extract_from_external(path)
+            extractions.append(extraction)
+            stats["external_docs"] += 1
+            stats["files_processed"] += 1
+        print(f"  External docs: {stats['external_docs']}")
+
     # 5. Build graph
     print("Building graph...")
     G = build_graph(extractions)
@@ -1024,22 +1146,23 @@ def build_full_graph(
 
     # 7. Generate report
     print("Generating report...")
-    report = generate_report(G, partition, community_labels, stats)
-    report_path = output_dir / "GRAPH_REPORT.md"
+    report = generate_report(G, partition, community_labels, stats,
+                             output_suffix=output_suffix)
+    report_path = output_dir / f"GRAPH_REPORT{output_suffix}.md"
     report_path.write_text(report, encoding="utf-8")
 
     # 8. Export JSON
-    json_path = output_dir / "graph.json"
+    json_path = output_dir / f"graph{output_suffix}.json"
     export_json(G, partition, json_path)
 
     # 9. Export HTML
-    html_path = output_dir / "graph.html"
+    html_path = output_dir / f"graph{output_suffix}.html"
     export_html(G, partition, community_labels, html_path)
 
     print(f"\nGraph complete. Outputs in {output_dir}/")
-    print(f"  GRAPH_REPORT.md  — god nodes, surprising connections, suggested questions")
-    print(f"  graph.json       — persistent queryable graph ({G.number_of_nodes()} nodes)")
-    print(f"  graph.html       — interactive visualization (open in browser)")
+    print(f"  GRAPH_REPORT{output_suffix}.md  — god nodes, surprising connections, suggested questions")
+    print(f"  graph{output_suffix}.json       — persistent queryable graph ({G.number_of_nodes()} nodes)")
+    print(f"  graph{output_suffix}.html       — interactive visualization (open in browser)")
 
     return {
         "stats": stats,

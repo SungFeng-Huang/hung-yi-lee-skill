@@ -43,7 +43,7 @@ python3 scripts/hungyi_kb.py graph query "attention mechanism"
 python3 scripts/hungyi_kb.py lint
 ```
 
-## Knowledge Graph (`929` nodes, `4098` edges)
+## Knowledge Graph (`929` nodes, `4124` edges)
 
 - [GRAPH_REPORT.md](./graph/GRAPH_REPORT.md) — god nodes, surprising connections, suggested questions
 - [graph.html](./graph/graph.html) — interactive visualization (open in browser)

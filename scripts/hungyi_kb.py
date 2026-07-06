@@ -996,16 +996,23 @@ def lint_wiki() -> None:
 GRAPH_DIR = WIKI_DIR / "graph"
 
 
-def run_graph_build() -> None:
-    """Build the full knowledge graph from transcripts, topics, and references."""
+def run_graph_build(external: bool = False) -> None:
+    """Build the full knowledge graph from transcripts, topics, and references.
+
+    With `external=True`, also ingest the gitignored `raw/external/` corpora
+    and write graph.local.json / GRAPH_REPORT.local.md / graph.local.html —
+    the tracked lecture-only outputs (and wiki/log.md) stay untouched."""
     from hungyi_graph import build_full_graph, query_graph, detect_communities
 
     ensure_dirs()
     GRAPH_DIR.mkdir(parents=True, exist_ok=True)
+    external_dir = ROOT / "raw" / "external"
     print("Building knowledge graph...")
     print(f"  Transcripts dir: {TRANSCRIPTS_DIR}")
     print(f"  Topics dir:      {TOPICS_DIR}")
     print(f"  References dir:  {ROOT / 'references'}")
+    if external:
+        print(f"  External dir:    {external_dir} (writes *.local outputs)")
     print()
 
     result = build_full_graph(
@@ -1014,7 +1021,15 @@ def run_graph_build() -> None:
         references_dir=ROOT / "references",
         channel_index_path=CHANNEL_INDEX_PATH,
         output_dir=GRAPH_DIR,
+        external_dir=external_dir if external else None,
+        output_suffix=".local" if external else "",
     )
+
+    if external:
+        # Local overlay build: leave the tracked wiki artifacts (log.md and
+        # the compiled index) reflecting the lecture-only graph.
+        print("\n[local graph] tracked wiki/log.md and compiled index left untouched.")
+        return
 
     append_log_entry(
         "graph",
@@ -1038,10 +1053,19 @@ def run_graph_query(query: str) -> None:
     from networkx.readwrite import json_graph as nx_json
     from hungyi_graph import detect_communities, query_graph
 
-    graph_json = GRAPH_DIR / "graph.json"
+    # Prefer the local overlay graph (lecture + external corpora) when present.
+    local_json = GRAPH_DIR / "graph.local.json"
+    graph_json = local_json if local_json.exists() else GRAPH_DIR / "graph.json"
     if not graph_json.exists():
         print("No graph found. Run `graph build` first.")
         return
+    if graph_json is local_json:
+        print("[local graph] using wiki/graph/graph.local.json (includes external corpora)")
+        tracked = GRAPH_DIR / "graph.json"
+        if tracked.exists() and tracked.stat().st_mtime > local_json.stat().st_mtime:
+            print("[local graph] WARNING: graph.json is newer — the local overlay is "
+                  "stale; re-run `graph build --external` (or delete graph.local.* "
+                  "to query the lecture-only graph).")
 
     data = json.loads(graph_json.read_text(encoding="utf-8"))
     G = nx_json.node_link_graph(data, edges="links")
@@ -1061,8 +1085,15 @@ def run_graph_query(query: str) -> None:
     print()
     for node in result["results"]:
         depth_marker = "  " * node["depth"]
+        # External nodes carry provenance: they are the USER'S notes/papers,
+        # not lecture content — surface that on the result line.
+        prov = ""
+        if node["type"] == "external":
+            prov = f"（external：{node.get('source_type', 'external')}/{node.get('collection', '')}）"
+        elif node.get("from_external"):
+            prov = "（external-only concept）"
         print(f"{depth_marker}• {node['label']} ({node['type']}) "
-              f"[community {node['community']}, degree {node['degree']}]")
+              f"[community {node['community']}, degree {node['degree']}]{prov}")
 
     if result["paths"]:
         print()
@@ -1134,7 +1165,11 @@ def parse_args(argv: Iterable[str]) -> argparse.Namespace:
     # Graph subcommands
     graph_cmd = subparsers.add_parser("graph", help="Knowledge graph operations.")
     graph_sub = graph_cmd.add_subparsers(dest="graph_action", required=True)
-    graph_sub.add_parser("build", help="Build the full knowledge graph.")
+    graph_build = graph_sub.add_parser("build", help="Build the full knowledge graph.")
+    graph_build.add_argument(
+        "--external", action="store_true",
+        help="Also ingest raw/external/ corpora; writes *.local outputs, "
+             "leaving the tracked lecture-only graph untouched.")
     graph_query = graph_sub.add_parser("query", help="Query the knowledge graph.")
     graph_query.add_argument("query")
     graph_sub.add_parser("report", help="Regenerate GRAPH_REPORT.md from existing graph.")
@@ -1166,7 +1201,7 @@ def main(argv: Iterable[str]) -> int:
         return 0
     if args.command == "graph":
         if args.graph_action == "build":
-            run_graph_build()
+            run_graph_build(external=getattr(args, "external", False))
             return 0
         if args.graph_action == "query":
             run_graph_query(args.query)

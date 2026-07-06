@@ -90,6 +90,7 @@ When building or updating the knowledge graph:
 - `conda run -n hung-yi-lee python3 scripts/hungyi_kb.py search "<query>"`
 - `conda run -n hung-yi-lee python3 scripts/hungyi_kb.py build-brief "<query>"`
 - `conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph build`
+- `conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph build --external` — also ingests `raw/external/<collection>/*.md` (gitignored personal/third-party corpora; frontmatter: `title`+`source_type` required, `collection` defaults to the dir name, `url`/`origin_id` optional) and writes `wiki/graph/*.local.*` outputs; the tracked lecture-only graph, log.md and index stay untouched. `graph query` auto-prefers graph.local.json when present and tags external nodes with their provenance — answers must frame them as user-note/paper sources, never lecture content.
 - `conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph query "<query>"`
 - `conda run -n hung-yi-lee python3 scripts/hungyi_kb.py graph report`
 - `conda run -n hung-yi-lee python3 scripts/hungyi_kb.py lint`
