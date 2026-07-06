@@ -1,6 +1,6 @@
 # Knowledge Graph Report
 
-Generated: `2026-07-06T09:14:05+00:00`
+Generated: `2026-07-06T09:58:05+00:00`
 
 ## Corpus
 
@@ -12,11 +12,11 @@ Generated: `2026-07-06T09:14:05+00:00`
 
 ## Graph Stats
 
-- Nodes: `956`
-- Edges: `4814`
-- Communities: `10`
-- EXTRACTED edges: `1938`
-- INFERRED edges: `2874`
+- Nodes: `961`
+- Edges: `4817`
+- Communities: `9`
+- EXTRACTED edges: `1942`
+- INFERRED edges: `2873`
 - AMBIGUOUS edges: `0`
 - ALIGNED edges: `2` (graph_alignment.json)
 
@@ -37,16 +37,15 @@ Highest-degree concepts — what everything connects through.
 
 ## Communities
 
-- **Ml Fundamentals** — 440 nodes
-- **Diffusion And Generation** — 122 nodes
-- **【生成式人工智慧與機器學習導論2025】第 10 講：語音語言模型發展史 (本課程前段內容為歷史回顧，2025 年的技術從 1:42:00 開始)** — 83 nodes
+- **Ml Fundamentals** — 448 nodes
+- **Diffusion And Generation** — 127 nodes
+- **【生成式人工智慧與機器學習導論2025】第 10 講：語音語言模型發展史 (本課程前段內容為歷史回顧，2025 年的技術從 1:42:00 開始)** — 84 nodes
 - **Speech And Audio** — 79 nodes
 - **機器學習2021** — 68 nodes
 - **Evaluation And Benchmarks** — 47 nodes
 - **[ML 2021 (English version)] Lecture 17** — 41 nodes
-- **Model Editing And Merging** — 36 nodes
-- **Agents And Context** — 34 nodes
-- **[ICASSP 2020] TRAINING CODE-SWITCHING LANGUAGE MODEL WITH MONOLINGUAL DATA (Speaker** — 6 nodes
+- **Agents And Context** — 40 nodes
+- **Model Editing And Merging** — 27 nodes
 
 ## Surprising Connections
 

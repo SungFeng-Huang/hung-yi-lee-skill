@@ -486,6 +486,11 @@ def extract_from_external(path: Path) -> dict:
         node["url"] = meta["url"]
     if meta.get("origin_id"):
         node["origin_id"] = meta["origin_id"]
+    # `links:` = comma-separated origin_ids of other external docs this card
+    # links to (exporter-provided). Held in a PRIVATE key: build_graph pops it
+    # into EXTRACTED links_to edges; it never enters the final node attrs.
+    if meta.get("links"):
+        node["_links"] = [x.strip() for x in meta["links"].split(",") if x.strip()]
     nodes = [node]
     edges: list[dict] = []
 
@@ -577,7 +582,9 @@ def build_graph(extractions: list[dict]) -> "nx.Graph":
         for node in extraction.get("nodes", []):
             nid = node["id"]
             if nid not in seen_nodes:
-                seen_nodes[nid] = node
+                # copy: build_graph must not mutate the caller's extraction
+                # dicts (the _links pop below would make a second call lossy)
+                seen_nodes[nid] = dict(node)
             else:
                 # Merge: keep richer version
                 existing = seen_nodes[nid]
@@ -590,7 +597,32 @@ def build_graph(extractions: list[dict]) -> "nx.Graph":
                 if existing.get("from_external") or node.get("from_external"):
                     existing["from_external"] = bool(
                         existing.get("from_external")) and bool(node.get("from_external"))
+                # two docs collapsing onto one node keep the UNION of links
+                if node.get("_links"):
+                    merged = list(existing.get("_links") or [])
+                    merged += [x for x in node["_links"] if x not in merged]
+                    existing["_links"] = merged
         all_edges.extend(extraction.get("edges", []))
+
+    # External-card cross-links (frontmatter `links:`): pop the private key
+    # BEFORE nodes enter the graph; keep an origin_id -> node id map so
+    # targets resolve after every external node is known.
+    ext_links: dict[str, list[str]] = {}
+    origin_map: dict[str, str] = {}
+    for nid, attrs in seen_nodes.items():
+        links = attrs.pop("_links", None)
+        if links:
+            ext_links[nid] = links
+        if attrs.get("type") == "external" and attrs.get("origin_id"):
+            oid = attrs["origin_id"]
+            if oid in origin_map and origin_map[oid] != nid:
+                # duplicate origin ids would route links_to arbitrarily —
+                # keep the first, but say so out loud.
+                print(f"  WARNING: origin_id {oid} claimed by two external "
+                      f"nodes ({origin_map[oid]} / {nid}) — links resolve "
+                      f"to the first")
+                continue
+            origin_map[oid] = nid
 
     # Filter concept nodes by global frequency
     concept_freq: Counter = Counter()
@@ -618,20 +650,54 @@ def build_graph(extractions: list[dict]) -> "nx.Graph":
                 source_file=edge.get("source_file"),
             )
 
-    # Add INFERRED co-mention edges: concepts that appear in 2+ same videos
-    concept_to_videos: dict[str, set[str]] = defaultdict(set)
+    # EXTRACTED links_to edges: explicit card-to-card links carried by the
+    # exporter — a link in the source card's live content is textual evidence,
+    # the same level as a transcript mention.
+    if ext_links:
+        links_added = unresolved = 0
+        for src_nid, links in ext_links.items():
+            if src_nid not in G:
+                continue
+            for target in links:
+                t_nid = origin_map.get(target)
+                if t_nid is None:
+                    unresolved += 1
+                    continue
+                if t_nid == src_nid or t_nid not in G:
+                    continue
+                if not G.has_edge(src_nid, t_nid):
+                    G.add_edge(
+                        src_nid, t_nid,
+                        relation="links_to",
+                        confidence="EXTRACTED",
+                        confidence_score=1.0,
+                        weight=1.5,
+                        # provenance = the source card's doc (the link lives
+                        # in that card's live content)
+                        source_file=G.nodes[src_nid].get("source_file"),
+                    )
+                    links_added += 1
+        print(f"  links_to edges: {links_added}"
+              + (f" ({unresolved} unresolved targets)" if unresolved else ""))
+
+    # Add INFERRED co-mention edges: concepts that appear in 2+ of the same
+    # DOCUMENTS — a document is a video or an external card (both carry
+    # EXTRACTED `mentions` edges, so co-occurrence means the same thing).
+    concept_to_docs: dict[str, set[str]] = defaultdict(set)
     for src, tgt, data in G.edges(data=True):
         if data.get("relation") == "mentions":
-            if src.startswith("video_") and tgt.startswith("concept_"):
-                concept_to_videos[tgt].add(src)
-            elif tgt.startswith("video_") and src.startswith("concept_"):
-                concept_to_videos[src].add(tgt)
+            if (src.startswith("video_") or src.startswith("external_")) \
+                    and tgt.startswith("concept_"):
+                concept_to_docs[tgt].add(src)
+            elif (tgt.startswith("video_") or tgt.startswith("external_")) \
+                    and src.startswith("concept_"):
+                concept_to_docs[src].add(tgt)
 
-    # Find concept pairs that co-occur in the same videos
-    concept_list = [c for c, vs in concept_to_videos.items() if len(vs) >= 2]
+    # Find concept pairs that co-occur in the same documents
+    concept_list = [c for c, vs in concept_to_docs.items() if len(vs) >= 2]
     for i, c1 in enumerate(concept_list):
         for c2 in concept_list[i + 1:]:
-            shared = concept_to_videos[c1] & concept_to_videos[c2]
+            shared = concept_to_docs[c1] & concept_to_docs[c2]
             if len(shared) >= 2 and not G.has_edge(c1, c2):
                 score = min(len(shared) / 5.0, 1.0)
                 G.add_edge(
@@ -641,7 +707,7 @@ def build_graph(extractions: list[dict]) -> "nx.Graph":
                     confidence_score=round(score, 2),
                     weight=round(score * 2, 2),
                     source_file=None,
-                    shared_video_count=len(shared),
+                    shared_doc_count=len(shared),
                 )
 
     # Alignment layer (graph_alignment.json):
@@ -665,7 +731,7 @@ def build_graph(extractions: list[dict]) -> "nx.Graph":
                     # co_mentioned-specific attrs so none linger).
                     if G.edges[a, b].get("relation") != "co_mentioned":
                         continue
-                    G.edges[a, b].pop("shared_video_count", None)
+                    G.edges[a, b].pop("shared_doc_count", None)
                 G.add_edge(
                     a, b,
                     relation="aligned_with",
@@ -922,10 +988,12 @@ def generate_report(
     for _, comm_id in partition.items():
         community_sizes[comm_id] += 1
 
-    # Edge confidence breakdown
+    # Edge confidence / relation breakdown
     confidence_counts: Counter = Counter()
+    relation_counts: Counter = Counter()
     for _, _, data in G.edges(data=True):
         confidence_counts[data.get("confidence", "UNKNOWN")] += 1
+        relation_counts[data.get("relation", "?")] += 1
 
     now = datetime.now(UTC).replace(microsecond=0).isoformat()
     lines = [
@@ -942,6 +1010,8 @@ def generate_report(
         f"- Reference docs: `{corpus_stats.get('reference_docs', 0)}`",
         *([f"- External docs: `{corpus_stats['external_docs']}`"]
           if corpus_stats.get("external_docs") else []),
+        *[f"  - {coll}: `{n}`" for coll, n in sorted(
+            (corpus_stats.get("external_collections") or {}).items())],
         "",
         "## Graph Stats",
         "",
@@ -953,6 +1023,9 @@ def generate_report(
         f"- AMBIGUOUS edges: `{confidence_counts.get('AMBIGUOUS', 0)}`",
         f"- ALIGNED edges: `{confidence_counts.get('ALIGNED', 0)}`"
         " (graph_alignment.json)",
+        *([f"- links_to edges (external card cross-links): "
+           f"`{relation_counts['links_to']}`"]
+          if relation_counts.get("links_to") else []),
         "",
         "## God Nodes",
         "",
@@ -1241,12 +1314,20 @@ def build_full_graph(
 
     # 4b. Extract from external corpora (raw/external/<collection>/*.md)
     if external_dir is not None and external_dir.exists():
+        ext_collections: Counter = Counter()
         for path in sorted(external_dir.glob("*/*.md")):
             extraction = extract_from_external(path)
             extractions.append(extraction)
             stats["external_docs"] += 1
             stats["files_processed"] += 1
-        print(f"  External docs: {stats['external_docs']}")
+            # count by the doc's LOGICAL collection (frontmatter) — that is
+            # what node provenance carries — not the directory name
+            ext_collections[extraction["nodes"][0].get("collection")
+                            or path.parent.name] += 1
+        if ext_collections:
+            stats["external_collections"] = dict(ext_collections)
+        print(f"  External docs: {stats['external_docs']} "
+              + " ".join(f"{k}={v}" for k, v in sorted(ext_collections.items())))
 
     # 5. Build graph
     print("Building graph...")
