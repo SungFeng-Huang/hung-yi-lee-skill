@@ -1,5 +1,5 @@
 {
-  "_comment": "Concept alignment for the knowledge graph. `merge` = true synonyms: every variant folds onto the FIRST entry (canonical) before node ids form; matching is casefold. `align` = related but deliberately DISTINCT concepts: an aligned_with edge is added between existing nodes, never a merge (e.g. 語音合成 is the TTS task; 語音生成 is the broader family incl. sound/music — keep them separate but connected). Extend freely; `graph build` validates the shape.",
+  "_comment": "Concept alignment for the knowledge graph. `merge` = true synonyms: every variant folds onto the FIRST entry (canonical) before node ids form; matching is casefold. `align` = related but deliberately DISTINCT concepts: an aligned_with edge is added between existing nodes, never a merge (e.g. 語音合成 is the TTS task; 語音生成 is the broader family incl. sound/music — keep them separate but connected). Extend freely; `graph build` validates the shape. `ignore` = pairs a human REVIEWED and rejected (size variants, n-gram shards, co-occurrence-not-synonymy, name/institution noise): suggest_alignments.py stops re-proposing them; graph build ignores this section.",
   "merge": [
     [
       "語音合成",
@@ -138,6 +138,11 @@
       "全雙工",
       "Full Duplex",
       "Full-Duplex"
+    ],
+    [
+      "自監督學習",
+      "Self-Supervised",
+      "Self-Supervised Learning"
     ]
   ],
   "align": [
@@ -153,6 +158,76 @@
     [
       "語言模型",
       "Large Language Model"
+    ],
+    [
+      "全雙工",
+      "turn-taking"
+    ]
+  ],
+  "ignore": [
+    [
+      "ViT",
+      "ViT-S"
+    ],
+    [
+      "Trade-off",
+      "trade-offs"
+    ],
+    [
+      "Hong Kong",
+      "The Chinese University"
+    ],
+    [
+      "Low-Rank",
+      "Rank Adaptation"
+    ],
+    [
+      "Classifier-Free",
+      "Free Guidance"
+    ],
+    [
+      "GRPO",
+      "強化學習"
+    ],
+    [
+      "全雙工",
+      "Moshi"
+    ],
+    [
+      "Audio Pretraining",
+      "Contrastive Language"
+    ],
+    [
+      "Yuancheng Wang",
+      "Zhizheng Wu"
+    ],
+    [
+      "Scale Self",
+      "Supervised Pre"
+    ],
+    [
+      "Full Stack Speech Processing",
+      "Supervised Pre"
+    ],
+    [
+      "Full Stack Speech Processing",
+      "Scale Self"
+    ],
+    [
+      "Fidelity Text",
+      "Minimal Supervision"
+    ],
+    [
+      "Controllable Text",
+      "Text Descriptions"
+    ],
+    [
+      "Ning Hsu",
+      "Wei-Ning"
+    ],
+    [
+      "reference-driven",
+      "Reference Shortcut"
     ]
   ]
 }

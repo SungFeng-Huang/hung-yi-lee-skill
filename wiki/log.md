@@ -371,3 +371,16 @@
 - topic_pages: `8`
 - series_pages: `205`
 - cached_transcripts: `44`
+## [2026-07-06 20:50:19] graph | knowledge graph build
+
+- nodes: `948`
+- edges: `4751`
+- communities: `6`
+- files_processed: `495`
+- output: `wiki/graph`
+## [2026-07-06 20:50:19] compile | wiki refresh
+
+- video_count: `482`
+- topic_pages: `8`
+- series_pages: `205`
+- cached_transcripts: `44`

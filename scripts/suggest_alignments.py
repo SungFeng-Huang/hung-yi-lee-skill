@@ -67,6 +67,13 @@ def load_covered(alignment_path: Path) -> set[frozenset[str]]:
         for a, b in combinations(group, 2):
             covered.add(frozenset((a.casefold(), b.casefold())))
             covered.add(frozenset((norm_label(a), norm_label(b))))
+    # `ignore` = human-reviewed-and-REJECTED pairs — suppressed exactly like
+    # covered ones so the miner stops re-proposing them every rebuild.
+    for pair in data.get("ignore", []):
+        if len(pair) == 2:
+            a, b = pair
+            covered.add(frozenset((a.casefold(), b.casefold())))
+            covered.add(frozenset((norm_label(a), norm_label(b))))
     return covered
 
 
