@@ -84,6 +84,18 @@ MIN_CONCEPT_FREQUENCY = 2
 #          語音生成 family must survive alignment).
 
 ALIGNMENT_PATH = Path(__file__).resolve().parent / "graph_alignment.json"
+ROOT_DIR = Path(__file__).resolve().parent.parent
+
+
+def _rel(path) -> str:
+    """source_file as a REPO-RELATIVE path. Two reasons: portability (the
+    graph outputs are tracked — absolute paths break on any other machine)
+    and sanitization (an absolute path embeds the local username/home in
+    published files). Paths outside the repo fall back unchanged."""
+    try:
+        return str(Path(path).resolve().relative_to(ROOT_DIR))
+    except (ValueError, OSError):
+        return str(path)
 
 
 def load_alignment(path: Path = ALIGNMENT_PATH) -> dict:
@@ -244,7 +256,7 @@ def extract_from_transcript(path: Path) -> dict:
         "id": video_node_id,
         "label": title,
         "type": "video",
-        "source_file": str(path),
+        "source_file": _rel(path),
         "video_id": video_id,
         "series": series,
         "topics": topics,
@@ -257,7 +269,7 @@ def extract_from_transcript(path: Path) -> dict:
             "id": concept_id,
             "label": concept_text,
             "type": "concept",
-            "source_file": str(path),
+            "source_file": _rel(path),
             "mention_count": count,
         })
         edges.append({
@@ -267,7 +279,7 @@ def extract_from_transcript(path: Path) -> dict:
             "confidence": "EXTRACTED",
             "confidence_score": 1.0,
             "weight": min(count / 5.0, 3.0),  # Normalize weight
-            "source_file": str(path),
+            "source_file": _rel(path),
         })
 
     # Series edge
@@ -277,7 +289,7 @@ def extract_from_transcript(path: Path) -> dict:
             "id": series_id,
             "label": series,
             "type": "series",
-            "source_file": str(path),
+            "source_file": _rel(path),
         })
         edges.append({
             "source": video_node_id,
@@ -286,7 +298,7 @@ def extract_from_transcript(path: Path) -> dict:
             "confidence": "EXTRACTED",
             "confidence_score": 1.0,
             "weight": 1.0,
-            "source_file": str(path),
+            "source_file": _rel(path),
         })
 
     # Topic edges
@@ -296,7 +308,7 @@ def extract_from_transcript(path: Path) -> dict:
             "id": topic_id,
             "label": topic.replace("-", " ").title(),
             "type": "topic",
-            "source_file": str(path),
+            "source_file": _rel(path),
         })
         edges.append({
             "source": video_node_id,
@@ -305,7 +317,7 @@ def extract_from_transcript(path: Path) -> dict:
             "confidence": "EXTRACTED",
             "confidence_score": 1.0,
             "weight": 1.5,
-            "source_file": str(path),
+            "source_file": _rel(path),
         })
 
     return {"nodes": nodes, "edges": edges}
@@ -404,7 +416,7 @@ def extract_from_wiki_topic(path: Path) -> dict:
     label = first_line.lstrip("# ").strip() if first_line.startswith("#") else path.stem
 
     topic_id = f"topic_{path.stem}"
-    nodes = [{"id": topic_id, "label": label, "type": "topic", "source_file": str(path)}]
+    nodes = [{"id": topic_id, "label": label, "type": "topic", "source_file": _rel(path)}]
     edges: list[dict] = []
 
     # Extract concepts from the topic page
@@ -419,7 +431,7 @@ def extract_from_wiki_topic(path: Path) -> dict:
             "id": concept_id,
             "label": concept_text,
             "type": "concept",
-            "source_file": str(path),
+            "source_file": _rel(path),
             "mention_count": count,
         })
         edges.append({
@@ -429,7 +441,7 @@ def extract_from_wiki_topic(path: Path) -> dict:
             "confidence": "EXTRACTED",
             "confidence_score": 1.0,
             "weight": 1.0,
-            "source_file": str(path),
+            "source_file": _rel(path),
         })
 
     return {"nodes": nodes, "edges": edges}
@@ -480,7 +492,7 @@ def extract_from_external(path: Path) -> dict:
         "type": "external",
         "source_type": source_type,
         "collection": collection,
-        "source_file": str(path),
+        "source_file": _rel(path),
     }
     if meta.get("url"):
         node["url"] = meta["url"]
@@ -507,7 +519,7 @@ def extract_from_external(path: Path) -> dict:
             "id": concept_id,
             "label": concept_text,
             "type": "concept",
-            "source_file": str(path),
+            "source_file": _rel(path),
             "mention_count": count,
             # AND-merged in build_graph: stays True only when NO lecture-side
             # extraction also produced this concept — i.e. external-only.
@@ -520,7 +532,7 @@ def extract_from_external(path: Path) -> dict:
             "confidence": "EXTRACTED",
             "confidence_score": 1.0,
             "weight": min(count / 5.0, 3.0),
-            "source_file": str(path),
+            "source_file": _rel(path),
         })
 
     return {"nodes": nodes, "edges": edges}
@@ -533,7 +545,7 @@ def extract_from_reference(path: Path) -> dict:
     label = first_line.lstrip("# ").strip() if first_line.startswith("#") else path.stem
 
     ref_id = f"ref_{path.stem}"
-    nodes = [{"id": ref_id, "label": label, "type": "reference", "source_file": str(path)}]
+    nodes = [{"id": ref_id, "label": label, "type": "reference", "source_file": _rel(path)}]
     edges: list[dict] = []
 
     concepts = extract_concepts_from_text(text)
@@ -547,7 +559,7 @@ def extract_from_reference(path: Path) -> dict:
             "id": concept_id,
             "label": concept_text,
             "type": "concept",
-            "source_file": str(path),
+            "source_file": _rel(path),
             "mention_count": count,
         })
         edges.append({
@@ -557,7 +569,7 @@ def extract_from_reference(path: Path) -> dict:
             "confidence": "EXTRACTED",
             "confidence_score": 1.0,
             "weight": 1.0,
-            "source_file": str(path),
+            "source_file": _rel(path),
         })
 
     return {"nodes": nodes, "edges": edges}
@@ -738,7 +750,7 @@ def build_graph(extractions: list[dict]) -> "nx.Graph":
                     confidence="ALIGNED",
                     confidence_score=1.0,
                     weight=2.0,
-                    source_file=str(ALIGNMENT_PATH),
+                    source_file=_rel(ALIGNMENT_PATH),
                 )
 
     return G
