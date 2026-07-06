@@ -29,6 +29,21 @@
 
 ---
 
+## 🔀 本 fork 與 upstream 的差異
+
+> 這是 [voidful/hung-yi-lee-skill](https://github.com/voidful/hung-yi-lee-skill) 的功能 fork。所有新功能保持 **generic、零個人資訊**，任何人都能照自己的知識庫情況復用。**分支佈局**：`main`＝純 upstream 鏡像；`fix/*`＝單一功能 PR 分支（[PR #2](https://github.com/voidful/hung-yi-lee-skill/pull/2) requirements 修正、[PR #3](https://github.com/voidful/hung-yi-lee-skill/pull/3) CJK 節點修正）；`local/conda-env-integration`＝全部功能＋conda 佈線（本分支）。
+
+- **CJK 概念節點修正**（已提 PR #3）：原版 slug 會把所有非 ASCII 字元換成 `_`，同長度的中文概念坍縮成同一個節點（語言模型／機器學習／深度學習曾共擠一個 id）——新的 `slug()` 保留漢字與假名。
+- **External corpus——把你自己的筆記接進老師的圖**：把筆記匯成 `raw/external/<collection>/*.md`（frontmatter 必填 `title`、`source_type`；可選 `collection`、`origin_id`、`links`），跑 `graph build --external` 產出 gitignored 的 `wiki/graph/*.local.*` 混合圖（tracked 輸出保持純課程）。`graph query` 自動偏好混合圖並對外部節點標注 provenance（`（external：…）`，絕不冒充課程內容）；`links:` 的文件互引成 EXTRACTED 邊、概念跨文件共現成 INFERRED 邊。
+- **概念對齊層**：`scripts/graph_alignment.json`——`merge`（真同義合併，如 語音合成=TTS=Text-to-Speech）、`align`（相近但刻意區分者加 ALIGNED 邊，如 語音語言模型↔Spoken LM↔Speech LLM）、`ignore`（已審不加）；`scripts/suggest_alignments.py` 從圖上自動挖候選（字面／結構／跨語三類訊號）。
+- **可攜性與 sanitize**：graph 輸出的 `source_file` 為 repo 相對路徑；fork 歷史已清除任何個人路徑。
+- conda env 佈線（文件指令改走 `conda run -n hung-yi-lee …`；本分支的 local 慣例）。
+
+個人整合層（筆記軟體匯出器、查詢 wrapper、research-gap 分析工具）**刻意不在本 fork**——那些依賴使用者自己的筆記系統；本 fork 只提供 generic 的 external-corpus 契約，你可以用任何來源產 markdown 餵進來。
+
+---
+
+
 ## 這個 skill 是怎麼長出來的
 
 > 老師說過一條規則：教東西不要直接講方法本身，要讓人看到「這個想法是怎麼被想出來的」。

@@ -29,6 +29,21 @@ distilled into a 916-node knowledge graph, 10 concept communities, and a complet
 
 ---
 
+## 🔀 How this fork differs from upstream
+
+> A feature fork of [voidful/hung-yi-lee-skill](https://github.com/voidful/hung-yi-lee-skill). Every addition stays **generic and free of personal data**, so anyone can reuse it with their own knowledge base. **Branch layout**: `main` = pristine upstream mirror; `fix/*` = single-feature PR branches ([PR #2](https://github.com/voidful/hung-yi-lee-skill/pull/2) requirements fix, [PR #3](https://github.com/voidful/hung-yi-lee-skill/pull/3) CJK node fix); `local/conda-env-integration` = all features + conda wiring (this branch).
+
+- **CJK concept-node fix** (submitted as PR #3): upstream's slug replaced every non-ASCII char with `_`, collapsing all same-length Chinese concepts into ONE node id — the new `slug()` preserves ideographs and kana.
+- **External corpus — plug your own notes into the teacher's graph**: export notes as `raw/external/<collection>/*.md` (frontmatter: required `title`, `source_type`; optional `collection`, `origin_id`, `links`), then `graph build --external` writes a gitignored `wiki/graph/*.local.*` mixed graph (tracked outputs stay lecture-only). `graph query` auto-prefers the mixed graph and tags external nodes with provenance (never presented as lecture content); `links:` cross-references become EXTRACTED edges, cross-document concept co-occurrence becomes INFERRED edges.
+- **Concept alignment layer**: `scripts/graph_alignment.json` — `merge` (true synonyms, e.g. 語音合成 = TTS = Text-to-Speech), `align` (related-but-distinct pairs get an ALIGNED edge, e.g. 語音語言模型 ↔ Spoken LM ↔ Speech LLM), `ignore` (reviewed-and-rejected pairs); `scripts/suggest_alignments.py` mines candidates from the graph (string / structural / cross-lingual signals).
+- **Portability & sanitization**: graph outputs store repo-relative `source_file` paths; the fork history is scrubbed of any personal paths.
+- conda env wiring (docs invoke `conda run -n hung-yi-lee …`; a local convention of this branch).
+
+The personal integration layer (note-app exporters, query wrappers, research-gap analysis) deliberately lives **outside** this fork — those depend on the author's own note system. This fork only ships the generic external-corpus contract: feed it markdown from any source.
+
+---
+
+
 ## How This Skill Grew Up
 
 > The teacher gave us a rule: never teach a method by stating the method — let people see *how the idea was invented*.
