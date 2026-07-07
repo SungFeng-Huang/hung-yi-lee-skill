@@ -87,7 +87,8 @@
     ],
     [
       "Diffusion Transformer",
-      "Diffusion Transformers"
+      "Diffusion Transformers",
+      "DiT"
     ],
     [
       "Generative Model",
@@ -327,6 +328,26 @@
     [
       "Speech LM",
       "SpeechLM"
+    ],
+    [
+      "EnCodec",
+      "SoundStream"
+    ],
+    [
+      "HuBERT",
+      "wav2vec"
+    ],
+    [
+      "Diffusion",
+      "Flow"
+    ],
+    [
+      "Audio Generation",
+      "Language Modeling Approach"
+    ],
+    [
+      "High-Fidelity Text-to-Speech",
+      "Minimal Supervision"
     ]
   ]
 }
