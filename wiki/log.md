@@ -462,3 +462,29 @@
 - topic_pages: `8`
 - series_pages: `205`
 - cached_transcripts: `44`
+## [2026-07-08 00:02:06] graph | knowledge graph build
+
+- nodes: `966`
+- edges: `4872`
+- communities: `9`
+- files_processed: `495`
+- output: `wiki/graph`
+## [2026-07-08 00:02:07] compile | wiki refresh
+
+- video_count: `482`
+- topic_pages: `8`
+- series_pages: `205`
+- cached_transcripts: `44`
+## [2026-07-08 00:05:39] graph | knowledge graph build
+
+- nodes: `966`
+- edges: `4872`
+- communities: `9`
+- files_processed: `495`
+- output: `wiki/graph`
+## [2026-07-08 00:05:39] compile | wiki refresh
+
+- video_count: `482`
+- topic_pages: `8`
+- series_pages: `205`
+- cached_transcripts: `44`

@@ -143,6 +143,57 @@
       "自監督學習",
       "Self-Supervised",
       "Self-Supervised Learning"
+    ],
+    [
+      "CFG",
+      "Classifier-Free Guidance"
+    ],
+    [
+      "GAN",
+      "Generative Adversarial Network",
+      "Generative Adversarial Networks"
+    ],
+    [
+      "CLAP",
+      "Contrastive Language-Audio Pretraining",
+      "Contrastive Language-Audio Pre-training"
+    ],
+    [
+      "DDPM",
+      "Denoising Diffusion Probabilistic Models",
+      "Denoising Diffusion Probabilistic Model"
+    ],
+    [
+      "ELF",
+      "Embedded Language Flows"
+    ],
+    [
+      "JSTIP",
+      "Joint Speech-Text Interleaved Pretraining"
+    ],
+    [
+      "Speech LLM",
+      "SpeechLLM"
+    ],
+    [
+      "DAC",
+      "Descript-Audio-Codec"
+    ],
+    [
+      "Diffusion Language Model",
+      "Diffusion Language Models"
+    ],
+    [
+      "Vision-Language Model",
+      "Vision-Language Models"
+    ],
+    [
+      "Speech Large Language Model",
+      "Speech Large Language Models"
+    ],
+    [
+      "Autoregressive Model",
+      "Auto-Regressive Model"
     ]
   ],
   "align": [
@@ -228,6 +279,14 @@
     [
       "reference-driven",
       "Reference Shortcut"
+    ],
+    [
+      "Audio LM",
+      "AudioLM"
+    ],
+    [
+      "Speech LM",
+      "SpeechLM"
     ]
   ]
 }

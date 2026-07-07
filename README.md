@@ -38,6 +38,7 @@
 - **抽取層三修**：`model_names:`＋對齊表構成**動態詞彙表**，build 時掃描所有文件（課程逐字稿講到 UniAudio 也能成節點——策展一次、全語料受惠）；新增單詞內部大寫 pattern（UniAudio/CosyVoice/WavLM 型，配 stoplist）；概念抽取改**最長匹配優先**（"Classifier-Free Guidance" 不再碎成 "Classifier-Free"＋"Free Guidance"，同一表面形式也不再被多個 pattern 重複計數）。
 - **概念對齊層**：`scripts/graph_alignment.json`——`merge`（真同義合併，如 語音合成=TTS=Text-to-Speech）、`align`（相近但刻意區分者加 ALIGNED 邊，如 語音語言模型↔Spoken LM↔Speech LLM）、`ignore`（已審不加）；`scripts/suggest_alignments.py` 從圖上自動挖候選（字面／結構／跨語三類訊號）。
 - **可攜性與 sanitize**：graph 輸出的 `source_file` 為 repo 相對路徑；fork 歷史已清除任何個人路徑。
+- **可調的語料平衡**：`scripts/graph_config.json` 的 `external_edge_weight`（α）——外部文件承載的邊按 α 縮放、co-mention 證據按 α 計分（低 α 會實際去密集化論文側的共現邊）；`auto_balance: true` 時 α=sqrt(逐字稿數/外部文件數) 自動調，論文再多也壓不死課程側。預設 1.0＝中性。
 - conda env 佈線（文件指令改走 `conda run -n hung-yi-lee …`；本分支的 local 慣例）。
 
 個人整合層（筆記軟體匯出器、查詢 wrapper、research-gap 分析工具）**刻意不在本 fork**——那些依賴使用者自己的筆記系統；本 fork 只提供 generic 的 external-corpus 契約，你可以用任何來源產 markdown 餵進來。

@@ -758,8 +758,39 @@ def extract_from_reference(path: Path) -> dict:
 # ---------------------------------------------------------------------------
 
 
-def build_graph(extractions: list[dict]) -> "nx.Graph":
-    """Merge all extraction dicts into a single NetworkX graph."""
+GRAPH_CONFIG_PATH = Path(__file__).resolve().parent / "graph_config.json"
+
+
+def load_graph_config(path: Path = GRAPH_CONFIG_PATH) -> dict:
+    """Build knobs (see graph_config.json). Missing file/keys fall back to
+    neutral defaults; invalid values fail fast (a silently-wrong weight would
+    skew every ranking downstream)."""
+    cfg = {"external_edge_weight": 1.0, "auto_balance": False}
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return cfg
+    if not isinstance(data, dict):
+        raise ValueError("graph_config.json: top level must be a JSON object")
+    w = data.get("external_edge_weight", 1.0)
+    if isinstance(w, bool) or not isinstance(w, (int, float)) \
+            or not math.isfinite(w) or w <= 0:
+        raise ValueError(f"graph_config.json: external_edge_weight must be a finite number > 0, got {w!r}")
+    cfg["external_edge_weight"] = float(w)
+    ab = data.get("auto_balance", False)
+    if not isinstance(ab, bool):
+        raise ValueError(f"graph_config.json: auto_balance must be a JSON boolean, got {ab!r}")
+    cfg["auto_balance"] = ab
+    return cfg
+
+
+def build_graph(extractions: list[dict], external_edge_weight: float = 1.0) -> "nx.Graph":
+    """Merge all extraction dicts into a single NetworkX graph.
+
+    `external_edge_weight` (α) damps the external corpus so a fast-growing
+    paper collection cannot drown the lecture side: edges carried by
+    external documents are scaled by α, and each external document
+    contributes α (instead of 1) to co_mentioned scores. 1.0 = neutral."""
     import networkx as nx
 
     G = nx.Graph()
@@ -894,11 +925,25 @@ def build_graph(extractions: list[dict]) -> "nx.Graph":
 
     # Find concept pairs that co-occur in the same documents
     concept_list = [c for c, vs in concept_to_docs.items() if len(vs) >= 2]
+    alpha = external_edge_weight
     for i, c1 in enumerate(concept_list):
         for c2 in concept_list[i + 1:]:
             shared = concept_to_docs[c1] & concept_to_docs[c2]
-            if len(shared) >= 2 and not G.has_edge(c1, c2):
-                score = min(len(shared) / 5.0, 1.0)
+            if len(shared) < 2 or G.has_edge(c1, c2):
+                continue
+            if alpha == 1.0:
+                eff = float(len(shared))
+            else:
+                # each external doc contributes α (not 1) of evidence; pairs
+                # whose α-weighted evidence falls below the same 2-doc bar
+                # produce no edge — low α de-densifies the paper-dominated
+                # co-mention mass, not just re-weights it
+                n_ext = sum(1 for d in shared if d.startswith("external_"))
+                eff = (len(shared) - n_ext) + alpha * n_ext
+                if eff < 2.0:
+                    continue
+            if True:
+                score = min(eff / 5.0, 1.0)
                 G.add_edge(
                     c1, c2,
                     relation="co_mentioned",
@@ -978,6 +1023,16 @@ def build_graph(extractions: list[dict]) -> "nx.Graph":
                     weight=2.0,
                     source_file=_rel(ALIGNMENT_PATH),
                 )
+
+    if external_edge_weight != 1.0:
+        scaled = 0
+        for u, v, data in G.edges(data=True):
+            if data.get("relation") == "co_mentioned":
+                continue  # already α-weighted at scoring time
+            if u.startswith("external_") or v.startswith("external_"):
+                data["weight"] = round(data.get("weight", 1.0) * external_edge_weight, 3)
+                scaled += 1
+        print(f"  external edge damping: α={external_edge_weight} on {scaled} edges")
 
     return G
 
@@ -1585,7 +1640,17 @@ def build_full_graph(
 
     # 5. Build graph
     print("Building graph...")
-    G = build_graph(extractions)
+    gcfg = load_graph_config()
+    alpha = gcfg["external_edge_weight"]
+    if gcfg["auto_balance"] and stats.get("external_docs"):
+        lecture_docs = stats.get("transcripts") or 0
+        if lecture_docs and stats["external_docs"]:
+            # damping semantics: never boost external past neutral
+            alpha = min(1.0, round(math.sqrt(lecture_docs / stats["external_docs"]), 3))
+            print(f"  auto_balance: α = sqrt({lecture_docs}/{stats['external_docs']}) = {alpha}")
+    if not stats.get("external_docs"):
+        alpha = 1.0  # lecture-only build: knob never touches tracked outputs
+    G = build_graph(extractions, external_edge_weight=alpha)
     print(f"  Nodes: {G.number_of_nodes()}, Edges: {G.number_of_edges()}")
 
     # 6. Community detection

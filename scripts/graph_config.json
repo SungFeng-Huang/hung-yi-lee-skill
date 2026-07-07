@@ -1,0 +1,5 @@
+{
+  "_comment": "Graph build knobs. external_edge_weight: multiplier applied to edges carried by external-corpus documents (doc-concept mentions, links_to, describes, and each external doc's contribution to co_mentioned scores). 1.0 = neutral (default; tracked lecture-only outputs are never affected). auto_balance: when true, override with sqrt(transcript_docs / external_docs) computed at build time, so a fast-growing paper corpus cannot drown the lecture side.",
+  "external_edge_weight": 1.0,
+  "auto_balance": false
+}
