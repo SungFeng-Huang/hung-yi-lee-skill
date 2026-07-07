@@ -467,6 +467,12 @@ def extract_from_external(path: Path) -> dict:
             if line.strip() == "---":
                 body_start = i + 1
                 break
+            if line.lstrip().startswith("- "):
+                # YAML block-list syntax — the contract is single-line
+                # values ("a,b,c"); a silent miss here would drop links/
+                # model_names AND disable the aggregator gate downstream.
+                raise ValueError(f"{path}: frontmatter uses a YAML list — "
+                                 f"use a single-line quoted CSV value instead")
             if ":" in line:
                 key, _, val = line.partition(":")
                 meta[key.strip()] = val.strip().strip('"').strip("'")
@@ -510,6 +516,50 @@ def extract_from_external(path: Path) -> dict:
     concept_counts: Counter = Counter()
     for c in concepts:
         concept_counts[c["raw"]] += 1
+
+    # Model-name signals for `describes` edges (private key, popped in
+    # build_graph — never enters final node attrs). Priority:
+    #   1) frontmatter `model_names:` (exporter-curated short names — covers
+    #      papers whose TITLE omits the model, e.g. "Language Models are
+    #      Few-Shot Learners" = GPT-3)                       -> EXTRACTED
+    #   2) fallback: the doc's DOMINANT self-mentioned model concept — top-1
+    #      model_name/acronym concept with >=3 mentions AND >=2x the runner-
+    #      up. Papers self-mention their own model overwhelmingly; survey/
+    #      comparison docs list many models with no dominant one, so the
+    #      dominance gate keeps them out                     -> INFERRED
+    #   3) title-before-colon short name, ONLY when the body extractions
+    #      also produced that concept (never a signal on its own)
+    # Heuristic signals (2/3) are skipped for AGGREGATOR docs — anything
+    # carrying >=3 `links:` targets is a curator/overview document whose
+    # dominant model name is its NARRATIVE subject, not its identity (a hub
+    # centred on one model would otherwise pass any frequency gate).
+    model_names: list[list[str]] = []
+    if meta.get("model_names"):
+        model_names = [[x.strip(), "frontmatter"]
+                       for x in meta["model_names"].split(",") if x.strip()]
+    elif meta.get("aggregator", "").lower() in ("true", "yes", "1") \
+            or len(node.get("_links") or []) >= 3:
+        # declared aggregator (frontmatter) or structurally link-heavy:
+        # skip the heuristic signals entirely.
+        pass
+    else:
+        # body-only counts: the title must not push a name over the dominance
+        # gate, nor satisfy its own title-assist condition.
+        body_concepts = extract_concepts_from_text(body)
+        body_counts: Counter = Counter(c["raw"] for c in body_concepts)
+        modelish = {c["raw"] for c in body_concepts
+                    if c["pattern"] in ("model_name", "acronym")}
+        cands = sorted(((body_counts[r], r) for r in modelish), reverse=True)
+        if cands and cands[0][0] >= 3 and \
+                cands[0][0] >= 2 * (cands[1][0] if len(cands) > 1 else 1):
+            model_names = [[cands[0][1], "self-mention"]]
+        m = re.match(r"^(?:\[[^\]]+\]\s*)?([^:：]{2,60})[:：]", title)
+        if m:
+            short = normalize_concept(m.group(1))
+            if short in body_counts and short not in [n for n, _ in model_names]:
+                model_names.append([short, "title"])
+    if model_names:
+        node["_model_names"] = model_names
 
     # External docs can be much longer than references/* — cap a bit higher
     # so a comparison card's core vocabulary still makes it into the graph.
@@ -614,17 +664,26 @@ def build_graph(extractions: list[dict]) -> "nx.Graph":
                     merged = list(existing.get("_links") or [])
                     merged += [x for x in node["_links"] if x not in merged]
                     existing["_links"] = merged
+                if node.get("_model_names"):
+                    merged = list(existing.get("_model_names") or [])
+                    have = {n for n, _ in merged}
+                    merged += [p for p in node["_model_names"] if p[0] not in have]
+                    existing["_model_names"] = merged
         all_edges.extend(extraction.get("edges", []))
 
     # External-card cross-links (frontmatter `links:`): pop the private key
     # BEFORE nodes enter the graph; keep an origin_id -> node id map so
     # targets resolve after every external node is known.
     ext_links: dict[str, list[str]] = {}
+    ext_models: dict[str, list[list[str]]] = {}
     origin_map: dict[str, str] = {}
     for nid, attrs in seen_nodes.items():
         links = attrs.pop("_links", None)
         if links:
             ext_links[nid] = links
+        models = attrs.pop("_model_names", None)
+        if models:
+            ext_models[nid] = models
         if attrs.get("type") == "external" and attrs.get("origin_id"):
             oid = attrs["origin_id"]
             if oid in origin_map and origin_map[oid] != nid:
@@ -721,6 +780,45 @@ def build_graph(extractions: list[dict]) -> "nx.Graph":
                     source_file=None,
                     shared_doc_count=len(shared),
                 )
+
+    # `describes` edges (placed AFTER the co-mention pass: relabeling a
+    # mentions edge earlier would hide that doc-concept pair from
+    # co-occurrence): an external doc's model name(s) -> the matching
+    # concept node. Frontmatter names are exporter-curated (EXTRACTED);
+    # self-mention/title fallbacks are heuristic (INFERRED). The doc-concept
+    # `mentions` edge (if any) is UPGRADED in place — the graph is not a
+    # multigraph — keeping the stronger confidence and weight.
+    if ext_models:
+        desc_counts: Counter = Counter()
+        for src_nid, pairs in ext_models.items():
+            if src_nid not in G:
+                continue
+            for name, sig in pairs:
+                cid = f"concept_{slug(normalize_concept(name))}"
+                if cid == src_nid or cid not in G:
+                    continue
+                conf = "EXTRACTED" if sig == "frontmatter" else "INFERRED"
+                score = 1.0 if sig == "frontmatter" else 0.7
+                if G.has_edge(src_nid, cid):
+                    e = G.edges[src_nid, cid]
+                    e["relation"] = "describes"
+                    # confidence describes the NEW claim ("this doc is about
+                    # that model"), not the old mention evidence — heuristic
+                    # signals stay INFERRED even on an EXTRACTED mention.
+                    e["confidence"] = conf
+                    e["confidence_score"] = score
+                    e["weight"] = max(e.get("weight", 0), 2.0)
+                else:
+                    G.add_edge(src_nid, cid, relation="describes",
+                               confidence=conf, confidence_score=score,
+                               weight=2.0,
+                               source_file=G.nodes[src_nid].get("source_file"))
+                desc_counts[sig] += 1
+        if desc_counts:
+            print(f"  describes edges: {sum(desc_counts.values())} "
+                  f"(frontmatter {desc_counts.get('frontmatter', 0)}, "
+                  f"self-mention {desc_counts.get('self-mention', 0)}, "
+                  f"title {desc_counts.get('title', 0)})")
 
     # Alignment layer (graph_alignment.json):
     # 1) merged nodes carry their variant spellings, so queries match any form
@@ -1038,6 +1136,9 @@ def generate_report(
         *([f"- links_to edges (external card cross-links): "
            f"`{relation_counts['links_to']}`"]
           if relation_counts.get("links_to") else []),
+        *([f"- describes edges (external doc -> its model-name concept): "
+           f"`{relation_counts['describes']}`"]
+          if relation_counts.get("describes") else []),
         "",
         "## God Nodes",
         "",
