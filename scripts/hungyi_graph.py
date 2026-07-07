@@ -26,7 +26,14 @@ from typing import Any
 # ---------------------------------------------------------------------------
 
 CONCEPT_PATTERNS: list[tuple[str, re.Pattern]] = [
-    ("english_term", re.compile(r"\b([A-Z][a-zA-Z]*(?:\s+[A-Z][a-zA-Z]*)+)\b")),
+    # Components may be hyphenated ("Classifier-Free Guidance", "Low-Rank
+    # Adaptation") — without this the full compound is unmatchable and
+    # longest-match-first can only pick a shard. ATOMIC groups ((?>...)):
+    # the nested-quantifier shape backtracks catastrophically on long
+    # hyphenated capitalized runs (paper-card tables) without them — the
+    # backtracking variant blew a 10s build past 7 minutes (needs Py>=3.11).
+    ("english_term", re.compile(
+        r"\b([A-Z][a-zA-Z]*(?>-[A-Za-z]+)*(?>\s+[A-Z][a-zA-Z]*(?>-[A-Za-z]+)*)+)\b")),
     ("tech_term", re.compile(
         r"\b((?:self-supervised|pre-?train|fine-?tun|back-?prop|over-?fit|under-?fit|"
         r"cross-?entropy|multi-?head|auto-?regressive|flow-?matching|"
@@ -58,6 +65,15 @@ CONCEPT_PATTERNS: list[tuple[str, re.Pattern]] = [
     # VC dimension / VC++ / venture capital (the "Voice Conversion" full form
     # still merge-folds onto 語音轉換 via graph_alignment.json).
     ("acronym", re.compile(r"\b(TTS|ASR|SVS|S2ST|LALM)\b")),
+    # Single-token names with an INTERNAL capital (UniAudio, CosyVoice,
+    # SoundStream, WavLM). These slipped through every other pattern:
+    # english_term needs a second space-separated word, tech_term needs a
+    # hyphen, model_name is a frozen whitelist. Generic-word noise
+    # (YouTube, JavaScript, ...) is handled by STOP_CONCEPTS, tuned on data.
+    # ATOMIC inner group: the backtracking form explodes on long mixed-case
+    # tokens that end at a letter-digit junction (no \b there — every split
+    # fails, and plain (?:...)+ explores them all).
+    ("camelcase", re.compile(r"\b[A-Z][a-z0-9]+(?>[A-Z][a-zA-Z0-9]*)+\b")),
 ]
 
 # Concepts that are too generic to be useful as nodes
@@ -66,6 +82,11 @@ STOP_CONCEPTS = {
     "New", "Old", "Good", "Bad", "More", "Less",
     "Part", "Step", "Note", "Example", "Section",
     "Today", "Course", "Lecture", "Video",
+    # camelcase-pattern noise (products/orgs/tools that are venues or
+    # utilities in the lectures, not concepts under study; tuned on data —
+    # PyTorch/TensorFlow-class framework names stay OUT of this list)
+    "YouTube", "GitHub", "JavaScript", "TypeScript", "PowerPoint",
+    "MacBook", "OpenReview", "WhatsApp", "TikTok", "LinkedIn",
 }
 
 # Minimum frequency for a concept to become a node (across all documents)
@@ -185,20 +206,127 @@ def slug(text: str) -> str:
     return out.strip("_") or "_"
 
 
+# ---------------------------------------------------------------------------
+# Dynamic extraction vocabulary (the curation loop)
+# ---------------------------------------------------------------------------
+# Regex patterns can't know every model name (single-token CamelCase like
+# UniAudio slipped through everything; the model_name whitelist is a frozen
+# snapshot). But curated names ALREADY exist: graph_alignment.json's merge
+# variants, and — when building with --external — the external docs'
+# `model_names:` frontmatter. Scanning every document against that vocabulary
+# closes the loop: each curated name improves extraction corpus-wide
+# (a lecture that says "UniAudio" now yields the concept even though no
+# static pattern knows the word).
+
+_VOCAB_ASCII_RE: re.Pattern | None = None   # \b-bounded, case-insensitive
+_VOCAB_CJK: list[str] = []                  # substring-scanned
+_VOCAB_DISPLAY: dict[str, str] = {}         # casefold -> display form
+CJK_CHAR = re.compile(r"[぀-ヿ〇㐀-䶿一-鿿]")
+
+
+def set_extraction_vocabulary(extra_names: list[str] | None = None) -> None:
+    """(Re)build the vocabulary scanner from alignment merge names + any
+    extra names (external docs' model_names). Longest-first alternation so
+    the regex itself prefers the longest surface form."""
+    global _VOCAB_ASCII_RE, _VOCAB_CJK, _VOCAB_DISPLAY
+    names: dict[str, str] = {}
+    for canon, variants in _ALIGNMENT["alt_labels"].items():
+        for name in [canon, *variants]:
+            names.setdefault(name.casefold(), name)
+    for name in extra_names or []:
+        name = re.sub(r"\s+", " ", name.strip())
+        if len(name) >= 2:
+            names.setdefault(name.casefold(), name)
+    for stop in STOP_CONCEPTS:
+        names.pop(stop.casefold(), None)
+    _VOCAB_DISPLAY = names
+    ascii_terms = [n for n in names.values() if not CJK_CHAR.search(n)]
+    _VOCAB_CJK = [n for n in names.values() if CJK_CHAR.search(n)]
+    if ascii_terms:
+        alternation = "|".join(
+            re.escape(t) for t in sorted(ascii_terms, key=len, reverse=True))
+        # Lookarounds instead of \b: curated names may end in non-word
+        # chars (C++-style) where \b can never match.
+        _VOCAB_ASCII_RE = re.compile(rf"(?<!\w)(?:{alternation})(?!\w)", re.IGNORECASE)
+    else:
+        _VOCAB_ASCII_RE = None
+
+
+def _collect_external_model_names(external_dir: Path) -> list[str]:
+    """Frontmatter-only pre-pass over raw/external/**/*.md collecting
+    `model_names:` values. Tolerant: unreadable/malformed docs are skipped
+    here — extract_from_external fail-fasts on them properly later."""
+    names: list[str] = []
+    for path in sorted(external_dir.glob("*/*.md")):
+        try:
+            with open(path, encoding="utf-8") as f:
+                first = f.readline().strip()
+                if first != "---":
+                    continue
+                for line in f:
+                    line = line.rstrip("\n")
+                    if line.strip() == "---":
+                        break
+                    if line.startswith("model_names:"):
+                        val = line.partition(":")[2].strip().strip('"').strip("'")
+                        names += [x.strip() for x in val.split(",") if x.strip()]
+        except OSError:
+            continue
+    return names
+
+
+# Alignment merge names are always in scope; build_full_graph extends this
+# with external docs' model_names before any extraction runs.
+set_extraction_vocabulary()
+
+
+def _vocabulary_matches(text: str):
+    """Yield (start, end, display_form) vocabulary hits."""
+    if _VOCAB_ASCII_RE is not None:
+        for m in _VOCAB_ASCII_RE.finditer(text):
+            yield m.start(), m.end(), _VOCAB_DISPLAY.get(m.group(0).casefold(),
+                                                         m.group(0))
+    for term in _VOCAB_CJK:
+        start = text.find(term)
+        while start != -1:
+            yield start, start + len(term), term
+            start = text.find(term, start + 1)
+
+
 def extract_concepts_from_text(text: str) -> list[dict]:
-    """Extract concept mentions from a text block."""
-    found: list[dict] = []
+    """Extract concept mentions from a text block.
+
+    LONGEST-MATCH-FIRST: all pattern + vocabulary hits are collected as
+    spans, then kept longest-first with no overlaps. This kills two old
+    failure modes at once: n-gram shards ("Classifier-Free Guidance" no
+    longer also yields "Classifier-Free" + "Free Guidance"), and
+    double-counting when several patterns matched the same surface
+    (previously one "Moshi" could count once per pattern)."""
+    spans: list[tuple[int, int, str, str]] = []   # (start, end, raw, pattern)
     for pattern_name, pattern in CONCEPT_PATTERNS:
         for match in pattern.finditer(text):
-            raw = match.group(1) if match.lastindex else match.group(0)
-            normalized = normalize_concept(raw)
-            if normalized in STOP_CONCEPTS or len(normalized) < 2:
-                continue
-            found.append({
-                "raw": normalized,
-                "pattern": pattern_name,
-                "start": match.start(),
-            })
+            grp = 1 if match.lastindex else 0
+            raw = match.group(grp)
+            spans.append((*match.span(grp), raw, pattern_name))
+    for start, end, display in _vocabulary_matches(text):
+        spans.append((start, end, display, "vocabulary"))
+
+    # Longest first; ties broken by position then by pattern order stability.
+    spans.sort(key=lambda s: (-(s[1] - s[0]), s[0]))
+    occupied = bytearray(len(text))
+    found: list[dict] = []
+    for start, end, raw, pattern_name in spans:
+        if any(occupied[start:end]):
+            continue
+        normalized = normalize_concept(raw)
+        if normalized in STOP_CONCEPTS or len(normalized) < 2:
+            continue
+        occupied[start:end] = b"\x01" * (end - start)
+        found.append({
+            "raw": normalized,
+            "pattern": pattern_name,
+            "start": start,
+        })
     return found
 
 
@@ -1374,6 +1502,19 @@ def build_full_graph(
     graph.local.json / GRAPH_REPORT.local.md / graph.local.html and the
     tracked lecture-only outputs stay untouched."""
     output_dir.mkdir(parents=True, exist_ok=True)
+
+    # 0. Vocabulary pre-pass — external docs' curated model_names must enter
+    # the extraction vocabulary BEFORE any document is scanned, so a lecture
+    # mentioning "UniAudio" yields the concept even though no static pattern
+    # knows that word. Lecture-only builds reset to the alignment-only
+    # vocabulary (deterministic tracked outputs).
+    if external_dir is not None and external_dir.exists():
+        vocab = _collect_external_model_names(external_dir)
+        set_extraction_vocabulary(vocab)
+        if vocab:
+            print(f"  Vocabulary: +{len(vocab)} curated model names from external corpora")
+    else:
+        set_extraction_vocabulary()
 
     extractions: list[dict] = []
     stats = {

@@ -410,3 +410,55 @@
 - topic_pages: `8`
 - series_pages: `205`
 - cached_transcripts: `44`
+## [2026-07-07 21:37:29] graph | knowledge graph build
+
+- nodes: `964`
+- edges: `4913`
+- communities: `8`
+- files_processed: `495`
+- output: `wiki/graph`
+## [2026-07-07 21:37:29] compile | wiki refresh
+
+- video_count: `482`
+- topic_pages: `8`
+- series_pages: `205`
+- cached_transcripts: `44`
+## [2026-07-07 22:51:34] graph | knowledge graph build
+
+- nodes: `964`
+- edges: `4913`
+- communities: `8`
+- files_processed: `495`
+- output: `wiki/graph`
+## [2026-07-07 22:51:35] compile | wiki refresh
+
+- video_count: `482`
+- topic_pages: `8`
+- series_pages: `205`
+- cached_transcripts: `44`
+## [2026-07-07 23:01:22] graph | knowledge graph build
+
+- nodes: `964`
+- edges: `4913`
+- communities: `8`
+- files_processed: `495`
+- output: `wiki/graph`
+## [2026-07-07 23:01:22] compile | wiki refresh
+
+- video_count: `482`
+- topic_pages: `8`
+- series_pages: `205`
+- cached_transcripts: `44`
+## [2026-07-07 23:09:07] graph | knowledge graph build
+
+- nodes: `967`
+- edges: `4910`
+- communities: `8`
+- files_processed: `495`
+- output: `wiki/graph`
+## [2026-07-07 23:09:07] compile | wiki refresh
+
+- video_count: `482`
+- topic_pages: `8`
+- series_pages: `205`
+- cached_transcripts: `44`
