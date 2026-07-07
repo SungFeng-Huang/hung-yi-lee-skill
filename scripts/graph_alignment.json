@@ -194,6 +194,46 @@
     [
       "Autoregressive Model",
       "Auto-Regressive Model"
+    ],
+    [
+      "Spirit LM",
+      "SpiritLM"
+    ],
+    [
+      "Seed-TTS",
+      "SeedTTS"
+    ],
+    [
+      "HiFi-GAN",
+      "HiFiGAN"
+    ],
+    [
+      "FastSpeech 2",
+      "FastSpeech2"
+    ],
+    [
+      "CosyVoice 2",
+      "CosyVoice2"
+    ],
+    [
+      "Libri-Light",
+      "LibriLight"
+    ],
+    [
+      "Common Voice",
+      "CommonVoice"
+    ],
+    [
+      "Arena-Hard",
+      "ArenaHard"
+    ],
+    [
+      "MoE",
+      "Mixture-of-Experts"
+    ],
+    [
+      "CoT",
+      "Chain-of-Thought"
     ]
   ],
   "align": [

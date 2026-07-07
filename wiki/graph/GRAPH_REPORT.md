@@ -1,6 +1,6 @@
 # Knowledge Graph Report
 
-Generated: `2026-07-07T16:05:39+00:00`
+Generated: `2026-07-07T16:25:50+00:00`
 
 ## Corpus
 
@@ -14,7 +14,7 @@ Generated: `2026-07-07T16:05:39+00:00`
 
 - Nodes: `966`
 - Edges: `4872`
-- Communities: `9`
+- Communities: `7`
 - EXTRACTED edges: `1974`
 - INFERRED edges: `2896`
 - AMBIGUOUS edges: `0`
@@ -37,15 +37,13 @@ Highest-degree concepts — what everything connects through.
 
 ## Communities
 
-- **Ml Fundamentals** — 456 nodes
-- **Diffusion And Generation** — 132 nodes
+- **Ml Fundamentals** — 505 nodes
+- **Diffusion And Generation** — 134 nodes
 - **【生成式人工智慧與機器學習導論2025】第 8 講：通用模型的終身學習 (Fine-tuning, Model Editing, Model Merging, Test-Time Training)** — 106 nodes
-- **Speech And Audio** — 77 nodes
-- **Model Editing And Merging** — 59 nodes
-- **Evaluation And Benchmarks** — 49 nodes
+- **Speech And Audio** — 97 nodes
+- **Model Editing And Merging** — 57 nodes
 - **Agents And Context** — 34 nodes
 - **【生成式人工智慧與機器學習導論2025】第 10 講：語音語言模型發展史 (本課程前段內容為歷史回顧，2025 年的技術從 1:42:00 開始)** — 33 nodes
-- **Source Notes** — 20 nodes
 
 ## Surprising Connections
 
