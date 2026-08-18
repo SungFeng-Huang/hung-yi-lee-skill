@@ -10,7 +10,7 @@ This wiki follows a Karpathy-style pattern:
 
 ## Current Snapshot
 
-- Metadata sync time: `2026-08-14T19:43:41+00:00`
+- Metadata sync time: `2026-08-18T06:50:33+00:00`
 - Public video count: `482`
 - Cached transcript files: `44`
 - Cached transcript segments: `84253`
