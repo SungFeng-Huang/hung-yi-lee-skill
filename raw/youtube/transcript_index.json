@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T21:02:27+00:00",
+  "generated_at": "2026-08-23T05:53:20+00:00",
   "videos": {
     "Ll-wk8x3G_g": {
       "title": "如何讓 Transformer 知道輸入 Token 的順序？Absolute、Relative、RoPE、到沒有 Positional Embedding",
@@ -168,7 +168,7 @@
       "url": "https://www.youtube.com/watch?v=zpRR_A3Thoo",
       "status": "missing",
       "error": "TranscriptsDisabled",
-      "updated_at": "2026-08-19T21:02:24+00:00"
+      "updated_at": "2026-08-23T05:41:20+00:00"
     },
     "gkAyqoQkOSk": {
       "title": "【生成式AI時代下的機器學習(2025)】第十二講：語言模型如何學會說話 — 概述語音語言模型發展歷程",
@@ -292,35 +292,35 @@
       "url": "https://www.youtube.com/watch?v=zxFTrb_xGD0",
       "status": "missing",
       "error": "NoTranscriptFound",
-      "updated_at": "2026-08-19T21:02:25+00:00"
+      "updated_at": "2026-08-23T05:41:21+00:00"
     },
     "fIoCxwVobEo": {
       "title": "NeuralAudioCodecs: Recent Progress and a Case Study with SemantiCodec -Wenwu Wang (Univ. of Surrey)",
       "url": "https://www.youtube.com/watch?v=fIoCxwVobEo",
-      "status": "missing",
-      "error": "NoTranscriptFound",
-      "updated_at": "2026-08-19T21:02:25+00:00"
+      "status": "error",
+      "error": "ChunkedEncodingError: Response ended prematurely",
+      "updated_at": "2026-08-23T05:53:18+00:00"
     },
     "JidtdZVtpkI": {
       "title": "VoiceCraft: Zero-Shot Speech Editing and TTS in the Wild - Shang-Wen Li (Meta)",
       "url": "https://www.youtube.com/watch?v=JidtdZVtpkI",
       "status": "missing",
       "error": "NoTranscriptFound",
-      "updated_at": "2026-08-19T21:02:26+00:00"
+      "updated_at": "2026-08-23T05:53:18+00:00"
     },
     "ExDfqz8NfnE": {
       "title": "Challenges in Developing Universal Audio Foundation Model - Dongchao Yang (CUHK)",
       "url": "https://www.youtube.com/watch?v=ExDfqz8NfnE",
       "status": "missing",
       "error": "NoTranscriptFound",
-      "updated_at": "2026-08-19T21:02:27+00:00"
+      "updated_at": "2026-08-23T05:53:19+00:00"
     },
     "Zjpl84KCTvw": {
       "title": "Audio Language Models - Neil Zeghidour (Moshi)",
       "url": "https://www.youtube.com/watch?v=Zjpl84KCTvw",
       "status": "missing",
       "error": "NoTranscriptFound",
-      "updated_at": "2026-08-19T21:02:27+00:00"
+      "updated_at": "2026-08-23T05:53:20+00:00"
     },
     "OYN_GvAqv-A": {
       "title": "【生成式AI導論 2024】第18講：有關影像的生成式AI (下) — 快速導讀經典影像生成方法 (VAE, Flow, Diffusion, GAN) 以及與生成的影片互動",
@@ -680,7 +680,7 @@
   },
   "summary": {
     "fetched": 44,
-    "missing": 22,
-    "errors": 18
+    "missing": 21,
+    "errors": 19
   }
 }

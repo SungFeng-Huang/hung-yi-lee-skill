@@ -9,8 +9,8 @@ Transcript cache coverage across the indexed channel.
 ## Transcript Status Breakdown
 
 - `fetched`: 44
-- `missing`: 22
-- `error`: 18
+- `missing`: 21
+- `error`: 19
 
 ## Series With The Most Remaining Uncached Videos
 
