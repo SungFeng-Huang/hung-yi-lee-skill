@@ -1,6 +1,6 @@
 # Diffusion And Generation
 
-Video count: `83`
+Video count: `82`
 
 Representative videos:
 
@@ -10,7 +10,6 @@ Representative videos:
 - [【生成式人工智慧與機器學習導論2025】第 10 講：語音語言模型發展史 (本課程前段內容為歷史回顧，2025 年的技術從 1:42:00 開始)](https://www.youtube.com/watch?v=CbIPjrOj2Tc) | [transcript](../../raw/youtube/transcripts/CbIPjrOj2Tc.md)
 - [【生成式人工智慧與機器學習導論2025】第 9 講：影像和聲音上的生成策略 — Diffusion/Flow-matching 系列和接龍 (Autoregressive) 這兩條世界線的交會](https://www.youtube.com/watch?v=ccqCDD9LqCA) | [transcript](../../raw/youtube/transcripts/ccqCDD9LqCA.md)
 - [【生成式人工智慧與機器學習導論2025】第 8 講：通用模型的終身學習 (Fine-tuning, Model Editing, Model Merging, Test-Time Training)](https://www.youtube.com/watch?v=EnWz5XuOnIQ) | [transcript](../../raw/youtube/transcripts/EnWz5XuOnIQ.md)
-- [【生成式人工智慧與機器學習導論2025】第 7 講：大型語言模型的學習歷程](https://www.youtube.com/watch?v=YJoegm7kiUM) | [transcript](../../raw/youtube/transcripts/YJoegm7kiUM.md)
 - [【生成式人工智慧與機器學習導論2025】第 6 講：一堂課搞懂訓練類神經網路的各種訣竅](https://www.youtube.com/watch?v=mPWvAN4hzzY) | [transcript](../../raw/youtube/transcripts/mPWvAN4hzzY.md)
 - [【生成式人工智慧與機器學習導論2025】第 5 講：一堂課搞懂機器學習與深度學習的基本原理 (案例：老師什麼時候要下課)](https://www.youtube.com/watch?v=Taj1eHmZyWw) | [transcript](../../raw/youtube/transcripts/Taj1eHmZyWw.md)
 - [【生成式人工智慧與機器學習導論2025】第 4 講：評估生成式人工智慧能力時可能遇到的各種坑](https://www.youtube.com/watch?v=dWQVY_h0YXU) | [transcript](../../raw/youtube/transcripts/dWQVY_h0YXU.md)
@@ -54,3 +53,4 @@ Representative videos:
 - [【生成式AI 2023】FrugalGPT: 來看看窮人怎麼用省錢的方式來使用 ChatGPT (上)](https://www.youtube.com/watch?v=vxxPtDCb9Go)
 - [【生成式AI 2023】讓 AI 做計劃然後自己運行自己](https://www.youtube.com/watch?v=eQNADlR0jSs)
 - [【生成式AI 2023】用語言模型來解釋語言模型 (下)](https://www.youtube.com/watch?v=OOvhBIIHITE)
+- [【生成式AI 2023】用語言模型來解釋語言模型 (上)](https://www.youtube.com/watch?v=GBXm30qRAqg)

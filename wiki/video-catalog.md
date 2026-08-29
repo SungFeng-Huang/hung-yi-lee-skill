@@ -132,12 +132,11 @@ Count: `13`
 - `QLiKmca4kzI` [【生成式AI時代下的機器學習(2025)】第一講：一堂課搞懂生成式人工智慧的技術突破與未來發展](https://www.youtube.com/watch?v=QLiKmca4kzI)
 
 ## [生成式人工智慧與機器學習導論2025](./series/生成式人工智慧與機器學習導論2025.md)
-Count: `11`
+Count: `10`
 
 - `CbIPjrOj2Tc` [【生成式人工智慧與機器學習導論2025】第 10 講：語音語言模型發展史 (本課程前段內容為歷史回顧，2025 年的技術從 1:42:00 開始)](https://www.youtube.com/watch?v=CbIPjrOj2Tc)
 - `ccqCDD9LqCA` [【生成式人工智慧與機器學習導論2025】第 9 講：影像和聲音上的生成策略 — Diffusion/Flow-matching 系列和接龍 (Autoregressive) 這兩條世界線的交會](https://www.youtube.com/watch?v=ccqCDD9LqCA)
 - `EnWz5XuOnIQ` [【生成式人工智慧與機器學習導論2025】第 8 講：通用模型的終身學習 (Fine-tuning, Model Editing, Model Merging, Test-Time Training)](https://www.youtube.com/watch?v=EnWz5XuOnIQ)
-- `YJoegm7kiUM` [【生成式人工智慧與機器學習導論2025】第 7 講：大型語言模型的學習歷程](https://www.youtube.com/watch?v=YJoegm7kiUM)
 - `mPWvAN4hzzY` [【生成式人工智慧與機器學習導論2025】第 6 講：一堂課搞懂訓練類神經網路的各種訣竅](https://www.youtube.com/watch?v=mPWvAN4hzzY)
 - `Taj1eHmZyWw` [【生成式人工智慧與機器學習導論2025】第 5 講：一堂課搞懂機器學習與深度學習的基本原理 (案例：老師什麼時候要下課)](https://www.youtube.com/watch?v=Taj1eHmZyWw)
 - `dWQVY_h0YXU` [【生成式人工智慧與機器學習導論2025】第 4 講：評估生成式人工智慧能力時可能遇到的各種坑](https://www.youtube.com/watch?v=dWQVY_h0YXU)
@@ -370,6 +369,11 @@ Count: `1`
 Count: `1`
 
 - `rsbT7X2-g7E` [[INTERSPEECH 2020] WG-WaveNet: Real-Time High-Fidelity Speech Synthesis without GPU](https://www.youtube.com/watch?v=rsbT7X2-g7E)
+
+## [[Introduction to Generative AI and Machine Learning 2025] Lecture 7](./series/introduction-to-generative-ai-and-machine-learning-2025-lecture-7.md)
+Count: `1`
+
+- `YJoegm7kiUM` [[Introduction to Generative AI and Machine Learning 2025] Lecture 7: The Learning Process of Larg...](https://www.youtube.com/watch?v=YJoegm7kiUM)
 
 ## [[ML 2021 (English version)] Lecture 1](./series/ml-2021-english-version-lecture-1.md)
 Count: `1`

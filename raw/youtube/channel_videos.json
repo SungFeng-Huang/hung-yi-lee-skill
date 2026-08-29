@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T01:23:18+00:00",
+  "generated_at": "2026-08-29T20:40:00+00:00",
   "channel_title": "Hung-yi Lee - Videos",
   "channel_url": "https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ/videos",
   "video_count": 482,
@@ -156,13 +156,11 @@
     {
       "playlist_position": 15,
       "video_id": "YJoegm7kiUM",
-      "title": "【生成式人工智慧與機器學習導論2025】第 7 講：大型語言模型的學習歷程",
+      "title": "[Introduction to Generative AI and Machine Learning 2025] Lecture 7: The Learning Process of Larg...",
       "url": "https://www.youtube.com/watch?v=YJoegm7kiUM",
-      "series": "生成式人工智慧與機器學習導論2025",
+      "series": "[Introduction to Generative AI and Machine Learning 2025] Lecture 7",
       "topics": [
-        "ml-fundamentals",
-        "llm-and-transformers",
-        "diffusion-and-generation"
+        "ml-fundamentals"
       ]
     },
     {

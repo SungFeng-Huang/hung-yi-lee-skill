@@ -10,7 +10,7 @@ Count: `375`
 - `CbIPjrOj2Tc` [【生成式人工智慧與機器學習導論2025】第 10 講：語音語言模型發展史 (本課程前段內容為歷史回顧，2025 年的技術從 1:42:00 開始)](https://www.youtube.com/watch?v=CbIPjrOj2Tc)
 - `ccqCDD9LqCA` [【生成式人工智慧與機器學習導論2025】第 9 講：影像和聲音上的生成策略 — Diffusion/Flow-matching 系列和接龍 (Autoregressive) 這兩條世界線的交會](https://www.youtube.com/watch?v=ccqCDD9LqCA)
 - `EnWz5XuOnIQ` [【生成式人工智慧與機器學習導論2025】第 8 講：通用模型的終身學習 (Fine-tuning, Model Editing, Model Merging, Test-Time Training)](https://www.youtube.com/watch?v=EnWz5XuOnIQ)
-- `YJoegm7kiUM` [【生成式人工智慧與機器學習導論2025】第 7 講：大型語言模型的學習歷程](https://www.youtube.com/watch?v=YJoegm7kiUM)
+- `YJoegm7kiUM` [[Introduction to Generative AI and Machine Learning 2025] Lecture 7: The Learning Process of Larg...](https://www.youtube.com/watch?v=YJoegm7kiUM)
 - `mPWvAN4hzzY` [【生成式人工智慧與機器學習導論2025】第 6 講：一堂課搞懂訓練類神經網路的各種訣竅](https://www.youtube.com/watch?v=mPWvAN4hzzY)
 - `Taj1eHmZyWw` [【生成式人工智慧與機器學習導論2025】第 5 講：一堂課搞懂機器學習與深度學習的基本原理 (案例：老師什麼時候要下課)](https://www.youtube.com/watch?v=Taj1eHmZyWw)
 - `dWQVY_h0YXU` [【生成式人工智慧與機器學習導論2025】第 4 講：評估生成式人工智慧能力時可能遇到的各種坑](https://www.youtube.com/watch?v=dWQVY_h0YXU)
@@ -23,7 +23,7 @@ Count: `375`
 - ... and 360 more
 
 ## [Diffusion And Generation](./topics/diffusion-and-generation.md)
-Count: `83`
+Count: `82`
 
 - `m3i2mk5hs8U` [AI 能自我修正嗎？從 decoding、workflow 到 reasoning 的技術發展整理](https://www.youtube.com/watch?v=m3i2mk5hs8U)
 - `fDQaadKysSA` [加快語言模型生成速度 (2/2)：KV Cache](https://www.youtube.com/watch?v=fDQaadKysSA)
@@ -31,7 +31,6 @@ Count: `83`
 - `CbIPjrOj2Tc` [【生成式人工智慧與機器學習導論2025】第 10 講：語音語言模型發展史 (本課程前段內容為歷史回顧，2025 年的技術從 1:42:00 開始)](https://www.youtube.com/watch?v=CbIPjrOj2Tc)
 - `ccqCDD9LqCA` [【生成式人工智慧與機器學習導論2025】第 9 講：影像和聲音上的生成策略 — Diffusion/Flow-matching 系列和接龍 (Autoregressive) 這兩條世界線的交會](https://www.youtube.com/watch?v=ccqCDD9LqCA)
 - `EnWz5XuOnIQ` [【生成式人工智慧與機器學習導論2025】第 8 講：通用模型的終身學習 (Fine-tuning, Model Editing, Model Merging, Test-Time Training)](https://www.youtube.com/watch?v=EnWz5XuOnIQ)
-- `YJoegm7kiUM` [【生成式人工智慧與機器學習導論2025】第 7 講：大型語言模型的學習歷程](https://www.youtube.com/watch?v=YJoegm7kiUM)
 - `mPWvAN4hzzY` [【生成式人工智慧與機器學習導論2025】第 6 講：一堂課搞懂訓練類神經網路的各種訣竅](https://www.youtube.com/watch?v=mPWvAN4hzzY)
 - `Taj1eHmZyWw` [【生成式人工智慧與機器學習導論2025】第 5 講：一堂課搞懂機器學習與深度學習的基本原理 (案例：老師什麼時候要下課)](https://www.youtube.com/watch?v=Taj1eHmZyWw)
 - `dWQVY_h0YXU` [【生成式人工智慧與機器學習導論2025】第 4 講：評估生成式人工智慧能力時可能遇到的各種坑](https://www.youtube.com/watch?v=dWQVY_h0YXU)
@@ -40,10 +39,11 @@ Count: `83`
 - `TigfpYPJk1s` [【生成式人工智慧與機器學習導論2025】第１講：一堂課搞懂生成式人工智慧的原理](https://www.youtube.com/watch?v=TigfpYPJk1s)
 - `VuQUF1VVX40` [【生成式人工智慧與機器學習導論2025】第０講：開場與課程簡介](https://www.youtube.com/watch?v=VuQUF1VVX40)
 - `gkAyqoQkOSk` [【生成式AI時代下的機器學習(2025)】第十二講：語言模型如何學會說話 — 概述語音語言模型發展歷程](https://www.youtube.com/watch?v=gkAyqoQkOSk)
-- ... and 68 more
+- `jFUwoCkdqAo` [【生成式AI時代下的機器學習(2025)】第十一講：今天你想為 Foundation Model 裝備哪些 Task Vector？淺談神奇的 Model Merging 技術](https://www.youtube.com/watch?v=jFUwoCkdqAo)
+- ... and 67 more
 
 ## [LLMs And Transformers](./topics/llm-and-transformers.md)
-Count: `48`
+Count: `47`
 
 - `m3i2mk5hs8U` [AI 能自我修正嗎？從 decoding、workflow 到 reasoning 的技術發展整理](https://www.youtube.com/watch?v=m3i2mk5hs8U)
 - `R6fZR_9kmIw` [Harness Engineering: Sometimes Language Models Aren't Unintelligent, They Just Lack Proper Human ...](https://www.youtube.com/watch?v=R6fZR_9kmIw)
@@ -51,7 +51,6 @@ Count: `48`
 - `fDQaadKysSA` [加快語言模型生成速度 (2/2)：KV Cache](https://www.youtube.com/watch?v=fDQaadKysSA)
 - `vXb2QYOUzl4` [加快語言模型生成速度 (1/2)：Flash Attention](https://www.youtube.com/watch?v=vXb2QYOUzl4)
 - `CbIPjrOj2Tc` [【生成式人工智慧與機器學習導論2025】第 10 講：語音語言模型發展史 (本課程前段內容為歷史回顧，2025 年的技術從 1:42:00 開始)](https://www.youtube.com/watch?v=CbIPjrOj2Tc)
-- `YJoegm7kiUM` [【生成式人工智慧與機器學習導論2025】第 7 講：大型語言模型的學習歷程](https://www.youtube.com/watch?v=YJoegm7kiUM)
 - `8iFvM7WUUs8` [【生成式人工智慧與機器學習導論2025】第3講：解剖大型語言模型](https://www.youtube.com/watch?v=8iFvM7WUUs8)
 - `gkAyqoQkOSk` [【生成式AI時代下的機器學習(2025)】第十二講：語言模型如何學會說話 — 概述語音語言模型發展歷程](https://www.youtube.com/watch?v=gkAyqoQkOSk)
 - `s266BzGNKKc` [【生成式AI時代下的機器學習(2025)】第九講：你這麽認這個評分系統幹什麽啊？談談有關大型語言模型評估的幾件事](https://www.youtube.com/watch?v=s266BzGNKKc)
@@ -60,7 +59,8 @@ Count: `48`
 - `mpuRca2UZtI` [【生成式AI時代下的機器學習(2025)】助教課：利用多張GPU訓練大型語言模型—從零開始介紹DeepSpeed、Liger Kernel、Flash Attention及Quantization](https://www.youtube.com/watch?v=mpuRca2UZtI)
 - `Ozos6M1JtIE` [【生成式AI時代下的機器學習(2025)】第五講：大型語言模型訓練方法「預訓練–對齊」(Pretrain-Alignment) 的強大與極限](https://www.youtube.com/watch?v=Ozos6M1JtIE)
 - `gjsdVi90yQo` [【生成式AI時代下的機器學習(2025)】第四講：Transformer 的時代要結束了嗎？介紹 Transformer 的競爭者們](https://www.youtube.com/watch?v=gjsdVi90yQo)
-- ... and 33 more
+- `Xnil63UDW2o` [【生成式AI時代下的機器學習(2025)】第三講：AI 的腦科學 — 語言模型內部運作機制剖析 (解析單一神經元到整群神經元的運作機制、如何讓語言模型說出自己的內心世界)](https://www.youtube.com/watch?v=Xnil63UDW2o)
+- ... and 32 more
 
 ## [Speech And Audio](./topics/speech-and-audio.md)
 Count: `43`

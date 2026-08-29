@@ -1,6 +1,6 @@
 # LLMs And Transformers
 
-Video count: `48`
+Video count: `47`
 
 Representative videos:
 
@@ -10,7 +10,6 @@ Representative videos:
 - [加快語言模型生成速度 (2/2)：KV Cache](https://www.youtube.com/watch?v=fDQaadKysSA) | [transcript](../../raw/youtube/transcripts/fDQaadKysSA.md)
 - [加快語言模型生成速度 (1/2)：Flash Attention](https://www.youtube.com/watch?v=vXb2QYOUzl4) | [transcript](../../raw/youtube/transcripts/vXb2QYOUzl4.md)
 - [【生成式人工智慧與機器學習導論2025】第 10 講：語音語言模型發展史 (本課程前段內容為歷史回顧，2025 年的技術從 1:42:00 開始)](https://www.youtube.com/watch?v=CbIPjrOj2Tc) | [transcript](../../raw/youtube/transcripts/CbIPjrOj2Tc.md)
-- [【生成式人工智慧與機器學習導論2025】第 7 講：大型語言模型的學習歷程](https://www.youtube.com/watch?v=YJoegm7kiUM) | [transcript](../../raw/youtube/transcripts/YJoegm7kiUM.md)
 - [【生成式人工智慧與機器學習導論2025】第3講：解剖大型語言模型](https://www.youtube.com/watch?v=8iFvM7WUUs8) | [transcript](../../raw/youtube/transcripts/8iFvM7WUUs8.md)
 - [【生成式AI時代下的機器學習(2025)】第十二講：語言模型如何學會說話 — 概述語音語言模型發展歷程](https://www.youtube.com/watch?v=gkAyqoQkOSk) | [transcript](../../raw/youtube/transcripts/gkAyqoQkOSk.md)
 - [【生成式AI時代下的機器學習(2025)】第九講：你這麽認這個評分系統幹什麽啊？談談有關大型語言模型評估的幾件事](https://www.youtube.com/watch?v=s266BzGNKKc) | [transcript](../../raw/youtube/transcripts/s266BzGNKKc.md)
