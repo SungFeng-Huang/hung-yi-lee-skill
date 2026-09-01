@@ -1,6 +1,6 @@
 # Knowledge Graph Report
 
-Generated: `2026-08-31T21:01:58+00:00`
+Generated: `2026-09-01T21:17:19+00:00`
 
 ## Corpus
 
